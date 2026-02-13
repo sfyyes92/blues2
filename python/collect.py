@@ -35,11 +35,17 @@ def make_session() -> requests.Session:
     })
     return s
 
-def fetch_html(session: requests.Session, url: str, timeout: int = 25) -> str:
+
+def fetch_html(session: requests.Session, url: str, timeout: int = 25, extra_headers: Optional[dict] = None) -> str:
+    """Fetch HTML with optional per-request headers (useful for Referer)."""
     time.sleep(random.uniform(0.2, 0.8))
-    r = session.get(url, timeout=timeout, allow_redirects=True)
+    headers = session.headers.copy()
+    if extra_headers:
+        headers.update(extra_headers)
+    r = session.get(url, timeout=timeout, allow_redirects=True, headers=headers)
     r.raise_for_status()
     return r.text
+
 
 def download_file(session: requests.Session, url: str, out_dir: str) -> str:
     os.makedirs(out_dir, exist_ok=True)
@@ -60,6 +66,7 @@ def download_file(session: requests.Session, url: str, out_dir: str) -> str:
 
 DATE_RE = re.compile(r"^\s*(\d{4})年(\d{1,2})月(\d{1,2})日")
 
+
 def extract_yt_initial_data(html: str) -> Dict[str, Any]:
     patterns = [
         r"var\s+ytInitialData\s*=\s*(\{.*?\})\s*;\s*</script>",
@@ -71,6 +78,7 @@ def extract_yt_initial_data(html: str) -> Dict[str, Any]:
         if m:
             return json.loads(m.group(1))
     raise ValueError("未在频道页 HTML 中找到 ytInitialData（可能拿到同意页/结构变化）。")
+
 
 def iter_any_renderer(obj: Any, keys: Tuple[str, ...]) -> Iterator[Dict[str, Any]]:
     if isinstance(obj, dict):
@@ -84,6 +92,7 @@ def iter_any_renderer(obj: Any, keys: Tuple[str, ...]) -> Iterator[Dict[str, Any
         for it in obj:
             yield from iter_any_renderer(it, keys)
 
+
 def get_title_text(renderer: Dict[str, Any]) -> str:
     title = renderer.get("title", {})
     if isinstance(title, dict):
@@ -94,12 +103,14 @@ def get_title_text(renderer: Dict[str, Any]) -> str:
             return "".join(r.get("text", "") for r in runs if isinstance(r, dict))
     return ""
 
+
 def parse_leading_date(title: str) -> Optional[date]:
     m = DATE_RE.match(title)
     if not m:
         return None
     y, mo, d = map(int, m.groups())
     return date(y, mo, d)
+
 
 def find_latest_dated_video_url_from_channel_html(channel_html: str) -> Tuple[str, date, str]:
     data = extract_yt_initial_data(channel_html)
@@ -129,18 +140,54 @@ def find_latest_dated_video_url_from_channel_html(channel_html: str) -> Tuple[st
 
 # ===================== 3) 从视频页简介提取“节点下载：”链接 =====================
 
-def extract_node_download_url_from_watch_html(watch_html: str) -> str:
-    s = unescape(watch_html)
-    # 限制 URL 字符集，避免把 \n 也吃进去
-    url_charset = r"[A-Za-z0-9\-\._~:/\?#\[\]@!\$&'\(\)\*\+,;=%]+"
-    m = re.search(rf"节点下载：\s*(https?://{url_charset})", s)
-    if m:
-        return m.group(1)
+def extract_yt_initial_player_response(html: str) -> Dict[str, Any]:
+    """Extract ytInitialPlayerResponse JSON from a YouTube watch page."""
+    patterns = [
+        r"var\s+ytInitialPlayerResponse\s*=\s*(\{.*?\})\s*;\s*</script>",
+        r"ytInitialPlayerResponse\s*=\s*(\{.*?\})\s*;\s*</script>",
+    ]
+    for pat in patterns:
+        m = re.search(pat, html, flags=re.DOTALL)
+        if m:
+            return json.loads(m.group(1))
+    raise ValueError("未在 watch HTML 中找到 ytInitialPlayerResponse（可能拿到同意页/结构变化）。")
 
-    # 兼容 https:\/\/ 形式
-    m = re.search(rf"节点下载：\s*(https?:\\?/\\?/{url_charset})", s)
+
+def extract_node_download_url_from_watch_html(watch_html: str) -> str:
+    """从视频页简介提取 '节点下载：' 后面的完整 .html 链接。
+
+    GitHub Actions 等环境有时会拿到“展示省略版”（带 … 或 ...）的简介文本，
+    因此这里优先从 ytInitialPlayerResponse.videoDetails.shortDescription 获取原始简介，
+    并强制要求匹配到以 .html 结尾的完整链接。
+    """
+    s = unescape(watch_html)
+
+    def _validate(url: str) -> str:
+        url = url.strip()
+        if "…" in url or url.endswith("..."):
+            raise ValueError(f"节点下载链接疑似被省略：{url}")
+        return url
+
+    # 1) 优先：shortDescription（通常是完整简介）
+    try:
+        player = extract_yt_initial_player_response(s)
+        desc = player.get("videoDetails", {}).get("shortDescription", "") or ""
+        desc = unescape(desc)
+        m = re.search(r"节点下载：\s*(https?://[^\s\"<>\\]+\.html)", desc)
+        if m:
+            return _validate(m.group(1))
+    except Exception:
+        pass
+
+    # 2) 兜底：从整页找，但必须以 .html 结尾
+    m = re.search(r"节点下载：\s*(https?://[^\s\"<>\\]+\.html)", s)
     if m:
-        return m.group(1).replace("\\/", "/")
+        return _validate(m.group(1))
+
+    # 3) 如果只找到不完整的，给清晰错误方便定位
+    m = re.search(r"节点下载：\s*(https?://[^\s\"<>\\]+)", s)
+    if m:
+        raise ValueError(f"只找到了不完整的节点下载链接：{m.group(1)}")
 
     raise ValueError("视频页中未找到“节点下载：<URL>”。")
 
@@ -174,6 +221,7 @@ def extract_encrypted_text_from_html(html: str) -> str:
         raise ValueError("未找到 encryptedText")
     return m.group(1).strip()
 
+
 def evp_bytes_to_key_md5(password: bytes, salt: bytes, key_len: int, iv_len: int):
     d = b""
     last = b""
@@ -181,7 +229,27 @@ def evp_bytes_to_key_md5(password: bytes, salt: bytes, key_len: int, iv_len: int
         last = hashlib.md5(last + password + salt).digest()
         d += last
     return d[:key_len], d[key_len:key_len + iv_len]
-    
+
+
+def decrypt_cryptojs_openssl_salted(ciphertext_b64: str, password: str) -> str:
+    raw = base64.b64decode(ciphertext_b64)
+    if raw[:8] != b"Salted__":
+        raise ValueError("不是 OpenSSL Salted__ 格式（开头不是 'Salted__'）")
+    salt = raw[8:16]
+    ct = raw[16:]
+
+    key, iv = evp_bytes_to_key_md5(password.encode("utf-8"), salt, 32, 16)  # AES-256-CBC
+    cipher = AES.new(key, AES.MODE_CBC, iv)
+    pt = cipher.decrypt(ct)
+
+    pad = pt[-1]
+    if pad < 1 or pad > 16:
+        raise ValueError("解密失败：padding 异常（密码可能不对）")
+    pt = pt[:-pad]
+
+    # 网页里一般会 decodeURIComponent
+    return unquote(pt.decode("utf-8", errors="strict"))
+
 def decrypt(ciphertext, password):
     """Decrypts the given ciphertext using the provided password."""
     try:
@@ -203,25 +271,6 @@ def decrypt(ciphertext, password):
     except Exception as e:
         raise ValueError(f"Decryption failed: {e}")
 
-def decrypt_cryptojs_openssl_salted(ciphertext_b64: str, password: str) -> str:
-    raw = base64.b64decode(ciphertext_b64)
-    if raw[:8] != b"Salted__":
-        raise ValueError("不是 OpenSSL Salted__ 格式（开头不是 'Salted__'）")
-    salt = raw[8:16]
-    ct = raw[16:]
-
-    key, iv = evp_bytes_to_key_md5(password.encode("utf-8"), salt, 32, 16)  # AES-256-CBC
-    cipher = AES.new(key, AES.MODE_CBC, iv)
-    pt = cipher.decrypt(ct)
-
-    pad = pt[-1]
-    if pad < 1 or pad > 16:
-        raise ValueError("解密失败：padding 异常（密码可能不对）")
-    pt = pt[:-pad]
-
-    # 网页里一般会 decodeURIComponent
-    return unquote(pt.decode("utf-8", errors="strict"))
-    
 def brute_force_password(encrypted_data):
     """Attempts to brute-force the password to decrypt the data."""
     print("start brute_force_password")
@@ -237,18 +286,14 @@ def brute_force_password(encrypted_data):
             continue
     raise ValueError("Failed to brute-force the encryption password.")
 
-def brute_force_password_placeholder(unlock_page_html: str) -> str:
-    """
-    占位：你后续自己实现暴力破解。
-    现在不做任何破解，直接抛错或返回空字符串。
-    """
-    raise NotImplementedError("暴力破解逻辑请你自行实现。")
 
 def get_password(ciphertext_b64: str) -> str:
     return brute_force_password(ciphertext_b64)
 
+
 def extract_urls(text: str) -> List[str]:
     return re.findall(r'https?://[^\s"<>]+', text)
+
 
 def pick_c_yaml_and_v_txt(urls: List[str]) -> List[str]:
     out = []
@@ -287,17 +332,19 @@ def main():
     watch_html = fetch_html(session, video_url)
     node_page_url = extract_node_download_url_from_watch_html(watch_html)
     print("\n节点下载链接:", node_page_url)
+    print("node_page_url repr:", repr(node_page_url))
 
     # C) 访问 12-Youtube.html -> 提取“点击解锁资源”按钮链接（jmy/12.html）
-    node_page_html = fetch_html(session, node_page_url)
+    node_page_html = fetch_html(session, node_page_url, extra_headers={"Referer": video_url})
     unlock_url = extract_unlock_resource_url_from_source(node_page_html, base_url=node_page_url)
     print("解锁资源链接:", unlock_url)
 
     # D) 访问 jmy/12.html -> 提取 encryptedText -> 解密得到明文 HTML
-    unlock_html = fetch_html(session, unlock_url)
+    unlock_html = fetch_html(session, unlock_url, extra_headers={"Referer": node_page_url})
     encrypted_b64 = extract_encrypted_text_from_html(unlock_html)
 
-    password = get_password(encrypted_b64)  # 这里你也可以改成调用占位破解函数
+    # 你本地已有实现的话，把 brute_force_password() 和 get_password() 按你逻辑调整回去即可
+    password = get_password(encrypted_b64)
     plaintext = decrypt_cryptojs_openssl_salted(encrypted_b64, password)
 
     # E) 从明文中抓 URL -> 只下载 c.yaml 和 v.txt
@@ -316,6 +363,7 @@ def main():
         print(f"已下载: {u}\n  -> {path}")
 
     print("\n全部完成。")
+
 
 if __name__ == "__main__":
     main()
