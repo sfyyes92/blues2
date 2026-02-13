@@ -224,13 +224,14 @@ def decrypt_cryptojs_openssl_salted(ciphertext_b64: str, password: str) -> str:
     
 def brute_force_password(encrypted_data):
     """Attempts to brute-force the password to decrypt the data."""
-    logging.info("start brute_force_password")
+    print("start brute_force_password")
     for pwd in range(0, 10000):
         try:
             password = f"{pwd:04d}"
             decoded_data = decrypt(encrypted_data, str(password))
             decrypted_data = urllib.parse.unquote(decoded_data)
             logging.info(password)
+            print("password: ",password)
             return password
         except ValueError:
             continue
@@ -270,7 +271,7 @@ def pick_c_yaml_and_v_txt(urls: List[str]) -> List[str]:
 
 def main():
     channel_url = "https://www.youtube.com/@blue-Youtube"
-    out_dir = "../output/"
+    out_dir = "downloads"
 
     session = make_session()
 
