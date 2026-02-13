@@ -152,44 +152,86 @@ def extract_yt_initial_player_response(html: str) -> Dict[str, Any]:
             return json.loads(m.group(1))
     raise ValueError("未在 watch HTML 中找到 ytInitialPlayerResponse（可能拿到同意页/结构变化）。")
 
-
 def extract_node_download_url_from_watch_html(watch_html: str) -> str:
-    """从视频页简介提取 '节点下载：' 后面的完整 .html 链接。
-
-    GitHub Actions 等环境有时会拿到“展示省略版”（带 … 或 ...）的简介文本，
-    因此这里优先从 ytInitialPlayerResponse.videoDetails.shortDescription 获取原始简介，
-    并强制要求匹配到以 .html 结尾的完整链接。
     """
-    s = unescape(watch_html)
+    多策略稳定提取“节点下载：”完整 .html 链接
+    兼容：
+      - structuredDescription
+      - description runs
+      - shortDescription
+    """
 
-    def _validate(url: str) -> str:
-        url = url.strip()
-        if "…" in url or url.endswith("..."):
-            raise ValueError(f"节点下载链接疑似被省略：{url}")
-        return url
+    def extract_yt_initial_data(html: str) -> Dict[str, Any]:
+        patterns = [
+            r"var\s+ytInitialData\s*=\s*(\{.*?\})\s*;\s*</script>",
+            r"ytInitialData\s*=\s*(\{.*?\})\s*;\s*</script>",
+        ]
+        for pat in patterns:
+            m = re.search(pat, html, flags=re.DOTALL)
+            if m:
+                return json.loads(m.group(1))
+        raise ValueError("未找到 ytInitialData")
 
-    # 1) 优先：shortDescription（通常是完整简介）
+    def extract_yt_initial_player_response(html: str) -> Dict[str, Any]:
+        patterns = [
+            r"var\s+ytInitialPlayerResponse\s*=\s*(\{.*?\})\s*;\s*</script>",
+            r"ytInitialPlayerResponse\s*=\s*(\{.*?\})\s*;\s*</script>",
+        ]
+        for pat in patterns:
+            m = re.search(pat, html, flags=re.DOTALL)
+            if m:
+                return json.loads(m.group(1))
+        return {}
+
+    def walk(obj):
+        if isinstance(obj, dict):
+            yield obj
+            for v in obj.values():
+                yield from walk(v)
+        elif isinstance(obj, list):
+            for it in obj:
+                yield from walk(it)
+
+    # --------------------------------------------------
+    # 1️⃣ 尝试 structuredDescription / urlEndpoint
+    # --------------------------------------------------
     try:
-        player = extract_yt_initial_player_response(s)
-        desc = player.get("videoDetails", {}).get("shortDescription", "") or ""
-        desc = unescape(desc)
-        m = re.search(r"节点下载：\s*(https?://[^\s\"<>\\]+\.html)", desc)
-        if m:
-            return _validate(m.group(1))
+        data = extract_yt_initial_data(watch_html)
+        for node in walk(data):
+            if "urlEndpoint" in node:
+                url = node["urlEndpoint"].get("url")
+                if url and "12-Youtube" in url and url.endswith(".html"):
+                    if not url.startswith("http"):
+                        url = "https://www.youtube.com" + url
+                    return url
     except Exception:
         pass
 
-    # 2) 兜底：从整页找，但必须以 .html 结尾
-    m = re.search(r"节点下载：\s*(https?://[^\s\"<>\\]+\.html)", s)
-    if m:
-        return _validate(m.group(1))
+    # --------------------------------------------------
+    # 2️⃣ 尝试 shortDescription（必须匹配 .html）
+    # --------------------------------------------------
+    try:
+        player = extract_yt_initial_player_response(watch_html)
+        desc = player.get("videoDetails", {}).get("shortDescription", "")
+        if desc:
+            m = re.search(r"(https?://[^\s\"<>\\]+\.html)", desc)
+            if m:
+                url = m.group(1).strip()
+                if "…" not in url and not url.endswith("..."):
+                    return url
+    except Exception:
+        pass
 
-    # 3) 如果只找到不完整的，给清晰错误方便定位
-    m = re.search(r"节点下载：\s*(https?://[^\s\"<>\\]+)", s)
+    # --------------------------------------------------
+    # 3️⃣ 全文兜底（必须匹配 .html）
+    # --------------------------------------------------
+    m = re.search(r"(https?://[^\s\"<>\\]+\.html)", watch_html)
     if m:
-        raise ValueError(f"只找到了不完整的节点下载链接：{m.group(1)}")
+        url = m.group(1).strip()
+        if "12-Youtube" in url and "…" not in url:
+            return url
 
-    raise ValueError("视频页中未找到“节点下载：<URL>”。")
+    raise ValueError("未找到完整节点下载链接（可能被 YouTube 截断或结构变动）")
 
 
 # ===================== 4) 从 12-Youtube.html 页面提取“点击解锁资源”按钮链接 =====================
