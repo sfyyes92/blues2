@@ -7,6 +7,10 @@ on:
 
   workflow_dispatch:
 
+  schedule:
+    # 每天中国时间 12:00（UTC+8）= UTC 04:00
+    - cron: "0 4 * * *"
+
 jobs:
   collect:
     permissions:                   
@@ -24,30 +28,18 @@ jobs:
           python-version: '3.13'
           cache: 'pip'
 
-      - name: Install dependencies
-        run: |
-          pip install -r python/requirements.txt
-          pip install selenium webdriver-manager bs4 pyperclip tqdm
+      - run: pip install -r python/requirements.txt
+      - run: pip install selenium webdriver-manager bs4 pyperclip tqdm
 
-      # ✅ 关键修改 1：即使脚本失败也继续执行
       - name: Collect
         run: |
           cd python && python collect.py
-        continue-on-error: true
 
-      # ✅ 关键修改 2：无论成功失败都执行 commit/push
+      # ✅ 还原：只有前面成功才会执行（collect.py 报错时，此步不会运行）
       - name: Commit && Push
-        if: always()
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-
-          # 确保 output 目录存在
-          mkdir -p output
-
-          git add output || true
-
-          # 如果有变更才 commit
+          git add output
           git diff-index --quiet HEAD output || git commit -m "feat: update collect"
-
           git push
