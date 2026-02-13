@@ -18,6 +18,26 @@ from Crypto.Cipher import AES
 from Crypto.Hash import MD5
 from Crypto.Util.Padding import unpad
 
+import os
+from datetime import datetime
+
+def dump_debug_html(html: str, filename_prefix: str):
+    """
+    将 HTML 保存到 ../output/ 目录
+    """
+    out_dir = os.path.join(os.path.dirname(__file__), "..", "output")
+    os.makedirs(out_dir, exist_ok=True)
+
+    ts = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+    path = os.path.join(out_dir, f"{filename_prefix}_{ts}.html")
+
+    with open(path, "w", encoding="utf-8", errors="ignore") as f:
+        f.write(html or "")
+
+    print(f"[DEBUG] HTML saved to: {path}")
+    return path
+
+
 
 # ===================== 1) 通用：HTTP 请求 =====================
 
@@ -373,7 +393,14 @@ def main():
 
     # B) 访问视频页 -> 提取“节点下载：”链接（12-Youtube.html）
     watch_html = fetch_html(session, video_url)
-    node_page_url = extract_node_download_url_from_watch_html(watch_html)
+
+    try:
+        node_page_url = extract_node_download_url_from_watch_html(watch_html)
+    except Exception as e:
+        dump_debug_html(watch_html, "watch_html")
+        print("[DEBUG] watch_html length:", len(watch_html) if watch_html else 0)
+        raise
+
     print("\n节点下载链接:", node_page_url)
     print("node_page_url repr:", repr(node_page_url))
 
