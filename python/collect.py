@@ -18,8 +18,8 @@ from Crypto.Cipher import AES
 from Crypto.Hash import MD5
 from Crypto.Util.Padding import unpad
 
-import os
 from datetime import datetime
+
 
 def dump_debug_html(html: str, filename_prefix: str):
     """
@@ -36,7 +36,6 @@ def dump_debug_html(html: str, filename_prefix: str):
 
     print(f"[DEBUG] HTML saved to: {path}")
     return path
-
 
 
 # ===================== 1) 通用：HTTP 请求 =====================
@@ -67,18 +66,14 @@ def fetch_html(session: requests.Session, url: str, timeout: int = 25, extra_hea
     return r.text
 
 
-def download_file(session: requests.Session, url: str, out_dir: str) -> str:
-    os.makedirs(out_dir, exist_ok=True)
-    filename = os.path.basename(urlparse(url).path) or "download.bin"
-    out_path = os.path.join(out_dir, filename)
-
+def download_to_path(session: requests.Session, url: str, out_path: str) -> str:
+    """Download url to out_path (force file name)."""
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
     time.sleep(random.uniform(0.2, 0.6))
     r = session.get(url, timeout=40, allow_redirects=True)
     r.raise_for_status()
-
     with open(out_path, "wb") as f:
         f.write(r.content)
-
     return out_path
 
 
@@ -135,7 +130,6 @@ def parse_leading_date(title: str) -> Optional[date]:
 def find_latest_dated_video_url_from_channel_html(channel_html: str) -> Tuple[str, date, str]:
     data = extract_yt_initial_data(channel_html)
 
-    # 频道主页常见：gridVideoRenderer；也兼容 videoRenderer
     renderer_keys = ("gridVideoRenderer", "videoRenderer")
 
     candidates: List[Tuple[date, str, str]] = []
@@ -161,7 +155,6 @@ def find_latest_dated_video_url_from_channel_html(channel_html: str) -> Tuple[st
 # ===================== 3) 从视频页简介提取“节点下载：”链接 =====================
 
 def extract_yt_initial_player_response(html: str) -> Dict[str, Any]:
-    """Extract ytInitialPlayerResponse JSON from a YouTube watch page."""
     patterns = [
         r"var\s+ytInitialPlayerResponse\s*=\s*(\{.*?\})\s*;\s*</script>",
         r"ytInitialPlayerResponse\s*=\s*(\{.*?\})\s*;\s*</script>",
@@ -172,6 +165,7 @@ def extract_yt_initial_player_response(html: str) -> Dict[str, Any]:
             return json.loads(m.group(1))
     raise ValueError("未在 watch HTML 中找到 ytInitialPlayerResponse（可能拿到同意页/结构变化）。")
 
+
 def extract_node_download_url_from_watch_html(watch_html: str) -> str:
     """
     从 YouTube watch HTML 中提取“节点下载：”后的链接。
@@ -179,28 +173,21 @@ def extract_node_download_url_from_watch_html(watch_html: str) -> str:
     1) structuredDescription 里直接出现完整直链
     2) 直链被截断成 ...，但在 youtube.com/redirect 的 q= 里仍有完整链接
     """
-    # 1) 先做最关键的转义还原：\u0026 -> &，以及 \/ -> /
     s = watch_html
     s = s.replace("\\u0026", "&").replace("\\u003d", "=").replace("\\/", "/")
     s = unescape(s)
 
-    # 2) 先尝试：简介里直接抓“节点下载：<URL>”
     url_charset = r"[A-Za-z0-9\-\._~:/\?#\[\]@!\$&'\(\)\*\+,;=%]+"
     m = re.search(rf"节点下载：\s*(https?://{url_charset})", s)
     if m:
         direct = m.group(1).strip()
-        # GitHub 那份 HTML 常见截断：... 或者以 . 结尾但不是 .html
         if ("..." not in direct) and (direct.lower().endswith(".html")):
             return direct
 
-    # 3) 兜底：从 youtube redirect 链接里解析 q=
-    # 例子：...redirect?event=video_description&redir_token=...&q=https%3A%2F%2Fus1.zhuk.dpdns.org%2F12-Youtube.html&v=...
     candidates = []
     for mm in re.finditer(r"https?://www\.youtube\.com/redirect\?[^\"'\s<>]+", s):
         redir = mm.group(0)
-        # 再确保一次转义（防止局部没被替换到）
         redir = redir.replace("\\u0026", "&").replace("\\u003d", "=").replace("\\/", "/")
-
         try:
             parsed = urlparse(redir)
             qs = urllib.parse.parse_qs(parsed.query)
@@ -208,26 +195,19 @@ def extract_node_download_url_from_watch_html(watch_html: str) -> str:
             if not qv:
                 continue
             real = urllib.parse.unquote(qv).strip()
-
-            # 只收集看起来像目标的链接
-            # 你例子是 https://us1.zhuk.dpdns.org/12-Youtube.html
             if real.startswith("http") and ("zhuk.dpdns.org" in real):
                 candidates.append(real)
         except Exception:
             continue
 
-    # 优先返回最像“节点下载页”的那个
     for u in candidates:
         if u.lower().endswith("-youtube.html") or u.lower().endswith("youtube.html"):
             return u
-
-    # 再次兜底：任何包含 12-Youtube.html 的
     for u in candidates:
         if "Youtube.html" in u or "youtube.html" in u:
             return u
 
     raise ValueError("未找到完整节点下载链接（可能被 YouTube 截断或结构变动）")
-
 
 
 # ===================== 4) 从 12-Youtube.html 页面提取“点击解锁资源”按钮链接 =====================
@@ -243,7 +223,6 @@ def extract_unlock_resource_url_from_source(html: str, base_url: str) -> str:
     if m:
         return urljoin(base_url, m.group(1).strip())
 
-    # 兜底：找 /jmy/xx.html
     m = re.search(r'(https?://[^\s"<>]+/jmy/\d+\.html|/jmy/\d+\.html)', s)
     if m:
         return urljoin(base_url, m.group(1).strip())
@@ -251,7 +230,7 @@ def extract_unlock_resource_url_from_source(html: str, base_url: str) -> str:
     raise ValueError("未找到“点击解锁资源”按钮链接。")
 
 
-# ===================== 5) 解密 jmy/12.html 的 encryptedText（已知密码/占位） =====================
+# ===================== 5) 解密相关（保留你现有实现，不做增强） =====================
 
 def extract_encrypted_text_from_html(html: str) -> str:
     m = re.search(r'const\s+encryptedText\s*=\s*"([^"]+)"\s*;', html, flags=re.DOTALL)
@@ -276,7 +255,7 @@ def decrypt_cryptojs_openssl_salted(ciphertext_b64: str, password: str) -> str:
     salt = raw[8:16]
     ct = raw[16:]
 
-    key, iv = evp_bytes_to_key_md5(password.encode("utf-8"), salt, 32, 16)  # AES-256-CBC
+    key, iv = evp_bytes_to_key_md5(password.encode("utf-8"), salt, 32, 16)
     cipher = AES.new(key, AES.MODE_CBC, iv)
     pt = cipher.decrypt(ct)
 
@@ -285,17 +264,15 @@ def decrypt_cryptojs_openssl_salted(ciphertext_b64: str, password: str) -> str:
         raise ValueError("解密失败：padding 异常（密码可能不对）")
     pt = pt[:-pad]
 
-    # 网页里一般会 decodeURIComponent
     return unquote(pt.decode("utf-8", errors="strict"))
 
+
 def decrypt(ciphertext, password):
-    """Decrypts the given ciphertext using the provided password."""
     try:
         encrypt_data = base64.b64decode(ciphertext)
         salt = encrypt_data[8:16]
         ciphertext = encrypt_data[16:]
 
-        # Derive the key and IV
         derived = b""
         while len(derived) < 48:
             hasher = MD5.new()
@@ -309,6 +286,7 @@ def decrypt(ciphertext, password):
     except Exception as e:
         raise ValueError(f"Decryption failed: {e}")
 
+
 def brute_force_password(encrypted_data):
     """Attempts to brute-force the password to decrypt the data."""
     print("start brute_force_password")
@@ -318,7 +296,7 @@ def brute_force_password(encrypted_data):
             decoded_data = decrypt(encrypted_data, str(password))
             decrypted_data = urllib.parse.unquote(decoded_data)
             logging.info(password)
-            print("password: ",password)
+            print("password: ", password)
             return password
         except ValueError:
             continue
@@ -329,36 +307,90 @@ def get_password(ciphertext_b64: str) -> str:
     return brute_force_password(ciphertext_b64)
 
 
+# ===================== 6) 新增：明文中“直链/网页”两种模式解析，并固定命名下载 =====================
+
 def extract_urls(text: str) -> List[str]:
-    return re.findall(r'https?://[^\s"<>]+', text)
+    return re.findall(r'https?://[^\s"<>]+', text or "")
 
 
-def pick_c_yaml_and_v_txt(urls: List[str]) -> List[str]:
-    out = []
-    for u in urls:
-        if u.endswith("c.yaml") or u.endswith("/c.yaml"):
-            out.append(u)
-        elif u.endswith("v.txt") or u.endswith("/v.txt"):
-            out.append(u)
-    # 去重保持顺序
-    seen = set()
-    uniq = []
-    for u in out:
-        if u not in seen:
-            uniq.append(u)
-            seen.add(u)
-    return uniq
+def normalize_url(u: str) -> str:
+    u = (u or "").strip().strip('"').strip("'")
+    # 订阅中心页里可能是 httpsus1...（缺少 ://）:contentReference[oaicite:2]{index=2}
+    if u.startswith("https") and not u.startswith("https://"):
+        u = u.replace("https", "https://", 1)
+    if u.startswith("http") and not (u.startswith("http://") or u.startswith("https://")):
+        u = u.replace("http", "http://", 1)
+    return u
 
 
-# ===================== 6) 主流程：从 YouTube 主页开始到下载文件 =====================
+def extract_cv_urls_from_subscribe_page(html: str) -> Tuple[str, str]:
+    """
+    解析订阅中心网页：优先读取 id=cYaml 和 id=vTxt 的文本内容。
+    你提供的源码里 vTxt 就是这样存的 :contentReference[oaicite:3]{index=3}
+    """
+    s = html
+
+    # 精准取元素文本
+    m_c = re.search(r'id\s*=\s*["\']cYaml["\'][^>]*>\s*([^<\s]+)\s*<', s, flags=re.I)
+    m_v = re.search(r'id\s*=\s*["\']vTxt["\'][^>]*>\s*([^<\s]+)\s*<', s, flags=re.I)
+
+    c_url = normalize_url(m_c.group(1)) if m_c else ""
+    v_url = normalize_url(m_v.group(1)) if m_v else ""
+
+    # 兜底：扫出任意 yaml/yml 与 txt
+    if not c_url:
+        m = re.search(r'(https?://[^\s"<>]+?\.(?:ya?ml))(?:\?|$)', s, flags=re.I)
+        if m:
+            c_url = normalize_url(m.group(1))
+    if not v_url:
+        m = re.search(r'(https?://[^\s"<>]+?\.txt)(?:\?|$)', s, flags=re.I)
+        if m:
+            v_url = normalize_url(m.group(1))
+
+    if not c_url or not v_url:
+        raise ValueError(f"订阅中心页未解析到 c/v 链接：c={c_url!r}, v={v_url!r}")
+
+    return c_url, v_url
+
+
+def resolve_cv_urls(session: requests.Session, plaintext: str) -> Tuple[str, str]:
+    """
+    明文可能：
+    A) 直接包含订阅下载直链（.yaml/.yml + .txt）
+    B) 不包含直链，只有一个网页链接，访问网页后从 id=cYaml / id=vTxt 取出链接
+    """
+    urls = extract_urls(plaintext)
+
+    yaml_candidates = [u for u in urls if re.search(r'\.(?:ya?ml)(?:\?|$)', u, re.I)]
+    txt_candidates = [u for u in urls if re.search(r'\.txt(?:\?|$)', u, re.I)]
+    if yaml_candidates and txt_candidates:
+        return yaml_candidates[0], txt_candidates[0]
+
+    # 网页模式：优先试 .html 链接
+    page_candidates = [u for u in urls if re.search(r'\.html?(?:\?|$)', u, re.I)]
+    candidates = page_candidates or urls
+
+    last_err = None
+    for page_url in candidates:
+        try:
+            page_html = fetch_html(session, page_url)
+            return extract_cv_urls_from_subscribe_page(page_html)
+        except Exception as e:
+            last_err = e
+            continue
+
+    raise ValueError(f"明文里未找到可直接下载的订阅链接，也无法从网页解析到订阅链接。最后错误：{last_err}")
+
+
+# ===================== 7) 主流程 =====================
 
 def main():
     channel_url = "https://www.youtube.com/@blue-Youtube"
-    out_dir = "../output/"
+    out_dir = os.path.join(os.path.dirname(__file__), "..", "output")
 
     session = make_session()
 
-    # A) 访问频道主页 -> 找最新日期打头的视频
+    # A) 频道主页 -> 最新日期视频
     channel_html = fetch_html(session, channel_url)
     video_url, dt, title = find_latest_dated_video_url_from_channel_html(channel_html)
     video_url = video_url.replace("www.youtube.com", "m.youtube.com")
@@ -367,46 +399,45 @@ def main():
     print("标题:", title)
     print("链接:", video_url)
 
-    # B) 访问视频页 -> 提取“节点下载：”链接（12-Youtube.html）
+    # B) 视频页 -> 节点下载页
     watch_html = fetch_html(session, video_url)
-
     try:
         node_page_url = extract_node_download_url_from_watch_html(watch_html)
-    except Exception as e:
+    except Exception:
         dump_debug_html(watch_html, "watch_html")
         print("[DEBUG] watch_html length:", len(watch_html) if watch_html else 0)
         raise
 
     print("\n节点下载链接:", node_page_url)
-    print("node_page_url repr:", repr(node_page_url))
 
-    # C) 访问 12-Youtube.html -> 提取“点击解锁资源”按钮链接（jmy/12.html）
+    # C) 节点下载页 -> 解锁资源页
     node_page_html = fetch_html(session, node_page_url, extra_headers={"Referer": video_url})
     unlock_url = extract_unlock_resource_url_from_source(node_page_html, base_url=node_page_url)
     print("解锁资源链接:", unlock_url)
 
-    # D) 访问 jmy/12.html -> 提取 encryptedText -> 解密得到明文 HTML
+    # D) 解锁资源页 -> encryptedText -> 解密得到明文
     unlock_html = fetch_html(session, unlock_url, extra_headers={"Referer": node_page_url})
     encrypted_b64 = extract_encrypted_text_from_html(unlock_html)
 
-    # 你本地已有实现的话，把 brute_force_password() 和 get_password() 按你逻辑调整回去即可
     password = get_password(encrypted_b64)
     plaintext = decrypt_cryptojs_openssl_salted(encrypted_b64, password)
 
-    # E) 从明文中抓 URL -> 只下载 c.yaml 和 v.txt
-    urls = extract_urls(plaintext)
-    targets = pick_c_yaml_and_v_txt(urls)
-    if not targets:
-        raise ValueError("解密明文中未找到 c.yaml 或 v.txt 链接")
+    # E) 新逻辑：明文里可能直链，也可能是订阅中心网页
+    c_url, v_url = resolve_cv_urls(session, plaintext)
 
-    print("\n待下载文件：")
-    for u in targets:
-        print(" -", u)
+    print("\n最终待下载：")
+    print(" - c:", c_url)
+    print(" - v:", v_url)
 
-    print("\n开始下载...")
-    for u in targets:
-        path = download_file(session, u, out_dir=out_dir)
-        print(f"已下载: {u}\n  -> {path}")
+    # F) 固定命名保存
+    c_path = os.path.join(out_dir, "c.yaml")
+    v_path = os.path.join(out_dir, "v.txt")
+
+    print("\n开始下载并固定命名...")
+    download_to_path(session, c_url, c_path)
+    print("已下载 ->", c_path)
+    download_to_path(session, v_url, v_path)
+    print("已下载 ->", v_path)
 
     print("\n全部完成。")
 
