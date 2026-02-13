@@ -8,8 +8,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    # 每天中国时间 12:00（UTC+8）= UTC 04:00
-    - cron: "0 4 * * *"
+    - cron: "0 13 * * *"
 
 jobs:
   collect:
