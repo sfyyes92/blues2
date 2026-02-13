@@ -365,6 +365,7 @@ def main():
     # A) 访问频道主页 -> 找最新日期打头的视频
     channel_html = fetch_html(session, channel_url)
     video_url, dt, title = find_latest_dated_video_url_from_channel_html(channel_html)
+    video_url = video_url.replace("www.youtube.com", "m.youtube.com")
     print("最新日期视频：")
     print("日期:", dt.isoformat())
     print("标题:", title)
