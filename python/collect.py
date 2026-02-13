@@ -354,7 +354,7 @@ def pick_c_yaml_and_v_txt(urls: List[str]) -> List[str]:
 
 def main():
     channel_url = "https://www.youtube.com/@blue-Youtube"
-    out_dir = "downloads"
+    out_dir = "../output/"
 
     session = make_session()
 
