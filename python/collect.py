@@ -174,84 +174,60 @@ def extract_yt_initial_player_response(html: str) -> Dict[str, Any]:
 
 def extract_node_download_url_from_watch_html(watch_html: str) -> str:
     """
-    多策略稳定提取“节点下载：”完整 .html 链接
-    兼容：
-      - structuredDescription
-      - description runs
-      - shortDescription
+    从 YouTube watch HTML 中提取“节点下载：”后的链接。
+    兼容两种情况：
+    1) structuredDescription 里直接出现完整直链
+    2) 直链被截断成 ...，但在 youtube.com/redirect 的 q= 里仍有完整链接
     """
+    # 1) 先做最关键的转义还原：\u0026 -> &，以及 \/ -> /
+    s = watch_html
+    s = s.replace("\\u0026", "&").replace("\\u003d", "=").replace("\\/", "/")
+    s = unescape(s)
 
-    def extract_yt_initial_data(html: str) -> Dict[str, Any]:
-        patterns = [
-            r"var\s+ytInitialData\s*=\s*(\{.*?\})\s*;\s*</script>",
-            r"ytInitialData\s*=\s*(\{.*?\})\s*;\s*</script>",
-        ]
-        for pat in patterns:
-            m = re.search(pat, html, flags=re.DOTALL)
-            if m:
-                return json.loads(m.group(1))
-        raise ValueError("未找到 ytInitialData")
-
-    def extract_yt_initial_player_response(html: str) -> Dict[str, Any]:
-        patterns = [
-            r"var\s+ytInitialPlayerResponse\s*=\s*(\{.*?\})\s*;\s*</script>",
-            r"ytInitialPlayerResponse\s*=\s*(\{.*?\})\s*;\s*</script>",
-        ]
-        for pat in patterns:
-            m = re.search(pat, html, flags=re.DOTALL)
-            if m:
-                return json.loads(m.group(1))
-        return {}
-
-    def walk(obj):
-        if isinstance(obj, dict):
-            yield obj
-            for v in obj.values():
-                yield from walk(v)
-        elif isinstance(obj, list):
-            for it in obj:
-                yield from walk(it)
-
-    # --------------------------------------------------
-    # 1️⃣ 尝试 structuredDescription / urlEndpoint
-    # --------------------------------------------------
-    try:
-        data = extract_yt_initial_data(watch_html)
-        for node in walk(data):
-            if "urlEndpoint" in node:
-                url = node["urlEndpoint"].get("url")
-                if url and "12-Youtube" in url and url.endswith(".html"):
-                    if not url.startswith("http"):
-                        url = "https://www.youtube.com" + url
-                    return url
-    except Exception:
-        pass
-
-    # --------------------------------------------------
-    # 2️⃣ 尝试 shortDescription（必须匹配 .html）
-    # --------------------------------------------------
-    try:
-        player = extract_yt_initial_player_response(watch_html)
-        desc = player.get("videoDetails", {}).get("shortDescription", "")
-        if desc:
-            m = re.search(r"(https?://[^\s\"<>\\]+\.html)", desc)
-            if m:
-                url = m.group(1).strip()
-                if "…" not in url and not url.endswith("..."):
-                    return url
-    except Exception:
-        pass
-
-    # --------------------------------------------------
-    # 3️⃣ 全文兜底（必须匹配 .html）
-    # --------------------------------------------------
-    m = re.search(r"(https?://[^\s\"<>\\]+\.html)", watch_html)
+    # 2) 先尝试：简介里直接抓“节点下载：<URL>”
+    url_charset = r"[A-Za-z0-9\-\._~:/\?#\[\]@!\$&'\(\)\*\+,;=%]+"
+    m = re.search(rf"节点下载：\s*(https?://{url_charset})", s)
     if m:
-        url = m.group(1).strip()
-        if "12-Youtube" in url and "…" not in url:
-            return url
+        direct = m.group(1).strip()
+        # GitHub 那份 HTML 常见截断：... 或者以 . 结尾但不是 .html
+        if ("..." not in direct) and (direct.lower().endswith(".html")):
+            return direct
+
+    # 3) 兜底：从 youtube redirect 链接里解析 q=
+    # 例子：...redirect?event=video_description&redir_token=...&q=https%3A%2F%2Fus1.zhuk.dpdns.org%2F12-Youtube.html&v=...
+    candidates = []
+    for mm in re.finditer(r"https?://www\.youtube\.com/redirect\?[^\"'\s<>]+", s):
+        redir = mm.group(0)
+        # 再确保一次转义（防止局部没被替换到）
+        redir = redir.replace("\\u0026", "&").replace("\\u003d", "=").replace("\\/", "/")
+
+        try:
+            parsed = urlparse(redir)
+            qs = urllib.parse.parse_qs(parsed.query)
+            qv = qs.get("q", [None])[0]
+            if not qv:
+                continue
+            real = urllib.parse.unquote(qv).strip()
+
+            # 只收集看起来像目标的链接
+            # 你例子是 https://us1.zhuk.dpdns.org/12-Youtube.html
+            if real.startswith("http") and ("zhuk.dpdns.org" in real):
+                candidates.append(real)
+        except Exception:
+            continue
+
+    # 优先返回最像“节点下载页”的那个
+    for u in candidates:
+        if u.lower().endswith("-youtube.html") or u.lower().endswith("youtube.html"):
+            return u
+
+    # 再次兜底：任何包含 12-Youtube.html 的
+    for u in candidates:
+        if "Youtube.html" in u or "youtube.html" in u:
+            return u
 
     raise ValueError("未找到完整节点下载链接（可能被 YouTube 截断或结构变动）")
+
 
 
 # ===================== 4) 从 12-Youtube.html 页面提取“点击解锁资源”按钮链接 =====================
