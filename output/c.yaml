@@ -5,676 +5,648 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vless","name":"🇺🇸US_1|⬇️2.1MB/s","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_1|⬇️1.3MB/s_1","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"未知VLESS-81|free-nodes","server":"dns.dressforida.monster","port":443,"uuid":"79149019-5abe-46f9-91ae-e1e7d1d2c408","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.techradar.com","tls":false,"udp":true}
-  - {"type":"vless","name":"FRVLESS-111|free-nodes_1","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_1|⬇️1.3MB/s_2","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_1|⬇️2.6MB/s","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_1|⬇️3.1MB/s","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_1|⬇️4.9MB/s","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_1|⬇️6.3MB/s","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_2|⬇️1.0MB/s_1","server":"185.171.202.55","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_4|⬇️2.3MB/s","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_7|⬇️2.3MB/s","server":"185.171.202.55","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸US_1|⬇️4.4MB/s","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸US_6|⬇️3.6MB/s","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_1|⬇️2.1MB/s_1","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"未知VLESS-81|free-nodes_1","server":"dns.dressforida.monster","port":443,"uuid":"79149019-5abe-46f9-91ae-e1e7d1d2c408","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.techradar.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_1|⬇️4.4MB/s_1","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_6|⬇️3.6MB/s_1","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸US_1|⬇️3.2MB/s_1","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_3|⬇️1.8MB/s_1","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_2|⬇️1.0MB/s_2","server":"185.171.202.55","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_2|⬇️1.0MB/s_3","server":"185.171.202.55","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_3|⬇️1.8MB/s_2","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸US_1|⬇️3.2MB/s_2","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_3|⬇️1.8MB/s_3","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_2|⬇️1.0MB/s_4","server":"185.171.202.55","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"未知VLESS-85|free-nodes","server":"dns.dressforida.monster","port":443,"uuid":"79149019-5abe-46f9-91ae-e1e7d1d2c408","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.techradar.com","tls":false,"udp":true}
-  - {"type":"vless","name":"未知VLESS-110|free-nodes","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"FRVLESS-111|free-nodes_2","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇦🇲AM_1|⬇️1.5MB/s_1","server":"185.234.57.216","port":443,"uuid":"b824f264-8cc3-4669-9f60-47b51ed1aa11","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇦🇲AM_1|⬇️4.7MB/s_1","server":"185.234.57.216","port":443,"uuid":"b824f264-8cc3-4669-9f60-47b51ed1aa11","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_1|⬇️3.2MB/s_1","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_2|⬇️1.0MB/s_5","server":"185.171.202.55","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_3|⬇️1.8MB/s_4","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
+  - {"type":"vless","name":"未知VLESS-85|free-nodes_1","server":"dns.dressforida.monster","port":443,"uuid":"79149019-5abe-46f9-91ae-e1e7d1d2c408","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.techradar.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸US_1|⬇️3.2MB/s_3","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸US_7|⬇️4.3MB/s_1","server":"66.179.82.126","port":443,"uuid":"b1267991-59ff-4b67-b141-97e3ced4e7c8","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇦🇲AM_1|⬇️1.5MB/s_2","server":"185.234.57.216","port":443,"uuid":"b824f264-8cc3-4669-9f60-47b51ed1aa11","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇦🇲AM_2|⬇️2.9MB/s_1","server":"185.234.57.216","port":443,"uuid":"d50ef9ea-7adf-4b45-977a-16bca0f11584","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_1|⬇️3.2MB/s_2","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_2|⬇️1.0MB/s_6","server":"185.171.202.55","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_3|⬇️1.8MB/s_5","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇳🇱NL_1|⬇️2.7MB/s","server":"nl04-vlr01.tcp-reset-club.net","port":443,"uuid":"1c4aceb6-bff7-4737-8c5d-43afb3dc350b","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"hls-svod.itunes.apple.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸US_1|⬇️2.2MB/s_1","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸US_1|⬇️3.2MB/s_4","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸US_7|⬇️4.3MB/s_2","server":"66.179.82.126","port":443,"uuid":"b1267991-59ff-4b67-b141-97e3ced4e7c8","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇦🇲AM_2|⬇️2.9MB/s_2","server":"185.234.57.216","port":443,"uuid":"d50ef9ea-7adf-4b45-977a-16bca0f11584","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_1|⬇️3.2MB/s_3","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_2|⬇️1.0MB/s_7","server":"185.171.202.55","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_3|⬇️1.8MB/s_6","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸US_1|⬇️3.2MB/s_5","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸US_7|⬇️4.3MB/s_3","server":"66.179.82.126","port":443,"uuid":"b1267991-59ff-4b67-b141-97e3ced4e7c8","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇦🇲AM_1|⬇️1.5MB/s_3","server":"185.234.57.216","port":443,"uuid":"b824f264-8cc3-4669-9f60-47b51ed1aa11","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇦🇲AM_1|⬇️4.7MB/s_2","server":"185.234.57.216","port":443,"uuid":"b824f264-8cc3-4669-9f60-47b51ed1aa11","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇦🇲AM_2|⬇️2.9MB/s_3","server":"185.234.57.216","port":443,"uuid":"d50ef9ea-7adf-4b45-977a-16bca0f11584","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇨🇦CA_1|⬇️4.8MB/s_1","server":"hk.tfree.top","port":10006,"uuid":"48b36b6a-eaa6-4843-9231-0bb8b38b5da5","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.cloudflare.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇩🇪DE_2|⬇️5.3MB/s_1","server":"158.160.171.167","port":443,"uuid":"53fa2131-611e-413f-8b1a-3aed45529a52","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"84.img.avito.st","tls":false,"udp":true}
-  - {"type":"vless","name":"🇩🇪DE_9|⬇️3.0MB/s","server":"84.201.128.76","port":443,"uuid":"400c1f85-9d3a-444a-8a50-81b11f3b4c20","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"smartcaptcha.yandexcloud.net","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇮FI_3|⬇️7.8MB/s","server":"51.250.0.147","port":443,"uuid":"eb071647-72a6-46be-8e89-ff3d228d52f6","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"ads.x5.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_1|⬇️3.2MB/s_4","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_3|⬇️1.8MB/s_7","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇮🇱IL_1|⬇️3.3MB/s","server":"195.20.17.182","port":443,"uuid":"ec5796b3-678b-4b11-9c1d-a53171dfd897","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.python.org","tls":false,"udp":true}
-  - {"type":"vless","name":"🇳🇱NL_2|⬇️3.8MB/s","server":"nl04-vlr01.tcp-reset-club.net","port":443,"uuid":"1c4aceb6-bff7-4737-8c5d-43afb3dc350b","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"hls-svod.itunes.apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇳🇱NL_5|⬇️4.2MB/s","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇳🇱NL_5|⬇️4.2MB/s_1","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇵🇱PL_1|⬇️4.1MB/s","server":"1.cdnconn.com","port":23335,"uuid":"e384913f-8863-47b4-8858-a84b68abb4a6","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"icloud.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇷🇺RU_1|⬇️3.3MB/s_1","server":"212.192.14.250","port":64527,"uuid":"b3203210-2e42-468a-ad7d-5da9b9a1bac4","skip-cert-verify":true,"network":"tcp","servername":"yandex.ru","tls":false,"udp":true}
   - {"type":"vless","name":"🇸🇬SG_13|⬇️1.6MB/s_1","server":"178.239.122.108","port":443,"uuid":"ec5796b3-678b-4b11-9c1d-a53171dfd897","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸US_1|⬇️2.2MB/s_2","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸US_1|⬇️3.2MB/s_6","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸US_1|⬇️4.7MB/s","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_1|⬇️4.7MB/s_1","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸US_1|⬇️4.9MB/s_1","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸US_7|⬇️4.3MB/s_4","server":"66.179.82.126","port":443,"uuid":"b1267991-59ff-4b67-b141-97e3ced4e7c8","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_2|⬇️1.0MB/s_8","server":"185.171.202.55","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇩🇪DE_8|⬇️6.4MB/s","server":"deu469.unboundworld.org","port":443,"uuid":"cc9f7840-757a-430b-bddc-a73478bea434","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.t3n.de","tls":false,"udp":true}
-  - {"type":"vless","name":"🇳🇱荷兰03","server":"104.20.1.252","port":2052,"uuid":"f8ae018b-b84d-4c9b-b03b-4642c3a25977","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"exemplary-milkytsxqiqyso.sportland.company.","ws-opts":{"path":"/?ed@freenettir","headers":{"host":"exemplary-milkytsxqiqyso.sportland.company."}}}
-  - {"type":"vless","name":"🇺🇸US_7|⬇️4.3MB/s_5","server":"66.179.82.126","port":443,"uuid":"b1267991-59ff-4b67-b141-97e3ced4e7c8","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇳🇱荷兰03_1","server":"104.20.1.252","port":2052,"uuid":"f8ae018b-b84d-4c9b-b03b-4642c3a25977","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"exemplary-milkytsxqiqyso.sportland.company.","ws-opts":{"path":"/?ed@freenettir","headers":{"host":"exemplary-milkytsxqiqyso.sportland.company."}}}
   - {"type":"vless","name":"🇺🇸US_1|⬇️4.9MB/s_2","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇨🇦CA_1|⬇️4.8MB/s_2","server":"hk.tfree.top","port":10006,"uuid":"48b36b6a-eaa6-4843-9231-0bb8b38b5da5","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.cloudflare.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_2|⬇️1.0MB/s_9","server":"185.171.202.55","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇦🇲AM_1|⬇️4.7MB/s_3","server":"185.234.57.216","port":443,"uuid":"b824f264-8cc3-4669-9f60-47b51ed1aa11","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸US_3|⬇️3.4MB/s","server":"132.226.85.167","port":443,"uuid":"e43dd231-7c75-4606-80ec-50fbb8335ce7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.microsoft.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇮🇱IL_1|⬇️4.8MB/s","server":"195.20.17.182","port":443,"uuid":"ec5796b3-678b-4b11-9c1d-a53171dfd897","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.python.org","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸US_2|⬇️3.4MB/s","server":"198.62.62.248","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"tar.alabama-tigr.info","ws-opts":{"path":"/love","headers":{"host":"tar.alabama-tigr.info"}}}
-  - {"type":"vless","name":"🇦🇲AM_2|⬇️2.9MB/s_4","server":"185.234.57.216","port":443,"uuid":"d50ef9ea-7adf-4b45-977a-16bca0f11584","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇬🇧GB_2|⬇️4.2MB/s","server":"217.154.38.156","port":443,"uuid":"2a8391ef-383c-4321-ac25-89b50973ab73","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇷🇺RU_1|⬇️3.3MB/s_2","server":"212.192.14.250","port":64527,"uuid":"b3203210-2e42-468a-ad7d-5da9b9a1bac4","skip-cert-verify":true,"network":"tcp","servername":"yandex.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"🇳🇱NL_3|⬇️3.6MB/s","server":"nl04-vlr01.tcp-reset-club.net","port":443,"uuid":"1c4aceb6-bff7-4737-8c5d-43afb3dc350b","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"hls-svod.itunes.apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇵🇱PL_2|⬇️1.6MB/s","server":"144.31.130.58","port":23335,"uuid":"e384913f-8863-47b4-8858-a84b68abb4a6","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"icloud.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇵🇱PL_3|⬇️2.0MB/s","server":"144.31.130.59","port":23335,"uuid":"e384913f-8863-47b4-8858-a84b68abb4a6","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"icloud.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇮FI_1|⬇️6.9MB/s","server":"51.250.65.209","port":443,"uuid":"eb071647-72a6-46be-8e89-ff3d228d52f6","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"api-maps.yandex.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"🇵🇱PL_1|⬇️1.8MB/s","server":"1.cdnconn.com","port":23335,"uuid":"e384913f-8863-47b4-8858-a84b68abb4a6","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"icloud.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_1|⬇️3.2MB/s_5","server":"fran.scroogethebest.com","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"fran.scroogethebest.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_3|⬇️3.4MB/s_1","server":"132.226.85.167","port":443,"uuid":"e43dd231-7c75-4606-80ec-50fbb8335ce7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.microsoft.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇮🇱IL_1|⬇️4.8MB/s_1","server":"195.20.17.182","port":443,"uuid":"ec5796b3-678b-4b11-9c1d-a53171dfd897","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.python.org","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_2|⬇️3.4MB/s_1","server":"198.62.62.248","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"tar.alabama-tigr.info","ws-opts":{"path":"/love","headers":{"host":"tar.alabama-tigr.info"}}}
+  - {"type":"vless","name":"🇵🇱PL_1|⬇️1.8MB/s_1","server":"1.cdnconn.com","port":23335,"uuid":"e384913f-8863-47b4-8858-a84b68abb4a6","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"icloud.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇩🇪DE_2|⬇️5.3MB/s_2","server":"158.160.171.167","port":443,"uuid":"53fa2131-611e-413f-8b1a-3aed45529a52","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"84.img.avito.st","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇮FI_2|⬇️5.5MB/s","server":"51.250.83.255","port":443,"uuid":"72adc5b8-146a-4bfe-921b-5c9e1df016e0","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"api-maps.yandex.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"🇳🇱NL_4|⬇️3.7MB/s","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇳🇱NL_4|⬇️3.7MB/s_1","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇸🇬SG_13|⬇️1.6MB/s_2","server":"178.239.122.108","port":443,"uuid":"ec5796b3-678b-4b11-9c1d-a53171dfd897","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇦🇲亚美尼亚|AM-020","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇦🇿阿塞拜疆|AZ-001","server":"ent1.easyserf.top","port":443,"uuid":"12adb397-701e-475e-91f6-e0c766f87fa4","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"ent1.easyserf.top","tls":false,"udp":true}
+  - {"type":"vless","name":"🇩🇪DE_2|⬇️5.3MB/s_3","server":"158.160.171.167","port":443,"uuid":"53fa2131-611e-413f-8b1a-3aed45529a52","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"84.img.avito.st","tls":false,"udp":true}
+  - {"type":"vless","name":"🇫🇮芬兰|FI-013","server":"145.249.115.14","port":443,"uuid":"Fluffy_VPN-r5G43YVg","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"very-mega-best.top","tls":false,"udp":true}
+  - {"type":"vless","name":"🇫🇮芬兰|FI-025","server":"165.154.235.194","port":30001,"uuid":"be70763e-ab0a-4f8d-87aa-b8ae86495cca","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.cloudflare.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇬🇧GB_1|⬇️3.9MB/s","server":"198.62.62.235","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"bank.alaska-tigr.info","ws-opts":{"path":"/love","headers":{"host":"bank.alaska-tigr.info"}}}
+  - {"type":"vless","name":"🇬🇧GB_1|1.2MB/s","server":"198.62.62.248","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"tar.alabama-tigr.info","ws-opts":{"path":"/love","headers":{"host":"tar.alabama-tigr.info"}}}
+  - {"type":"vless","name":"🇮🇱IL_1|⬇️4.8MB/s_2","server":"195.20.17.182","port":443,"uuid":"ec5796b3-678b-4b11-9c1d-a53171dfd897","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.python.org","tls":false,"udp":true}
+  - {"type":"vless","name":"🇱🇮列支敦士登|LI-005","server":"ita01-vlr02.tcp-reset-club.net","port":443,"uuid":"1c4aceb6-bff7-4737-8c5d-43afb3dc350b","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"hls-svod.itunes.apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇱🇮列支敦士登|LI-008","server":"62.182.195.78","port":8443,"uuid":"9a63b59c-5e54-437a-b7a1-2788780a7c13","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"retn.net","tls":false,"udp":true}
+  - {"type":"vless","name":"🇳🇱NL_1|⬇️3.5MB/s","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇳🇱NL_3|⬇️4.2MB/s","server":"ip-data.turkserver.ir","port":2083,"uuid":"c0b8751d-3bcd-4f55-9cca-4a00fc955a15","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"all-nm1.netsnap.ir.","ws-opts":{"path":"/","headers":{"host":"all-nm1.netsnap.ir."}}}
+  - {"type":"vless","name":"🇳🇱NL_4|⬇️3.7MB/s_2","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇳🇵尼泊尔|NP-008","server":"1.cdnconn.com","port":23335,"uuid":"e384913f-8863-47b4-8858-a84b68abb4a6","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"icloud.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇳🇵尼泊尔|NP-010","server":"158.160.171.167","port":443,"uuid":"53fa2131-611e-413f-8b1a-3aed45529a52","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"84.img.avito.st","tls":false,"udp":true}
+  - {"type":"vless","name":"🇵🇱PL_1|⬇️1.8MB/s_2","server":"1.cdnconn.com","port":23335,"uuid":"e384913f-8863-47b4-8858-a84b68abb4a6","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"icloud.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇵🇱PL_1|⬇️2.1MB/s","server":"1.cdnconn.com","port":23335,"uuid":"e384913f-8863-47b4-8858-a84b68abb4a6","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"icloud.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇵🇱PL_4|⬇️4.1MB/s","server":"144.31.130.49","port":23335,"uuid":"e384913f-8863-47b4-8858-a84b68abb4a6","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"icloud.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇵🇹PT_1|⬇️2.0MB/s","server":"31.129.22.64","port":47910,"uuid":"f651b25b-0a6a-4954-910f-7c07a1f6f664","skip-cert-verify":true,"network":"tcp","servername":"yandex.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"🇸🇬SG_13|⬇️1.6MB/s_3","server":"178.239.122.108","port":443,"uuid":"ec5796b3-678b-4b11-9c1d-a53171dfd897","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_1|⬇️1.2MB/s","server":"165.154.235.194","port":30001,"uuid":"be70763e-ab0a-4f8d-87aa-b8ae86495cca","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.cloudflare.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_1|⬇️4.9MB/s_3","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_2|⬇️3.4MB/s_2","server":"198.62.62.248","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"tar.alabama-tigr.info","ws-opts":{"path":"/love","headers":{"host":"tar.alabama-tigr.info"}}}
+  - {"type":"vless","name":"🇺🇸US_2|⬇️6.1MB/s","server":"198.62.62.248","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"tar.alabama-tigr.info","ws-opts":{"path":"/love","headers":{"host":"tar.alabama-tigr.info"}}}
+  - {"type":"vless","name":"🇺🇸US_3|⬇️3.4MB/s_2","server":"132.226.85.167","port":443,"uuid":"e43dd231-7c75-4606-80ec-50fbb8335ce7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.microsoft.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇳🇱荷兰03_2","server":"104.20.1.252","port":2052,"uuid":"f8ae018b-b84d-4c9b-b03b-4642c3a25977","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"exemplary-milkytsxqiqyso.sportland.company.","ws-opts":{"path":"/?ed@freenettir","headers":{"host":"exemplary-milkytsxqiqyso.sportland.company."}}}
+  - {"type":"vless","name":"🇳🇱荷兰17⌈wzdnzd/aggregator⌋","server":"104.20.1.252","port":80,"uuid":"7d4a519b-d270-434e-a42d-d39624577a92","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"bright-organizationauhuddhesz.sportland.company.","ws-opts":{"path":"/?ed","headers":{"host":"bright-organizationauhuddhesz.sportland.company."}}}
+  - {"type":"vless","name":"🇳🇱荷兰03_3","server":"104.18.32.47","port":80,"uuid":"e31085f9-7f55-4a7d-b00e-ce94149477cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.","ws-opts":{"path":"/?ed","headers":{"host":"PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO."}}}
+  - {"type":"vless","name":"🇳🇱荷兰04","server":"104.20.1.252","port":80,"uuid":"7d4a519b-d270-434e-a42d-d39624577a92","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"bright-organizationauhuddhesz.sportland.company.","ws-opts":{"path":"/?ed","headers":{"host":"bright-organizationauhuddhesz.sportland.company."}}}
+  - {"type":"vless","name":"🇳🇱NL_1|⬇️3.9MB/s_1","server":"104.18.32.47","port":80,"uuid":"e31085f9-7f55-4a7d-b00e-ce94149477cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.","ws-opts":{"path":"/?ed","headers":{"host":"PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO."}}}
+  - {"type":"vless","name":"🇳🇱NL_5|⬇️4.2MB/s_2","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_1|⬇️2.1MB/s_2","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_1|⬇️2.2MB/s_3","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_1|⬇️3.2MB/s_7","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_1|⬇️4.4MB/s_2","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_1|⬇️4.7MB/s_2","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_6|⬇️3.6MB/s_2","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"❓Other_1|⬇️1.2MB/s","server":"104.20.1.252","port":80,"uuid":"7d4a519b-d270-434e-a42d-d39624577a92","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"bright-organizationauhuddhesz.sportland.company.","ws-opts":{"path":"/?ed","headers":{"host":"bright-organizationauhuddhesz.sportland.company."}}}
+  - {"type":"vless","name":"未知VLESS-81|free-nodes_2","server":"dns.dressforida.monster","port":443,"uuid":"79149019-5abe-46f9-91ae-e1e7d1d2c408","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.techradar.com","tls":false,"udp":true}
+  - {"type":"vless","name":"未知VLESS-85|free-nodes_2","server":"dns.dressforida.monster","port":443,"uuid":"79149019-5abe-46f9-91ae-e1e7d1d2c408","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.techradar.com","tls":false,"udp":true}
+  - {"type":"vless","name":"BR-VLESS-01","server":"134.65.25.228","port":443,"uuid":"808fee56-008a-4780-91ba-40f072f63e49","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"download-porter.hoyoverse.com","tls":false,"udp":true}
+  - {"type":"vless","name":"FR-VLESS-01","server":"141.145.210.22","port":443,"uuid":"808fee56-008a-4780-91ba-40f072f63e49","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"download-porter.hoyoverse.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇳🇱荷兰03_4","server":"104.20.1.252","port":2052,"uuid":"f8ae018b-b84d-4c9b-b03b-4642c3a25977","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"exemplary-milkytsxqiqyso.sportland.company.","ws-opts":{"path":"/?ed@freenettir","headers":{"host":"exemplary-milkytsxqiqyso.sportland.company."}}}
+  - {"type":"vless","name":"🇳🇱NL_1|⬇️3.9MB/s_2","server":"104.18.32.47","port":80,"uuid":"e31085f9-7f55-4a7d-b00e-ce94149477cb","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.","ws-opts":{"path":"/?ed","headers":{"host":"PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO."}}}
+  - {"type":"vless","name":"🇺🇸_US_美国_3","server":"172.66.128.70","port":2052,"uuid":"f8ae018b-b84d-4c9b-b03b-4642c3a25977","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ExEMplAry-MILkytsxQiQYso.sPortlaNd.CoMPANy.","ws-opts":{"path":"/?ed","headers":{"host":"ExEMplAry-MILkytsxQiQYso.sPortlaNd.CoMPANy."}}}
+  - {"type":"vless","name":"Other_1|⬇️1.2MB/s","server":"104.20.1.252","port":80,"uuid":"7d4a519b-d270-434e-a42d-d39624577a92","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"bright-organizationauhuddhesz.sportland.company.","ws-opts":{"path":"/?ed","headers":{"host":"bright-organizationauhuddhesz.sportland.company."}}}
+  - {"type":"vless","name":"IT-VLESS-01","server":"84.8.254.2","port":443,"uuid":"808fee56-008a-4780-91ba-40f072f63e49","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"download-porter.hoyoverse.com","tls":false,"udp":true}
+  - {"type":"vless","name":"JP-VLESS-01","server":"151.145.66.232","port":443,"uuid":"808fee56-008a-4780-91ba-40f072f63e49","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.toshiba.co.jp","tls":false,"udp":true}
+  - {"type":"vless","name":"JP-VLESS-02","server":"138.3.215.109","port":443,"uuid":"808fee56-008a-4780-91ba-40f072f63e49","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.toshiba.co.jp","tls":false,"udp":true}
+  - {"type":"vless","name":"KR-VLESS-01","server":"158.180.81.30","port":443,"uuid":"808fee56-008a-4780-91ba-40f072f63e49","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"download-porter.hoyoverse.com","tls":false,"udp":true}
+  - {"type":"vless","name":"SG-VLESS-01","server":"213.35.96.121","port":443,"uuid":"808fee56-008a-4780-91ba-40f072f63e49","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.changiairport.com","tls":false,"udp":true}
+  - {"type":"vless","name":"SG-VLESS-02","server":"140.245.33.247","port":443,"uuid":"808fee56-008a-4780-91ba-40f072f63e49","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.changiairport.com","tls":false,"udp":true}
+  - {"type":"vless","name":"UK-VLESS-01","server":"91.108.254.161","port":443,"uuid":"808fee56-008a-4780-91ba-40f072f63e49","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"download-porter.hoyoverse.com","tls":false,"udp":true}
+  - {"type":"vless","name":"USVLESS-77|free-nodes","server":"142.248.80.157","port":443,"uuid":"4aff5de5-83dc-43c9-a33e-10e6fdb90ed2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"US-VLESS-01","server":"166.1.18.82","port":443,"uuid":"808fee56-008a-4780-91ba-40f072f63e49","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"download-porter.hoyoverse.com","tls":false,"udp":true}
+  - {"type":"vless","name":"US-VLESS-02","server":"158.101.126.164","port":443,"uuid":"808fee56-008a-4780-91ba-40f072f63e49","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"download-porter.hoyoverse.com","tls":false,"udp":true}
+  - {"type":"vless","name":"US-VLESS-03","server":"132.145.198.237","port":443,"uuid":"808fee56-008a-4780-91ba-40f072f63e49","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"download-porter.hoyoverse.com","tls":false,"udp":true}
+  - {"type":"vless","name":"US-VLESS-04","server":"164.152.104.230","port":443,"uuid":"808fee56-008a-4780-91ba-40f072f63e49","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"download-porter.hoyoverse.com","tls":false,"udp":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸US_1|⬇️2.1MB/s
-      - 🇫🇷FR_1|⬇️1.3MB/s_1
-      - 未知VLESS-81|free-nodes
-      - FRVLESS-111|free-nodes_1
-      - 🇫🇷FR_1|⬇️1.3MB/s_2
-      - 🇫🇷FR_1|⬇️2.6MB/s
-      - 🇫🇷FR_1|⬇️3.1MB/s
-      - 🇫🇷FR_1|⬇️4.9MB/s
-      - 🇫🇷FR_1|⬇️6.3MB/s
-      - 🇫🇷FR_2|⬇️1.0MB/s_1
-      - 🇫🇷FR_4|⬇️2.3MB/s
-      - 🇫🇷FR_7|⬇️2.3MB/s
-      - 🇺🇸US_1|⬇️4.4MB/s
-      - 🇺🇸US_6|⬇️3.6MB/s
+      - 🇺🇸US_1|⬇️2.1MB/s_1
+      - 未知VLESS-81|free-nodes_1
+      - 🇺🇸US_1|⬇️4.4MB/s_1
+      - 🇺🇸US_6|⬇️3.6MB/s_1
       - 🇺🇸US_1|⬇️3.2MB/s_1
-      - 🇫🇷FR_3|⬇️1.8MB/s_1
-      - 🇫🇷FR_2|⬇️1.0MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_3
-      - 🇫🇷FR_3|⬇️1.8MB/s_2
       - 🇺🇸US_1|⬇️3.2MB/s_2
-      - 🇫🇷FR_3|⬇️1.8MB/s_3
-      - 🇫🇷FR_2|⬇️1.0MB/s_4
-      - 未知VLESS-85|free-nodes
-      - 未知VLESS-110|free-nodes
-      - FRVLESS-111|free-nodes_2
-      - 🇦🇲AM_1|⬇️1.5MB/s_1
-      - 🇦🇲AM_1|⬇️4.7MB/s_1
-      - 🇫🇷FR_1|⬇️3.2MB/s_1
-      - 🇫🇷FR_2|⬇️1.0MB/s_5
-      - 🇫🇷FR_3|⬇️1.8MB/s_4
+      - 未知VLESS-85|free-nodes_1
       - 🇺🇸US_1|⬇️3.2MB/s_3
-      - 🇺🇸US_7|⬇️4.3MB/s_1
-      - 🇦🇲AM_1|⬇️1.5MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_1
-      - 🇫🇷FR_1|⬇️3.2MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_6
-      - 🇫🇷FR_3|⬇️1.8MB/s_5
-      - 🇳🇱NL_1|⬇️2.7MB/s
       - 🇺🇸US_1|⬇️2.2MB/s_1
       - 🇺🇸US_1|⬇️3.2MB/s_4
-      - 🇺🇸US_7|⬇️4.3MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_2
-      - 🇫🇷FR_1|⬇️3.2MB/s_3
-      - 🇫🇷FR_2|⬇️1.0MB/s_7
-      - 🇫🇷FR_3|⬇️1.8MB/s_6
       - 🇺🇸US_1|⬇️3.2MB/s_5
-      - 🇺🇸US_7|⬇️4.3MB/s_3
-      - 🇦🇲AM_1|⬇️1.5MB/s_3
-      - 🇦🇲AM_1|⬇️4.7MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_3
-      - 🇨🇦CA_1|⬇️4.8MB/s_1
       - 🇩🇪DE_2|⬇️5.3MB/s_1
-      - 🇩🇪DE_9|⬇️3.0MB/s
-      - 🇫🇮FI_3|⬇️7.8MB/s
-      - 🇫🇷FR_1|⬇️3.2MB/s_4
-      - 🇫🇷FR_3|⬇️1.8MB/s_7
       - 🇮🇱IL_1|⬇️3.3MB/s
-      - 🇳🇱NL_2|⬇️3.8MB/s
-      - 🇳🇱NL_5|⬇️4.2MB/s
+      - 🇳🇱NL_5|⬇️4.2MB/s_1
       - 🇵🇱PL_1|⬇️4.1MB/s
-      - 🇷🇺RU_1|⬇️3.3MB/s_1
       - 🇸🇬SG_13|⬇️1.6MB/s_1
       - 🇺🇸US_1|⬇️2.2MB/s_2
       - 🇺🇸US_1|⬇️3.2MB/s_6
-      - 🇺🇸US_1|⬇️4.7MB/s
+      - 🇺🇸US_1|⬇️4.7MB/s_1
       - 🇺🇸US_1|⬇️4.9MB/s_1
-      - 🇺🇸US_7|⬇️4.3MB/s_4
-      - 🇫🇷FR_2|⬇️1.0MB/s_8
-      - 🇩🇪DE_8|⬇️6.4MB/s
-      - 🇳🇱荷兰03
-      - 🇺🇸US_7|⬇️4.3MB/s_5
+      - 🇳🇱荷兰03_1
       - 🇺🇸US_1|⬇️4.9MB/s_2
-      - 🇨🇦CA_1|⬇️4.8MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_9
-      - 🇦🇲AM_1|⬇️4.7MB/s_3
-      - 🇺🇸US_3|⬇️3.4MB/s
-      - 🇮🇱IL_1|⬇️4.8MB/s
-      - 🇺🇸US_2|⬇️3.4MB/s
-      - 🇦🇲AM_2|⬇️2.9MB/s_4
-      - 🇬🇧GB_2|⬇️4.2MB/s
-      - 🇷🇺RU_1|⬇️3.3MB/s_2
-      - 🇳🇱NL_3|⬇️3.6MB/s
-      - 🇵🇱PL_2|⬇️1.6MB/s
-      - 🇵🇱PL_3|⬇️2.0MB/s
-      - 🇫🇮FI_1|⬇️6.9MB/s
-      - 🇵🇱PL_1|⬇️1.8MB/s
-      - 🇫🇷FR_1|⬇️3.2MB/s_5
+      - 🇺🇸US_3|⬇️3.4MB/s_1
+      - 🇮🇱IL_1|⬇️4.8MB/s_1
+      - 🇺🇸US_2|⬇️3.4MB/s_1
+      - 🇵🇱PL_1|⬇️1.8MB/s_1
       - 🇩🇪DE_2|⬇️5.3MB/s_2
-      - 🇫🇮FI_2|⬇️5.5MB/s
-      - 🇳🇱NL_4|⬇️3.7MB/s
+      - 🇳🇱NL_4|⬇️3.7MB/s_1
       - 🇸🇬SG_13|⬇️1.6MB/s_2
+      - 🇦🇲亚美尼亚|AM-020
+      - 🇦🇿阿塞拜疆|AZ-001
+      - 🇩🇪DE_2|⬇️5.3MB/s_3
+      - 🇫🇮芬兰|FI-013
+      - 🇫🇮芬兰|FI-025
+      - 🇬🇧GB_1|⬇️3.9MB/s
+      - 🇬🇧GB_1|1.2MB/s
+      - 🇮🇱IL_1|⬇️4.8MB/s_2
+      - 🇱🇮列支敦士登|LI-005
+      - 🇱🇮列支敦士登|LI-008
+      - 🇳🇱NL_1|⬇️3.5MB/s
+      - 🇳🇱NL_3|⬇️4.2MB/s
+      - 🇳🇱NL_4|⬇️3.7MB/s_2
+      - 🇳🇵尼泊尔|NP-008
+      - 🇳🇵尼泊尔|NP-010
+      - 🇵🇱PL_1|⬇️1.8MB/s_2
+      - 🇵🇱PL_1|⬇️2.1MB/s
+      - 🇵🇱PL_4|⬇️4.1MB/s
+      - 🇵🇹PT_1|⬇️2.0MB/s
+      - 🇸🇬SG_13|⬇️1.6MB/s_3
+      - 🇺🇸US_1|⬇️1.2MB/s
+      - 🇺🇸US_1|⬇️4.9MB/s_3
+      - 🇺🇸US_2|⬇️3.4MB/s_2
+      - 🇺🇸US_2|⬇️6.1MB/s
+      - 🇺🇸US_3|⬇️3.4MB/s_2
+      - 🇳🇱荷兰03_2
+      - 🇳🇱荷兰17⌈wzdnzd/aggregator⌋
+      - 🇳🇱荷兰03_3
+      - 🇳🇱荷兰04
+      - 🇳🇱NL_1|⬇️3.9MB/s_1
+      - 🇳🇱NL_5|⬇️4.2MB/s_2
+      - 🇺🇸US_1|⬇️2.1MB/s_2
+      - 🇺🇸US_1|⬇️2.2MB/s_3
+      - 🇺🇸US_1|⬇️3.2MB/s_7
+      - 🇺🇸US_1|⬇️4.4MB/s_2
+      - 🇺🇸US_1|⬇️4.7MB/s_2
+      - 🇺🇸US_6|⬇️3.6MB/s_2
+      - ❓Other_1|⬇️1.2MB/s
+      - 未知VLESS-81|free-nodes_2
+      - 未知VLESS-85|free-nodes_2
+      - BR-VLESS-01
+      - FR-VLESS-01
+      - 🇳🇱荷兰03_4
+      - 🇳🇱NL_1|⬇️3.9MB/s_2
+      - 🇺🇸_US_美国_3
+      - Other_1|⬇️1.2MB/s
+      - IT-VLESS-01
+      - JP-VLESS-01
+      - JP-VLESS-02
+      - KR-VLESS-01
+      - SG-VLESS-01
+      - SG-VLESS-02
+      - UK-VLESS-01
+      - USVLESS-77|free-nodes
+      - US-VLESS-01
+      - US-VLESS-02
+      - US-VLESS-03
+      - US-VLESS-04
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸US_1|⬇️2.1MB/s
-      - 🇫🇷FR_1|⬇️1.3MB/s_1
-      - 未知VLESS-81|free-nodes
-      - FRVLESS-111|free-nodes_1
-      - 🇫🇷FR_1|⬇️1.3MB/s_2
-      - 🇫🇷FR_1|⬇️2.6MB/s
-      - 🇫🇷FR_1|⬇️3.1MB/s
-      - 🇫🇷FR_1|⬇️4.9MB/s
-      - 🇫🇷FR_1|⬇️6.3MB/s
-      - 🇫🇷FR_2|⬇️1.0MB/s_1
-      - 🇫🇷FR_4|⬇️2.3MB/s
-      - 🇫🇷FR_7|⬇️2.3MB/s
-      - 🇺🇸US_1|⬇️4.4MB/s
-      - 🇺🇸US_6|⬇️3.6MB/s
+      - 🇺🇸US_1|⬇️2.1MB/s_1
+      - 未知VLESS-81|free-nodes_1
+      - 🇺🇸US_1|⬇️4.4MB/s_1
+      - 🇺🇸US_6|⬇️3.6MB/s_1
       - 🇺🇸US_1|⬇️3.2MB/s_1
-      - 🇫🇷FR_3|⬇️1.8MB/s_1
-      - 🇫🇷FR_2|⬇️1.0MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_3
-      - 🇫🇷FR_3|⬇️1.8MB/s_2
       - 🇺🇸US_1|⬇️3.2MB/s_2
-      - 🇫🇷FR_3|⬇️1.8MB/s_3
-      - 🇫🇷FR_2|⬇️1.0MB/s_4
-      - 未知VLESS-85|free-nodes
-      - 未知VLESS-110|free-nodes
-      - FRVLESS-111|free-nodes_2
-      - 🇦🇲AM_1|⬇️1.5MB/s_1
-      - 🇦🇲AM_1|⬇️4.7MB/s_1
-      - 🇫🇷FR_1|⬇️3.2MB/s_1
-      - 🇫🇷FR_2|⬇️1.0MB/s_5
-      - 🇫🇷FR_3|⬇️1.8MB/s_4
+      - 未知VLESS-85|free-nodes_1
       - 🇺🇸US_1|⬇️3.2MB/s_3
-      - 🇺🇸US_7|⬇️4.3MB/s_1
-      - 🇦🇲AM_1|⬇️1.5MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_1
-      - 🇫🇷FR_1|⬇️3.2MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_6
-      - 🇫🇷FR_3|⬇️1.8MB/s_5
-      - 🇳🇱NL_1|⬇️2.7MB/s
       - 🇺🇸US_1|⬇️2.2MB/s_1
       - 🇺🇸US_1|⬇️3.2MB/s_4
-      - 🇺🇸US_7|⬇️4.3MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_2
-      - 🇫🇷FR_1|⬇️3.2MB/s_3
-      - 🇫🇷FR_2|⬇️1.0MB/s_7
-      - 🇫🇷FR_3|⬇️1.8MB/s_6
       - 🇺🇸US_1|⬇️3.2MB/s_5
-      - 🇺🇸US_7|⬇️4.3MB/s_3
-      - 🇦🇲AM_1|⬇️1.5MB/s_3
-      - 🇦🇲AM_1|⬇️4.7MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_3
-      - 🇨🇦CA_1|⬇️4.8MB/s_1
       - 🇩🇪DE_2|⬇️5.3MB/s_1
-      - 🇩🇪DE_9|⬇️3.0MB/s
-      - 🇫🇮FI_3|⬇️7.8MB/s
-      - 🇫🇷FR_1|⬇️3.2MB/s_4
-      - 🇫🇷FR_3|⬇️1.8MB/s_7
       - 🇮🇱IL_1|⬇️3.3MB/s
-      - 🇳🇱NL_2|⬇️3.8MB/s
-      - 🇳🇱NL_5|⬇️4.2MB/s
+      - 🇳🇱NL_5|⬇️4.2MB/s_1
       - 🇵🇱PL_1|⬇️4.1MB/s
-      - 🇷🇺RU_1|⬇️3.3MB/s_1
       - 🇸🇬SG_13|⬇️1.6MB/s_1
       - 🇺🇸US_1|⬇️2.2MB/s_2
       - 🇺🇸US_1|⬇️3.2MB/s_6
-      - 🇺🇸US_1|⬇️4.7MB/s
+      - 🇺🇸US_1|⬇️4.7MB/s_1
       - 🇺🇸US_1|⬇️4.9MB/s_1
-      - 🇺🇸US_7|⬇️4.3MB/s_4
-      - 🇫🇷FR_2|⬇️1.0MB/s_8
-      - 🇩🇪DE_8|⬇️6.4MB/s
-      - 🇳🇱荷兰03
-      - 🇺🇸US_7|⬇️4.3MB/s_5
+      - 🇳🇱荷兰03_1
       - 🇺🇸US_1|⬇️4.9MB/s_2
-      - 🇨🇦CA_1|⬇️4.8MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_9
-      - 🇦🇲AM_1|⬇️4.7MB/s_3
-      - 🇺🇸US_3|⬇️3.4MB/s
-      - 🇮🇱IL_1|⬇️4.8MB/s
-      - 🇺🇸US_2|⬇️3.4MB/s
-      - 🇦🇲AM_2|⬇️2.9MB/s_4
-      - 🇬🇧GB_2|⬇️4.2MB/s
-      - 🇷🇺RU_1|⬇️3.3MB/s_2
-      - 🇳🇱NL_3|⬇️3.6MB/s
-      - 🇵🇱PL_2|⬇️1.6MB/s
-      - 🇵🇱PL_3|⬇️2.0MB/s
-      - 🇫🇮FI_1|⬇️6.9MB/s
-      - 🇵🇱PL_1|⬇️1.8MB/s
-      - 🇫🇷FR_1|⬇️3.2MB/s_5
+      - 🇺🇸US_3|⬇️3.4MB/s_1
+      - 🇮🇱IL_1|⬇️4.8MB/s_1
+      - 🇺🇸US_2|⬇️3.4MB/s_1
+      - 🇵🇱PL_1|⬇️1.8MB/s_1
       - 🇩🇪DE_2|⬇️5.3MB/s_2
-      - 🇫🇮FI_2|⬇️5.5MB/s
-      - 🇳🇱NL_4|⬇️3.7MB/s
+      - 🇳🇱NL_4|⬇️3.7MB/s_1
       - 🇸🇬SG_13|⬇️1.6MB/s_2
+      - 🇦🇲亚美尼亚|AM-020
+      - 🇦🇿阿塞拜疆|AZ-001
+      - 🇩🇪DE_2|⬇️5.3MB/s_3
+      - 🇫🇮芬兰|FI-013
+      - 🇫🇮芬兰|FI-025
+      - 🇬🇧GB_1|⬇️3.9MB/s
+      - 🇬🇧GB_1|1.2MB/s
+      - 🇮🇱IL_1|⬇️4.8MB/s_2
+      - 🇱🇮列支敦士登|LI-005
+      - 🇱🇮列支敦士登|LI-008
+      - 🇳🇱NL_1|⬇️3.5MB/s
+      - 🇳🇱NL_3|⬇️4.2MB/s
+      - 🇳🇱NL_4|⬇️3.7MB/s_2
+      - 🇳🇵尼泊尔|NP-008
+      - 🇳🇵尼泊尔|NP-010
+      - 🇵🇱PL_1|⬇️1.8MB/s_2
+      - 🇵🇱PL_1|⬇️2.1MB/s
+      - 🇵🇱PL_4|⬇️4.1MB/s
+      - 🇵🇹PT_1|⬇️2.0MB/s
+      - 🇸🇬SG_13|⬇️1.6MB/s_3
+      - 🇺🇸US_1|⬇️1.2MB/s
+      - 🇺🇸US_1|⬇️4.9MB/s_3
+      - 🇺🇸US_2|⬇️3.4MB/s_2
+      - 🇺🇸US_2|⬇️6.1MB/s
+      - 🇺🇸US_3|⬇️3.4MB/s_2
+      - 🇳🇱荷兰03_2
+      - 🇳🇱荷兰17⌈wzdnzd/aggregator⌋
+      - 🇳🇱荷兰03_3
+      - 🇳🇱荷兰04
+      - 🇳🇱NL_1|⬇️3.9MB/s_1
+      - 🇳🇱NL_5|⬇️4.2MB/s_2
+      - 🇺🇸US_1|⬇️2.1MB/s_2
+      - 🇺🇸US_1|⬇️2.2MB/s_3
+      - 🇺🇸US_1|⬇️3.2MB/s_7
+      - 🇺🇸US_1|⬇️4.4MB/s_2
+      - 🇺🇸US_1|⬇️4.7MB/s_2
+      - 🇺🇸US_6|⬇️3.6MB/s_2
+      - ❓Other_1|⬇️1.2MB/s
+      - 未知VLESS-81|free-nodes_2
+      - 未知VLESS-85|free-nodes_2
+      - BR-VLESS-01
+      - FR-VLESS-01
+      - 🇳🇱荷兰03_4
+      - 🇳🇱NL_1|⬇️3.9MB/s_2
+      - 🇺🇸_US_美国_3
+      - Other_1|⬇️1.2MB/s
+      - IT-VLESS-01
+      - JP-VLESS-01
+      - JP-VLESS-02
+      - KR-VLESS-01
+      - SG-VLESS-01
+      - SG-VLESS-02
+      - UK-VLESS-01
+      - USVLESS-77|free-nodes
+      - US-VLESS-01
+      - US-VLESS-02
+      - US-VLESS-03
+      - US-VLESS-04
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸US_1|⬇️2.1MB/s
-      - 🇫🇷FR_1|⬇️1.3MB/s_1
-      - 未知VLESS-81|free-nodes
-      - FRVLESS-111|free-nodes_1
-      - 🇫🇷FR_1|⬇️1.3MB/s_2
-      - 🇫🇷FR_1|⬇️2.6MB/s
-      - 🇫🇷FR_1|⬇️3.1MB/s
-      - 🇫🇷FR_1|⬇️4.9MB/s
-      - 🇫🇷FR_1|⬇️6.3MB/s
-      - 🇫🇷FR_2|⬇️1.0MB/s_1
-      - 🇫🇷FR_4|⬇️2.3MB/s
-      - 🇫🇷FR_7|⬇️2.3MB/s
-      - 🇺🇸US_1|⬇️4.4MB/s
-      - 🇺🇸US_6|⬇️3.6MB/s
+      - 🇺🇸US_1|⬇️2.1MB/s_1
+      - 未知VLESS-81|free-nodes_1
+      - 🇺🇸US_1|⬇️4.4MB/s_1
+      - 🇺🇸US_6|⬇️3.6MB/s_1
       - 🇺🇸US_1|⬇️3.2MB/s_1
-      - 🇫🇷FR_3|⬇️1.8MB/s_1
-      - 🇫🇷FR_2|⬇️1.0MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_3
-      - 🇫🇷FR_3|⬇️1.8MB/s_2
       - 🇺🇸US_1|⬇️3.2MB/s_2
-      - 🇫🇷FR_3|⬇️1.8MB/s_3
-      - 🇫🇷FR_2|⬇️1.0MB/s_4
-      - 未知VLESS-85|free-nodes
-      - 未知VLESS-110|free-nodes
-      - FRVLESS-111|free-nodes_2
-      - 🇦🇲AM_1|⬇️1.5MB/s_1
-      - 🇦🇲AM_1|⬇️4.7MB/s_1
-      - 🇫🇷FR_1|⬇️3.2MB/s_1
-      - 🇫🇷FR_2|⬇️1.0MB/s_5
-      - 🇫🇷FR_3|⬇️1.8MB/s_4
+      - 未知VLESS-85|free-nodes_1
       - 🇺🇸US_1|⬇️3.2MB/s_3
-      - 🇺🇸US_7|⬇️4.3MB/s_1
-      - 🇦🇲AM_1|⬇️1.5MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_1
-      - 🇫🇷FR_1|⬇️3.2MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_6
-      - 🇫🇷FR_3|⬇️1.8MB/s_5
-      - 🇳🇱NL_1|⬇️2.7MB/s
       - 🇺🇸US_1|⬇️2.2MB/s_1
       - 🇺🇸US_1|⬇️3.2MB/s_4
-      - 🇺🇸US_7|⬇️4.3MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_2
-      - 🇫🇷FR_1|⬇️3.2MB/s_3
-      - 🇫🇷FR_2|⬇️1.0MB/s_7
-      - 🇫🇷FR_3|⬇️1.8MB/s_6
       - 🇺🇸US_1|⬇️3.2MB/s_5
-      - 🇺🇸US_7|⬇️4.3MB/s_3
-      - 🇦🇲AM_1|⬇️1.5MB/s_3
-      - 🇦🇲AM_1|⬇️4.7MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_3
-      - 🇨🇦CA_1|⬇️4.8MB/s_1
       - 🇩🇪DE_2|⬇️5.3MB/s_1
-      - 🇩🇪DE_9|⬇️3.0MB/s
-      - 🇫🇮FI_3|⬇️7.8MB/s
-      - 🇫🇷FR_1|⬇️3.2MB/s_4
-      - 🇫🇷FR_3|⬇️1.8MB/s_7
       - 🇮🇱IL_1|⬇️3.3MB/s
-      - 🇳🇱NL_2|⬇️3.8MB/s
-      - 🇳🇱NL_5|⬇️4.2MB/s
+      - 🇳🇱NL_5|⬇️4.2MB/s_1
       - 🇵🇱PL_1|⬇️4.1MB/s
-      - 🇷🇺RU_1|⬇️3.3MB/s_1
       - 🇸🇬SG_13|⬇️1.6MB/s_1
       - 🇺🇸US_1|⬇️2.2MB/s_2
       - 🇺🇸US_1|⬇️3.2MB/s_6
-      - 🇺🇸US_1|⬇️4.7MB/s
+      - 🇺🇸US_1|⬇️4.7MB/s_1
       - 🇺🇸US_1|⬇️4.9MB/s_1
-      - 🇺🇸US_7|⬇️4.3MB/s_4
-      - 🇫🇷FR_2|⬇️1.0MB/s_8
-      - 🇩🇪DE_8|⬇️6.4MB/s
-      - 🇳🇱荷兰03
-      - 🇺🇸US_7|⬇️4.3MB/s_5
+      - 🇳🇱荷兰03_1
       - 🇺🇸US_1|⬇️4.9MB/s_2
-      - 🇨🇦CA_1|⬇️4.8MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_9
-      - 🇦🇲AM_1|⬇️4.7MB/s_3
-      - 🇺🇸US_3|⬇️3.4MB/s
-      - 🇮🇱IL_1|⬇️4.8MB/s
-      - 🇺🇸US_2|⬇️3.4MB/s
-      - 🇦🇲AM_2|⬇️2.9MB/s_4
-      - 🇬🇧GB_2|⬇️4.2MB/s
-      - 🇷🇺RU_1|⬇️3.3MB/s_2
-      - 🇳🇱NL_3|⬇️3.6MB/s
-      - 🇵🇱PL_2|⬇️1.6MB/s
-      - 🇵🇱PL_3|⬇️2.0MB/s
-      - 🇫🇮FI_1|⬇️6.9MB/s
-      - 🇵🇱PL_1|⬇️1.8MB/s
-      - 🇫🇷FR_1|⬇️3.2MB/s_5
+      - 🇺🇸US_3|⬇️3.4MB/s_1
+      - 🇮🇱IL_1|⬇️4.8MB/s_1
+      - 🇺🇸US_2|⬇️3.4MB/s_1
+      - 🇵🇱PL_1|⬇️1.8MB/s_1
       - 🇩🇪DE_2|⬇️5.3MB/s_2
-      - 🇫🇮FI_2|⬇️5.5MB/s
-      - 🇳🇱NL_4|⬇️3.7MB/s
+      - 🇳🇱NL_4|⬇️3.7MB/s_1
       - 🇸🇬SG_13|⬇️1.6MB/s_2
+      - 🇦🇲亚美尼亚|AM-020
+      - 🇦🇿阿塞拜疆|AZ-001
+      - 🇩🇪DE_2|⬇️5.3MB/s_3
+      - 🇫🇮芬兰|FI-013
+      - 🇫🇮芬兰|FI-025
+      - 🇬🇧GB_1|⬇️3.9MB/s
+      - 🇬🇧GB_1|1.2MB/s
+      - 🇮🇱IL_1|⬇️4.8MB/s_2
+      - 🇱🇮列支敦士登|LI-005
+      - 🇱🇮列支敦士登|LI-008
+      - 🇳🇱NL_1|⬇️3.5MB/s
+      - 🇳🇱NL_3|⬇️4.2MB/s
+      - 🇳🇱NL_4|⬇️3.7MB/s_2
+      - 🇳🇵尼泊尔|NP-008
+      - 🇳🇵尼泊尔|NP-010
+      - 🇵🇱PL_1|⬇️1.8MB/s_2
+      - 🇵🇱PL_1|⬇️2.1MB/s
+      - 🇵🇱PL_4|⬇️4.1MB/s
+      - 🇵🇹PT_1|⬇️2.0MB/s
+      - 🇸🇬SG_13|⬇️1.6MB/s_3
+      - 🇺🇸US_1|⬇️1.2MB/s
+      - 🇺🇸US_1|⬇️4.9MB/s_3
+      - 🇺🇸US_2|⬇️3.4MB/s_2
+      - 🇺🇸US_2|⬇️6.1MB/s
+      - 🇺🇸US_3|⬇️3.4MB/s_2
+      - 🇳🇱荷兰03_2
+      - 🇳🇱荷兰17⌈wzdnzd/aggregator⌋
+      - 🇳🇱荷兰03_3
+      - 🇳🇱荷兰04
+      - 🇳🇱NL_1|⬇️3.9MB/s_1
+      - 🇳🇱NL_5|⬇️4.2MB/s_2
+      - 🇺🇸US_1|⬇️2.1MB/s_2
+      - 🇺🇸US_1|⬇️2.2MB/s_3
+      - 🇺🇸US_1|⬇️3.2MB/s_7
+      - 🇺🇸US_1|⬇️4.4MB/s_2
+      - 🇺🇸US_1|⬇️4.7MB/s_2
+      - 🇺🇸US_6|⬇️3.6MB/s_2
+      - ❓Other_1|⬇️1.2MB/s
+      - 未知VLESS-81|free-nodes_2
+      - 未知VLESS-85|free-nodes_2
+      - BR-VLESS-01
+      - FR-VLESS-01
+      - 🇳🇱荷兰03_4
+      - 🇳🇱NL_1|⬇️3.9MB/s_2
+      - 🇺🇸_US_美国_3
+      - Other_1|⬇️1.2MB/s
+      - IT-VLESS-01
+      - JP-VLESS-01
+      - JP-VLESS-02
+      - KR-VLESS-01
+      - SG-VLESS-01
+      - SG-VLESS-02
+      - UK-VLESS-01
+      - USVLESS-77|free-nodes
+      - US-VLESS-01
+      - US-VLESS-02
+      - US-VLESS-03
+      - US-VLESS-04
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸US_1|⬇️2.1MB/s
-      - 🇫🇷FR_1|⬇️1.3MB/s_1
-      - 未知VLESS-81|free-nodes
-      - FRVLESS-111|free-nodes_1
-      - 🇫🇷FR_1|⬇️1.3MB/s_2
-      - 🇫🇷FR_1|⬇️2.6MB/s
-      - 🇫🇷FR_1|⬇️3.1MB/s
-      - 🇫🇷FR_1|⬇️4.9MB/s
-      - 🇫🇷FR_1|⬇️6.3MB/s
-      - 🇫🇷FR_2|⬇️1.0MB/s_1
-      - 🇫🇷FR_4|⬇️2.3MB/s
-      - 🇫🇷FR_7|⬇️2.3MB/s
-      - 🇺🇸US_1|⬇️4.4MB/s
-      - 🇺🇸US_6|⬇️3.6MB/s
+      - 🇺🇸US_1|⬇️2.1MB/s_1
+      - 未知VLESS-81|free-nodes_1
+      - 🇺🇸US_1|⬇️4.4MB/s_1
+      - 🇺🇸US_6|⬇️3.6MB/s_1
       - 🇺🇸US_1|⬇️3.2MB/s_1
-      - 🇫🇷FR_3|⬇️1.8MB/s_1
-      - 🇫🇷FR_2|⬇️1.0MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_3
-      - 🇫🇷FR_3|⬇️1.8MB/s_2
       - 🇺🇸US_1|⬇️3.2MB/s_2
-      - 🇫🇷FR_3|⬇️1.8MB/s_3
-      - 🇫🇷FR_2|⬇️1.0MB/s_4
-      - 未知VLESS-85|free-nodes
-      - 未知VLESS-110|free-nodes
-      - FRVLESS-111|free-nodes_2
-      - 🇦🇲AM_1|⬇️1.5MB/s_1
-      - 🇦🇲AM_1|⬇️4.7MB/s_1
-      - 🇫🇷FR_1|⬇️3.2MB/s_1
-      - 🇫🇷FR_2|⬇️1.0MB/s_5
-      - 🇫🇷FR_3|⬇️1.8MB/s_4
+      - 未知VLESS-85|free-nodes_1
       - 🇺🇸US_1|⬇️3.2MB/s_3
-      - 🇺🇸US_7|⬇️4.3MB/s_1
-      - 🇦🇲AM_1|⬇️1.5MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_1
-      - 🇫🇷FR_1|⬇️3.2MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_6
-      - 🇫🇷FR_3|⬇️1.8MB/s_5
-      - 🇳🇱NL_1|⬇️2.7MB/s
       - 🇺🇸US_1|⬇️2.2MB/s_1
       - 🇺🇸US_1|⬇️3.2MB/s_4
-      - 🇺🇸US_7|⬇️4.3MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_2
-      - 🇫🇷FR_1|⬇️3.2MB/s_3
-      - 🇫🇷FR_2|⬇️1.0MB/s_7
-      - 🇫🇷FR_3|⬇️1.8MB/s_6
       - 🇺🇸US_1|⬇️3.2MB/s_5
-      - 🇺🇸US_7|⬇️4.3MB/s_3
-      - 🇦🇲AM_1|⬇️1.5MB/s_3
-      - 🇦🇲AM_1|⬇️4.7MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_3
-      - 🇨🇦CA_1|⬇️4.8MB/s_1
       - 🇩🇪DE_2|⬇️5.3MB/s_1
-      - 🇩🇪DE_9|⬇️3.0MB/s
-      - 🇫🇮FI_3|⬇️7.8MB/s
-      - 🇫🇷FR_1|⬇️3.2MB/s_4
-      - 🇫🇷FR_3|⬇️1.8MB/s_7
       - 🇮🇱IL_1|⬇️3.3MB/s
-      - 🇳🇱NL_2|⬇️3.8MB/s
-      - 🇳🇱NL_5|⬇️4.2MB/s
+      - 🇳🇱NL_5|⬇️4.2MB/s_1
       - 🇵🇱PL_1|⬇️4.1MB/s
-      - 🇷🇺RU_1|⬇️3.3MB/s_1
       - 🇸🇬SG_13|⬇️1.6MB/s_1
       - 🇺🇸US_1|⬇️2.2MB/s_2
       - 🇺🇸US_1|⬇️3.2MB/s_6
-      - 🇺🇸US_1|⬇️4.7MB/s
+      - 🇺🇸US_1|⬇️4.7MB/s_1
       - 🇺🇸US_1|⬇️4.9MB/s_1
-      - 🇺🇸US_7|⬇️4.3MB/s_4
-      - 🇫🇷FR_2|⬇️1.0MB/s_8
-      - 🇩🇪DE_8|⬇️6.4MB/s
-      - 🇳🇱荷兰03
-      - 🇺🇸US_7|⬇️4.3MB/s_5
+      - 🇳🇱荷兰03_1
       - 🇺🇸US_1|⬇️4.9MB/s_2
-      - 🇨🇦CA_1|⬇️4.8MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_9
-      - 🇦🇲AM_1|⬇️4.7MB/s_3
-      - 🇺🇸US_3|⬇️3.4MB/s
-      - 🇮🇱IL_1|⬇️4.8MB/s
-      - 🇺🇸US_2|⬇️3.4MB/s
-      - 🇦🇲AM_2|⬇️2.9MB/s_4
-      - 🇬🇧GB_2|⬇️4.2MB/s
-      - 🇷🇺RU_1|⬇️3.3MB/s_2
-      - 🇳🇱NL_3|⬇️3.6MB/s
-      - 🇵🇱PL_2|⬇️1.6MB/s
-      - 🇵🇱PL_3|⬇️2.0MB/s
-      - 🇫🇮FI_1|⬇️6.9MB/s
-      - 🇵🇱PL_1|⬇️1.8MB/s
-      - 🇫🇷FR_1|⬇️3.2MB/s_5
+      - 🇺🇸US_3|⬇️3.4MB/s_1
+      - 🇮🇱IL_1|⬇️4.8MB/s_1
+      - 🇺🇸US_2|⬇️3.4MB/s_1
+      - 🇵🇱PL_1|⬇️1.8MB/s_1
       - 🇩🇪DE_2|⬇️5.3MB/s_2
-      - 🇫🇮FI_2|⬇️5.5MB/s
-      - 🇳🇱NL_4|⬇️3.7MB/s
+      - 🇳🇱NL_4|⬇️3.7MB/s_1
       - 🇸🇬SG_13|⬇️1.6MB/s_2
+      - 🇦🇲亚美尼亚|AM-020
+      - 🇦🇿阿塞拜疆|AZ-001
+      - 🇩🇪DE_2|⬇️5.3MB/s_3
+      - 🇫🇮芬兰|FI-013
+      - 🇫🇮芬兰|FI-025
+      - 🇬🇧GB_1|⬇️3.9MB/s
+      - 🇬🇧GB_1|1.2MB/s
+      - 🇮🇱IL_1|⬇️4.8MB/s_2
+      - 🇱🇮列支敦士登|LI-005
+      - 🇱🇮列支敦士登|LI-008
+      - 🇳🇱NL_1|⬇️3.5MB/s
+      - 🇳🇱NL_3|⬇️4.2MB/s
+      - 🇳🇱NL_4|⬇️3.7MB/s_2
+      - 🇳🇵尼泊尔|NP-008
+      - 🇳🇵尼泊尔|NP-010
+      - 🇵🇱PL_1|⬇️1.8MB/s_2
+      - 🇵🇱PL_1|⬇️2.1MB/s
+      - 🇵🇱PL_4|⬇️4.1MB/s
+      - 🇵🇹PT_1|⬇️2.0MB/s
+      - 🇸🇬SG_13|⬇️1.6MB/s_3
+      - 🇺🇸US_1|⬇️1.2MB/s
+      - 🇺🇸US_1|⬇️4.9MB/s_3
+      - 🇺🇸US_2|⬇️3.4MB/s_2
+      - 🇺🇸US_2|⬇️6.1MB/s
+      - 🇺🇸US_3|⬇️3.4MB/s_2
+      - 🇳🇱荷兰03_2
+      - 🇳🇱荷兰17⌈wzdnzd/aggregator⌋
+      - 🇳🇱荷兰03_3
+      - 🇳🇱荷兰04
+      - 🇳🇱NL_1|⬇️3.9MB/s_1
+      - 🇳🇱NL_5|⬇️4.2MB/s_2
+      - 🇺🇸US_1|⬇️2.1MB/s_2
+      - 🇺🇸US_1|⬇️2.2MB/s_3
+      - 🇺🇸US_1|⬇️3.2MB/s_7
+      - 🇺🇸US_1|⬇️4.4MB/s_2
+      - 🇺🇸US_1|⬇️4.7MB/s_2
+      - 🇺🇸US_6|⬇️3.6MB/s_2
+      - ❓Other_1|⬇️1.2MB/s
+      - 未知VLESS-81|free-nodes_2
+      - 未知VLESS-85|free-nodes_2
+      - BR-VLESS-01
+      - FR-VLESS-01
+      - 🇳🇱荷兰03_4
+      - 🇳🇱NL_1|⬇️3.9MB/s_2
+      - 🇺🇸_US_美国_3
+      - Other_1|⬇️1.2MB/s
+      - IT-VLESS-01
+      - JP-VLESS-01
+      - JP-VLESS-02
+      - KR-VLESS-01
+      - SG-VLESS-01
+      - SG-VLESS-02
+      - UK-VLESS-01
+      - USVLESS-77|free-nodes
+      - US-VLESS-01
+      - US-VLESS-02
+      - US-VLESS-03
+      - US-VLESS-04
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸US_1|⬇️2.1MB/s
-      - 🇫🇷FR_1|⬇️1.3MB/s_1
-      - 未知VLESS-81|free-nodes
-      - FRVLESS-111|free-nodes_1
-      - 🇫🇷FR_1|⬇️1.3MB/s_2
-      - 🇫🇷FR_1|⬇️2.6MB/s
-      - 🇫🇷FR_1|⬇️3.1MB/s
-      - 🇫🇷FR_1|⬇️4.9MB/s
-      - 🇫🇷FR_1|⬇️6.3MB/s
-      - 🇫🇷FR_2|⬇️1.0MB/s_1
-      - 🇫🇷FR_4|⬇️2.3MB/s
-      - 🇫🇷FR_7|⬇️2.3MB/s
-      - 🇺🇸US_1|⬇️4.4MB/s
-      - 🇺🇸US_6|⬇️3.6MB/s
+      - 🇺🇸US_1|⬇️2.1MB/s_1
+      - 未知VLESS-81|free-nodes_1
+      - 🇺🇸US_1|⬇️4.4MB/s_1
+      - 🇺🇸US_6|⬇️3.6MB/s_1
       - 🇺🇸US_1|⬇️3.2MB/s_1
-      - 🇫🇷FR_3|⬇️1.8MB/s_1
-      - 🇫🇷FR_2|⬇️1.0MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_3
-      - 🇫🇷FR_3|⬇️1.8MB/s_2
       - 🇺🇸US_1|⬇️3.2MB/s_2
-      - 🇫🇷FR_3|⬇️1.8MB/s_3
-      - 🇫🇷FR_2|⬇️1.0MB/s_4
-      - 未知VLESS-85|free-nodes
-      - 未知VLESS-110|free-nodes
-      - FRVLESS-111|free-nodes_2
-      - 🇦🇲AM_1|⬇️1.5MB/s_1
-      - 🇦🇲AM_1|⬇️4.7MB/s_1
-      - 🇫🇷FR_1|⬇️3.2MB/s_1
-      - 🇫🇷FR_2|⬇️1.0MB/s_5
-      - 🇫🇷FR_3|⬇️1.8MB/s_4
+      - 未知VLESS-85|free-nodes_1
       - 🇺🇸US_1|⬇️3.2MB/s_3
-      - 🇺🇸US_7|⬇️4.3MB/s_1
-      - 🇦🇲AM_1|⬇️1.5MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_1
-      - 🇫🇷FR_1|⬇️3.2MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_6
-      - 🇫🇷FR_3|⬇️1.8MB/s_5
-      - 🇳🇱NL_1|⬇️2.7MB/s
       - 🇺🇸US_1|⬇️2.2MB/s_1
       - 🇺🇸US_1|⬇️3.2MB/s_4
-      - 🇺🇸US_7|⬇️4.3MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_2
-      - 🇫🇷FR_1|⬇️3.2MB/s_3
-      - 🇫🇷FR_2|⬇️1.0MB/s_7
-      - 🇫🇷FR_3|⬇️1.8MB/s_6
       - 🇺🇸US_1|⬇️3.2MB/s_5
-      - 🇺🇸US_7|⬇️4.3MB/s_3
-      - 🇦🇲AM_1|⬇️1.5MB/s_3
-      - 🇦🇲AM_1|⬇️4.7MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_3
-      - 🇨🇦CA_1|⬇️4.8MB/s_1
       - 🇩🇪DE_2|⬇️5.3MB/s_1
-      - 🇩🇪DE_9|⬇️3.0MB/s
-      - 🇫🇮FI_3|⬇️7.8MB/s
-      - 🇫🇷FR_1|⬇️3.2MB/s_4
-      - 🇫🇷FR_3|⬇️1.8MB/s_7
       - 🇮🇱IL_1|⬇️3.3MB/s
-      - 🇳🇱NL_2|⬇️3.8MB/s
-      - 🇳🇱NL_5|⬇️4.2MB/s
+      - 🇳🇱NL_5|⬇️4.2MB/s_1
       - 🇵🇱PL_1|⬇️4.1MB/s
-      - 🇷🇺RU_1|⬇️3.3MB/s_1
       - 🇸🇬SG_13|⬇️1.6MB/s_1
       - 🇺🇸US_1|⬇️2.2MB/s_2
       - 🇺🇸US_1|⬇️3.2MB/s_6
-      - 🇺🇸US_1|⬇️4.7MB/s
+      - 🇺🇸US_1|⬇️4.7MB/s_1
       - 🇺🇸US_1|⬇️4.9MB/s_1
-      - 🇺🇸US_7|⬇️4.3MB/s_4
-      - 🇫🇷FR_2|⬇️1.0MB/s_8
-      - 🇩🇪DE_8|⬇️6.4MB/s
-      - 🇳🇱荷兰03
-      - 🇺🇸US_7|⬇️4.3MB/s_5
+      - 🇳🇱荷兰03_1
       - 🇺🇸US_1|⬇️4.9MB/s_2
-      - 🇨🇦CA_1|⬇️4.8MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_9
-      - 🇦🇲AM_1|⬇️4.7MB/s_3
-      - 🇺🇸US_3|⬇️3.4MB/s
-      - 🇮🇱IL_1|⬇️4.8MB/s
-      - 🇺🇸US_2|⬇️3.4MB/s
-      - 🇦🇲AM_2|⬇️2.9MB/s_4
-      - 🇬🇧GB_2|⬇️4.2MB/s
-      - 🇷🇺RU_1|⬇️3.3MB/s_2
-      - 🇳🇱NL_3|⬇️3.6MB/s
-      - 🇵🇱PL_2|⬇️1.6MB/s
-      - 🇵🇱PL_3|⬇️2.0MB/s
-      - 🇫🇮FI_1|⬇️6.9MB/s
-      - 🇵🇱PL_1|⬇️1.8MB/s
-      - 🇫🇷FR_1|⬇️3.2MB/s_5
+      - 🇺🇸US_3|⬇️3.4MB/s_1
+      - 🇮🇱IL_1|⬇️4.8MB/s_1
+      - 🇺🇸US_2|⬇️3.4MB/s_1
+      - 🇵🇱PL_1|⬇️1.8MB/s_1
       - 🇩🇪DE_2|⬇️5.3MB/s_2
-      - 🇫🇮FI_2|⬇️5.5MB/s
-      - 🇳🇱NL_4|⬇️3.7MB/s
+      - 🇳🇱NL_4|⬇️3.7MB/s_1
       - 🇸🇬SG_13|⬇️1.6MB/s_2
+      - 🇦🇲亚美尼亚|AM-020
+      - 🇦🇿阿塞拜疆|AZ-001
+      - 🇩🇪DE_2|⬇️5.3MB/s_3
+      - 🇫🇮芬兰|FI-013
+      - 🇫🇮芬兰|FI-025
+      - 🇬🇧GB_1|⬇️3.9MB/s
+      - 🇬🇧GB_1|1.2MB/s
+      - 🇮🇱IL_1|⬇️4.8MB/s_2
+      - 🇱🇮列支敦士登|LI-005
+      - 🇱🇮列支敦士登|LI-008
+      - 🇳🇱NL_1|⬇️3.5MB/s
+      - 🇳🇱NL_3|⬇️4.2MB/s
+      - 🇳🇱NL_4|⬇️3.7MB/s_2
+      - 🇳🇵尼泊尔|NP-008
+      - 🇳🇵尼泊尔|NP-010
+      - 🇵🇱PL_1|⬇️1.8MB/s_2
+      - 🇵🇱PL_1|⬇️2.1MB/s
+      - 🇵🇱PL_4|⬇️4.1MB/s
+      - 🇵🇹PT_1|⬇️2.0MB/s
+      - 🇸🇬SG_13|⬇️1.6MB/s_3
+      - 🇺🇸US_1|⬇️1.2MB/s
+      - 🇺🇸US_1|⬇️4.9MB/s_3
+      - 🇺🇸US_2|⬇️3.4MB/s_2
+      - 🇺🇸US_2|⬇️6.1MB/s
+      - 🇺🇸US_3|⬇️3.4MB/s_2
+      - 🇳🇱荷兰03_2
+      - 🇳🇱荷兰17⌈wzdnzd/aggregator⌋
+      - 🇳🇱荷兰03_3
+      - 🇳🇱荷兰04
+      - 🇳🇱NL_1|⬇️3.9MB/s_1
+      - 🇳🇱NL_5|⬇️4.2MB/s_2
+      - 🇺🇸US_1|⬇️2.1MB/s_2
+      - 🇺🇸US_1|⬇️2.2MB/s_3
+      - 🇺🇸US_1|⬇️3.2MB/s_7
+      - 🇺🇸US_1|⬇️4.4MB/s_2
+      - 🇺🇸US_1|⬇️4.7MB/s_2
+      - 🇺🇸US_6|⬇️3.6MB/s_2
+      - ❓Other_1|⬇️1.2MB/s
+      - 未知VLESS-81|free-nodes_2
+      - 未知VLESS-85|free-nodes_2
+      - BR-VLESS-01
+      - FR-VLESS-01
+      - 🇳🇱荷兰03_4
+      - 🇳🇱NL_1|⬇️3.9MB/s_2
+      - 🇺🇸_US_美国_3
+      - Other_1|⬇️1.2MB/s
+      - IT-VLESS-01
+      - JP-VLESS-01
+      - JP-VLESS-02
+      - KR-VLESS-01
+      - SG-VLESS-01
+      - SG-VLESS-02
+      - UK-VLESS-01
+      - USVLESS-77|free-nodes
+      - US-VLESS-01
+      - US-VLESS-02
+      - US-VLESS-03
+      - US-VLESS-04
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸US_1|⬇️2.1MB/s
-      - 🇫🇷FR_1|⬇️1.3MB/s_1
-      - 未知VLESS-81|free-nodes
-      - FRVLESS-111|free-nodes_1
-      - 🇫🇷FR_1|⬇️1.3MB/s_2
-      - 🇫🇷FR_1|⬇️2.6MB/s
-      - 🇫🇷FR_1|⬇️3.1MB/s
-      - 🇫🇷FR_1|⬇️4.9MB/s
-      - 🇫🇷FR_1|⬇️6.3MB/s
-      - 🇫🇷FR_2|⬇️1.0MB/s_1
-      - 🇫🇷FR_4|⬇️2.3MB/s
-      - 🇫🇷FR_7|⬇️2.3MB/s
-      - 🇺🇸US_1|⬇️4.4MB/s
-      - 🇺🇸US_6|⬇️3.6MB/s
+      - 🇺🇸US_1|⬇️2.1MB/s_1
+      - 未知VLESS-81|free-nodes_1
+      - 🇺🇸US_1|⬇️4.4MB/s_1
+      - 🇺🇸US_6|⬇️3.6MB/s_1
       - 🇺🇸US_1|⬇️3.2MB/s_1
-      - 🇫🇷FR_3|⬇️1.8MB/s_1
-      - 🇫🇷FR_2|⬇️1.0MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_3
-      - 🇫🇷FR_3|⬇️1.8MB/s_2
       - 🇺🇸US_1|⬇️3.2MB/s_2
-      - 🇫🇷FR_3|⬇️1.8MB/s_3
-      - 🇫🇷FR_2|⬇️1.0MB/s_4
-      - 未知VLESS-85|free-nodes
-      - 未知VLESS-110|free-nodes
-      - FRVLESS-111|free-nodes_2
-      - 🇦🇲AM_1|⬇️1.5MB/s_1
-      - 🇦🇲AM_1|⬇️4.7MB/s_1
-      - 🇫🇷FR_1|⬇️3.2MB/s_1
-      - 🇫🇷FR_2|⬇️1.0MB/s_5
-      - 🇫🇷FR_3|⬇️1.8MB/s_4
+      - 未知VLESS-85|free-nodes_1
       - 🇺🇸US_1|⬇️3.2MB/s_3
-      - 🇺🇸US_7|⬇️4.3MB/s_1
-      - 🇦🇲AM_1|⬇️1.5MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_1
-      - 🇫🇷FR_1|⬇️3.2MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_6
-      - 🇫🇷FR_3|⬇️1.8MB/s_5
-      - 🇳🇱NL_1|⬇️2.7MB/s
       - 🇺🇸US_1|⬇️2.2MB/s_1
       - 🇺🇸US_1|⬇️3.2MB/s_4
-      - 🇺🇸US_7|⬇️4.3MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_2
-      - 🇫🇷FR_1|⬇️3.2MB/s_3
-      - 🇫🇷FR_2|⬇️1.0MB/s_7
-      - 🇫🇷FR_3|⬇️1.8MB/s_6
       - 🇺🇸US_1|⬇️3.2MB/s_5
-      - 🇺🇸US_7|⬇️4.3MB/s_3
-      - 🇦🇲AM_1|⬇️1.5MB/s_3
-      - 🇦🇲AM_1|⬇️4.7MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_3
-      - 🇨🇦CA_1|⬇️4.8MB/s_1
       - 🇩🇪DE_2|⬇️5.3MB/s_1
-      - 🇩🇪DE_9|⬇️3.0MB/s
-      - 🇫🇮FI_3|⬇️7.8MB/s
-      - 🇫🇷FR_1|⬇️3.2MB/s_4
-      - 🇫🇷FR_3|⬇️1.8MB/s_7
       - 🇮🇱IL_1|⬇️3.3MB/s
-      - 🇳🇱NL_2|⬇️3.8MB/s
-      - 🇳🇱NL_5|⬇️4.2MB/s
+      - 🇳🇱NL_5|⬇️4.2MB/s_1
       - 🇵🇱PL_1|⬇️4.1MB/s
-      - 🇷🇺RU_1|⬇️3.3MB/s_1
       - 🇸🇬SG_13|⬇️1.6MB/s_1
       - 🇺🇸US_1|⬇️2.2MB/s_2
       - 🇺🇸US_1|⬇️3.2MB/s_6
-      - 🇺🇸US_1|⬇️4.7MB/s
+      - 🇺🇸US_1|⬇️4.7MB/s_1
       - 🇺🇸US_1|⬇️4.9MB/s_1
-      - 🇺🇸US_7|⬇️4.3MB/s_4
-      - 🇫🇷FR_2|⬇️1.0MB/s_8
-      - 🇩🇪DE_8|⬇️6.4MB/s
-      - 🇳🇱荷兰03
-      - 🇺🇸US_7|⬇️4.3MB/s_5
+      - 🇳🇱荷兰03_1
       - 🇺🇸US_1|⬇️4.9MB/s_2
-      - 🇨🇦CA_1|⬇️4.8MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_9
-      - 🇦🇲AM_1|⬇️4.7MB/s_3
-      - 🇺🇸US_3|⬇️3.4MB/s
-      - 🇮🇱IL_1|⬇️4.8MB/s
-      - 🇺🇸US_2|⬇️3.4MB/s
-      - 🇦🇲AM_2|⬇️2.9MB/s_4
-      - 🇬🇧GB_2|⬇️4.2MB/s
-      - 🇷🇺RU_1|⬇️3.3MB/s_2
-      - 🇳🇱NL_3|⬇️3.6MB/s
-      - 🇵🇱PL_2|⬇️1.6MB/s
-      - 🇵🇱PL_3|⬇️2.0MB/s
-      - 🇫🇮FI_1|⬇️6.9MB/s
-      - 🇵🇱PL_1|⬇️1.8MB/s
-      - 🇫🇷FR_1|⬇️3.2MB/s_5
+      - 🇺🇸US_3|⬇️3.4MB/s_1
+      - 🇮🇱IL_1|⬇️4.8MB/s_1
+      - 🇺🇸US_2|⬇️3.4MB/s_1
+      - 🇵🇱PL_1|⬇️1.8MB/s_1
       - 🇩🇪DE_2|⬇️5.3MB/s_2
-      - 🇫🇮FI_2|⬇️5.5MB/s
-      - 🇳🇱NL_4|⬇️3.7MB/s
+      - 🇳🇱NL_4|⬇️3.7MB/s_1
       - 🇸🇬SG_13|⬇️1.6MB/s_2
+      - 🇦🇲亚美尼亚|AM-020
+      - 🇦🇿阿塞拜疆|AZ-001
+      - 🇩🇪DE_2|⬇️5.3MB/s_3
+      - 🇫🇮芬兰|FI-013
+      - 🇫🇮芬兰|FI-025
+      - 🇬🇧GB_1|⬇️3.9MB/s
+      - 🇬🇧GB_1|1.2MB/s
+      - 🇮🇱IL_1|⬇️4.8MB/s_2
+      - 🇱🇮列支敦士登|LI-005
+      - 🇱🇮列支敦士登|LI-008
+      - 🇳🇱NL_1|⬇️3.5MB/s
+      - 🇳🇱NL_3|⬇️4.2MB/s
+      - 🇳🇱NL_4|⬇️3.7MB/s_2
+      - 🇳🇵尼泊尔|NP-008
+      - 🇳🇵尼泊尔|NP-010
+      - 🇵🇱PL_1|⬇️1.8MB/s_2
+      - 🇵🇱PL_1|⬇️2.1MB/s
+      - 🇵🇱PL_4|⬇️4.1MB/s
+      - 🇵🇹PT_1|⬇️2.0MB/s
+      - 🇸🇬SG_13|⬇️1.6MB/s_3
+      - 🇺🇸US_1|⬇️1.2MB/s
+      - 🇺🇸US_1|⬇️4.9MB/s_3
+      - 🇺🇸US_2|⬇️3.4MB/s_2
+      - 🇺🇸US_2|⬇️6.1MB/s
+      - 🇺🇸US_3|⬇️3.4MB/s_2
+      - 🇳🇱荷兰03_2
+      - 🇳🇱荷兰17⌈wzdnzd/aggregator⌋
+      - 🇳🇱荷兰03_3
+      - 🇳🇱荷兰04
+      - 🇳🇱NL_1|⬇️3.9MB/s_1
+      - 🇳🇱NL_5|⬇️4.2MB/s_2
+      - 🇺🇸US_1|⬇️2.1MB/s_2
+      - 🇺🇸US_1|⬇️2.2MB/s_3
+      - 🇺🇸US_1|⬇️3.2MB/s_7
+      - 🇺🇸US_1|⬇️4.4MB/s_2
+      - 🇺🇸US_1|⬇️4.7MB/s_2
+      - 🇺🇸US_6|⬇️3.6MB/s_2
+      - ❓Other_1|⬇️1.2MB/s
+      - 未知VLESS-81|free-nodes_2
+      - 未知VLESS-85|free-nodes_2
+      - BR-VLESS-01
+      - FR-VLESS-01
+      - 🇳🇱荷兰03_4
+      - 🇳🇱NL_1|⬇️3.9MB/s_2
+      - 🇺🇸_US_美国_3
+      - Other_1|⬇️1.2MB/s
+      - IT-VLESS-01
+      - JP-VLESS-01
+      - JP-VLESS-02
+      - KR-VLESS-01
+      - SG-VLESS-01
+      - SG-VLESS-02
+      - UK-VLESS-01
+      - USVLESS-77|free-nodes
+      - US-VLESS-01
+      - US-VLESS-02
+      - US-VLESS-03
+      - US-VLESS-04
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -697,97 +669,93 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸US_1|⬇️2.1MB/s
-      - 🇫🇷FR_1|⬇️1.3MB/s_1
-      - 未知VLESS-81|free-nodes
-      - FRVLESS-111|free-nodes_1
-      - 🇫🇷FR_1|⬇️1.3MB/s_2
-      - 🇫🇷FR_1|⬇️2.6MB/s
-      - 🇫🇷FR_1|⬇️3.1MB/s
-      - 🇫🇷FR_1|⬇️4.9MB/s
-      - 🇫🇷FR_1|⬇️6.3MB/s
-      - 🇫🇷FR_2|⬇️1.0MB/s_1
-      - 🇫🇷FR_4|⬇️2.3MB/s
-      - 🇫🇷FR_7|⬇️2.3MB/s
-      - 🇺🇸US_1|⬇️4.4MB/s
-      - 🇺🇸US_6|⬇️3.6MB/s
+      - 🇺🇸US_1|⬇️2.1MB/s_1
+      - 未知VLESS-81|free-nodes_1
+      - 🇺🇸US_1|⬇️4.4MB/s_1
+      - 🇺🇸US_6|⬇️3.6MB/s_1
       - 🇺🇸US_1|⬇️3.2MB/s_1
-      - 🇫🇷FR_3|⬇️1.8MB/s_1
-      - 🇫🇷FR_2|⬇️1.0MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_3
-      - 🇫🇷FR_3|⬇️1.8MB/s_2
       - 🇺🇸US_1|⬇️3.2MB/s_2
-      - 🇫🇷FR_3|⬇️1.8MB/s_3
-      - 🇫🇷FR_2|⬇️1.0MB/s_4
-      - 未知VLESS-85|free-nodes
-      - 未知VLESS-110|free-nodes
-      - FRVLESS-111|free-nodes_2
-      - 🇦🇲AM_1|⬇️1.5MB/s_1
-      - 🇦🇲AM_1|⬇️4.7MB/s_1
-      - 🇫🇷FR_1|⬇️3.2MB/s_1
-      - 🇫🇷FR_2|⬇️1.0MB/s_5
-      - 🇫🇷FR_3|⬇️1.8MB/s_4
+      - 未知VLESS-85|free-nodes_1
       - 🇺🇸US_1|⬇️3.2MB/s_3
-      - 🇺🇸US_7|⬇️4.3MB/s_1
-      - 🇦🇲AM_1|⬇️1.5MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_1
-      - 🇫🇷FR_1|⬇️3.2MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_6
-      - 🇫🇷FR_3|⬇️1.8MB/s_5
-      - 🇳🇱NL_1|⬇️2.7MB/s
       - 🇺🇸US_1|⬇️2.2MB/s_1
       - 🇺🇸US_1|⬇️3.2MB/s_4
-      - 🇺🇸US_7|⬇️4.3MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_2
-      - 🇫🇷FR_1|⬇️3.2MB/s_3
-      - 🇫🇷FR_2|⬇️1.0MB/s_7
-      - 🇫🇷FR_3|⬇️1.8MB/s_6
       - 🇺🇸US_1|⬇️3.2MB/s_5
-      - 🇺🇸US_7|⬇️4.3MB/s_3
-      - 🇦🇲AM_1|⬇️1.5MB/s_3
-      - 🇦🇲AM_1|⬇️4.7MB/s_2
-      - 🇦🇲AM_2|⬇️2.9MB/s_3
-      - 🇨🇦CA_1|⬇️4.8MB/s_1
       - 🇩🇪DE_2|⬇️5.3MB/s_1
-      - 🇩🇪DE_9|⬇️3.0MB/s
-      - 🇫🇮FI_3|⬇️7.8MB/s
-      - 🇫🇷FR_1|⬇️3.2MB/s_4
-      - 🇫🇷FR_3|⬇️1.8MB/s_7
       - 🇮🇱IL_1|⬇️3.3MB/s
-      - 🇳🇱NL_2|⬇️3.8MB/s
-      - 🇳🇱NL_5|⬇️4.2MB/s
+      - 🇳🇱NL_5|⬇️4.2MB/s_1
       - 🇵🇱PL_1|⬇️4.1MB/s
-      - 🇷🇺RU_1|⬇️3.3MB/s_1
       - 🇸🇬SG_13|⬇️1.6MB/s_1
       - 🇺🇸US_1|⬇️2.2MB/s_2
       - 🇺🇸US_1|⬇️3.2MB/s_6
-      - 🇺🇸US_1|⬇️4.7MB/s
+      - 🇺🇸US_1|⬇️4.7MB/s_1
       - 🇺🇸US_1|⬇️4.9MB/s_1
-      - 🇺🇸US_7|⬇️4.3MB/s_4
-      - 🇫🇷FR_2|⬇️1.0MB/s_8
-      - 🇩🇪DE_8|⬇️6.4MB/s
-      - 🇳🇱荷兰03
-      - 🇺🇸US_7|⬇️4.3MB/s_5
+      - 🇳🇱荷兰03_1
       - 🇺🇸US_1|⬇️4.9MB/s_2
-      - 🇨🇦CA_1|⬇️4.8MB/s_2
-      - 🇫🇷FR_2|⬇️1.0MB/s_9
-      - 🇦🇲AM_1|⬇️4.7MB/s_3
-      - 🇺🇸US_3|⬇️3.4MB/s
-      - 🇮🇱IL_1|⬇️4.8MB/s
-      - 🇺🇸US_2|⬇️3.4MB/s
-      - 🇦🇲AM_2|⬇️2.9MB/s_4
-      - 🇬🇧GB_2|⬇️4.2MB/s
-      - 🇷🇺RU_1|⬇️3.3MB/s_2
-      - 🇳🇱NL_3|⬇️3.6MB/s
-      - 🇵🇱PL_2|⬇️1.6MB/s
-      - 🇵🇱PL_3|⬇️2.0MB/s
-      - 🇫🇮FI_1|⬇️6.9MB/s
-      - 🇵🇱PL_1|⬇️1.8MB/s
-      - 🇫🇷FR_1|⬇️3.2MB/s_5
+      - 🇺🇸US_3|⬇️3.4MB/s_1
+      - 🇮🇱IL_1|⬇️4.8MB/s_1
+      - 🇺🇸US_2|⬇️3.4MB/s_1
+      - 🇵🇱PL_1|⬇️1.8MB/s_1
       - 🇩🇪DE_2|⬇️5.3MB/s_2
-      - 🇫🇮FI_2|⬇️5.5MB/s
-      - 🇳🇱NL_4|⬇️3.7MB/s
+      - 🇳🇱NL_4|⬇️3.7MB/s_1
       - 🇸🇬SG_13|⬇️1.6MB/s_2
+      - 🇦🇲亚美尼亚|AM-020
+      - 🇦🇿阿塞拜疆|AZ-001
+      - 🇩🇪DE_2|⬇️5.3MB/s_3
+      - 🇫🇮芬兰|FI-013
+      - 🇫🇮芬兰|FI-025
+      - 🇬🇧GB_1|⬇️3.9MB/s
+      - 🇬🇧GB_1|1.2MB/s
+      - 🇮🇱IL_1|⬇️4.8MB/s_2
+      - 🇱🇮列支敦士登|LI-005
+      - 🇱🇮列支敦士登|LI-008
+      - 🇳🇱NL_1|⬇️3.5MB/s
+      - 🇳🇱NL_3|⬇️4.2MB/s
+      - 🇳🇱NL_4|⬇️3.7MB/s_2
+      - 🇳🇵尼泊尔|NP-008
+      - 🇳🇵尼泊尔|NP-010
+      - 🇵🇱PL_1|⬇️1.8MB/s_2
+      - 🇵🇱PL_1|⬇️2.1MB/s
+      - 🇵🇱PL_4|⬇️4.1MB/s
+      - 🇵🇹PT_1|⬇️2.0MB/s
+      - 🇸🇬SG_13|⬇️1.6MB/s_3
+      - 🇺🇸US_1|⬇️1.2MB/s
+      - 🇺🇸US_1|⬇️4.9MB/s_3
+      - 🇺🇸US_2|⬇️3.4MB/s_2
+      - 🇺🇸US_2|⬇️6.1MB/s
+      - 🇺🇸US_3|⬇️3.4MB/s_2
+      - 🇳🇱荷兰03_2
+      - 🇳🇱荷兰17⌈wzdnzd/aggregator⌋
+      - 🇳🇱荷兰03_3
+      - 🇳🇱荷兰04
+      - 🇳🇱NL_1|⬇️3.9MB/s_1
+      - 🇳🇱NL_5|⬇️4.2MB/s_2
+      - 🇺🇸US_1|⬇️2.1MB/s_2
+      - 🇺🇸US_1|⬇️2.2MB/s_3
+      - 🇺🇸US_1|⬇️3.2MB/s_7
+      - 🇺🇸US_1|⬇️4.4MB/s_2
+      - 🇺🇸US_1|⬇️4.7MB/s_2
+      - 🇺🇸US_6|⬇️3.6MB/s_2
+      - ❓Other_1|⬇️1.2MB/s
+      - 未知VLESS-81|free-nodes_2
+      - 未知VLESS-85|free-nodes_2
+      - BR-VLESS-01
+      - FR-VLESS-01
+      - 🇳🇱荷兰03_4
+      - 🇳🇱NL_1|⬇️3.9MB/s_2
+      - 🇺🇸_US_美国_3
+      - Other_1|⬇️1.2MB/s
+      - IT-VLESS-01
+      - JP-VLESS-01
+      - JP-VLESS-02
+      - KR-VLESS-01
+      - SG-VLESS-01
+      - SG-VLESS-02
+      - UK-VLESS-01
+      - USVLESS-77|free-nodes
+      - US-VLESS-01
+      - US-VLESS-02
+      - US-VLESS-03
+      - US-VLESS-04
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
