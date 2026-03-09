@@ -5,186 +5,186 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"trojan","name":"美國","server":"172.66.44.230","port":8443,"password":"8r%3C%5B9%27l6hAO%238ZQi","udp":true,"skip-cert-verify":true,"sni":"Koma-YT.PAGeS.Dev","network":"ws","ws-opts":{"path":"/tro8sFW1S91B6sZrM1?ed=2560","headers":{"host":"Koma-YT.PAGeS.Dev"}}}
   - {"type":"vless","name":"🇬🇧GB_1|1.2MB/s","server":"198.62.62.248","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"tar.alabama-tigr.info","ws-opts":{"path":"/love","headers":{"host":"tar.alabama-tigr.info"}}}
-  - {"type":"vless","name":"hk-vless-reality","server":"23.148.20.55","port":443,"uuid":"e5130eee-cf44-405e-ce04-25817f961399","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.apple.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇳🇱NL_2|⬇️3.6MB/s","server":"104.18.32.47","port":2052,"uuid":"5e62ddcf-78c9-4b15-803a-436c8c839ddc","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.","ws-opts":{"path":"/","headers":{"host":"oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK."}}}
   - {"type":"vless","name":"🇳🇱NL_7|⬇️8.3MB/s","server":"mx2.tehrantolidi.ir","port":80,"uuid":"dfe13f5a-9ce4-44fc-be96-1067bbf9202d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"cdn123.global.ssl.fastly.net","ws-opts":{"path":"/site","headers":{"host":"cdn123.global.ssl.fastly.net"}}}
   - {"type":"vless","name":"🇺🇸ShatakVPN569904","server":"104.18.32.47","port":2052,"uuid":"2271c50f-ac7a-4d7f-8b04-64085b0daa56","skip-cert-verify":true}
-  - {"type":"vless","name":"🏳️ShatakVPN768101","server":"51.250.103.29","port":443,"uuid":"5aa188ea-db1b-4121-82f8-4eb1452cc052","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"ads.x5.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"🏳️ShatakVPN282215","server":"51.250.103.29","port":443,"uuid":"5aa188ea-db1b-4121-82f8-4eb1452cc052","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"ads.x5.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"🇬🇧GB_1|⬇️2.5MB/s","server":"198.62.62.235","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"bank.alaska-tigr.info","ws-opts":{"path":"/love","headers":{"host":"bank.alaska-tigr.info"}}}
-  - {"type":"vless","name":"🇳🇱NL_14|⬇️3.7MB/s","server":"141.11.21.219","port":17191,"uuid":"54635a5b-8638-452a-c9b2-805b157025a8","skip-cert-verify":true,"network":"tcp","servername":"a.sezar.top","tls":true,"udp":true}
-  - {"type":"vless","name":"🏳️ShatakVPN998366","server":"198.62.62.235","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"bank.alaska-tigr.info","ws-opts":{"path":"/love","headers":{"host":"bank.alaska-tigr.info"}}}
-  - {"type":"vless","name":"🏳️ShatakVPN201045","server":"198.62.62.248","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"tar.alabama-tigr.info","ws-opts":{"path":"/love","headers":{"host":"tar.alabama-tigr.info"}}}
-  - {"type":"vless","name":"未知VLESS-81|free-nodes_1","server":"dns.dressforida.monster","port":443,"uuid":"79149019-5abe-46f9-91ae-e1e7d1d2c408","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.techradar.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸US_1|⬇️2.9MB/s_1","server":"198.62.62.248","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"tar.alabama-tigr.info","ws-opts":{"path":"/love","headers":{"host":"tar.alabama-tigr.info"}}}
-  - {"type":"vless","name":"🇦🇲亚美尼亚|AM-063@zyzzzoaoa","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
   - {"type":"vless","name":"us🇺🇸","server":"198.62.62.248","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"tar.alabama-tigr.info","ws-opts":{"path":"/love","headers":{"host":"tar.alabama-tigr.info"}}}
   - {"type":"vless","name":"US","server":"198.62.62.124","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"war.connecticut-haloo.info","ws-opts":{"path":"/love","headers":{"host":"war.connecticut-haloo.info"}}}
+  - {"type":"vless","name":"未知VLESS-81|free-nodes","server":"dns.dressforida.monster","port":443,"uuid":"79149019-5abe-46f9-91ae-e1e7d1d2c408","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.techradar.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🏳️ShatakVPN201045","server":"198.62.62.248","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"tar.alabama-tigr.info","ws-opts":{"path":"/love","headers":{"host":"tar.alabama-tigr.info"}}}
+  - {"type":"vless","name":"🇺🇸US_1|⬇️2.9MB/s_1","server":"198.62.62.248","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"tar.alabama-tigr.info","ws-opts":{"path":"/love","headers":{"host":"tar.alabama-tigr.info"}}}
+  - {"type":"vless","name":"🇳🇱NL_14|⬇️3.7MB/s","server":"141.11.21.219","port":17191,"uuid":"54635a5b-8638-452a-c9b2-805b157025a8","skip-cert-verify":true,"network":"tcp","servername":"a.sezar.top","tls":true,"udp":true}
+  - {"type":"vless","name":"🇬🇧GB_1|⬇️3.9MB/s","server":"198.62.62.235","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"bank.alaska-tigr.info","ws-opts":{"path":"/love","headers":{"host":"bank.alaska-tigr.info"}}}
+  - {"type":"vless","name":"🇬🇧GB_1|⬇️2.5MB/s","server":"198.62.62.235","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"bank.alaska-tigr.info","ws-opts":{"path":"/love","headers":{"host":"bank.alaska-tigr.info"}}}
+  - {"type":"vless","name":"🇦🇲亚美尼亚|AM-063@zyzzzoaoa_1","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇦🇲亚美尼亚|AM-063@zyzzzoaoa_2","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇩🇪DE_8|⬇️3.9MB/s","server":"146.185.241.48","port":52006,"uuid":"b3da836c-d6d8-03e8-ba4a-0a7a54491924","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"max.ru","tls":false,"udp":true}
   - {"type":"vless","name":"🇳🇱NL_5|⬇️4.2MB/s","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸美国02","server":"198.62.62.235","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"bank.alaska-tigr.info","ws-opts":{"path":"/love","headers":{"host":"bank.alaska-tigr.info"}}}
-  - {"type":"vless","name":"🇺🇸美国09","server":"198.62.62.248","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"tar.alabama-tigr.info","ws-opts":{"path":"/love","headers":{"host":"tar.alabama-tigr.info"}}}
-  - {"type":"vless","name":"未知VLESS-81|free-nodes_2","server":"dns.dressforida.monster","port":443,"uuid":"79149019-5abe-46f9-91ae-e1e7d1d2c408","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.techradar.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇩🇪DE_12|⬇️1.0MB/s","server":"84.201.174.221","port":443,"uuid":"42191252-2937-404a-a982-04519c71e26a","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"api-maps.yandex.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"🇩🇪DE_10|⬇️1.8MB/s","server":"146.185.240.171","port":52006,"uuid":"b3da836c-d6d8-03e8-ba4a-0a7a54491924","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"max.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"🇳🇱NL_4|⬇️2.2MB/s","server":"nll.scroogethebest.com","port":443,"uuid":"e2e1ddaa-1acf-4c4c-a211-92284f6440ed","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"nll.scroogethebest.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇩🇪DE_2|⬇️6.1MB/s","server":"5.254.85.151","port":443,"uuid":"ccedb1b1-35f3-46d1-a85a-c699eef5f3e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"germany.scroogethebest.com","tls":false,"udp":true}
+  - {"type":"trojan","name":"美國","server":"172.66.44.230","port":8443,"password":"8r%3C%5B9%27l6hAO%238ZQi","udp":true,"skip-cert-verify":true,"sni":"Koma-YT.PAGeS.Dev","network":"ws","ws-opts":{"path":"/tro8sFW1S91B6sZrM1?ed=2560","headers":{"host":"Koma-YT.PAGeS.Dev"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 美國
       - 🇬🇧GB_1|1.2MB/s
-      - hk-vless-reality
       - 🇳🇱NL_2|⬇️3.6MB/s
       - 🇳🇱NL_7|⬇️8.3MB/s
       - 🇺🇸ShatakVPN569904
-      - 🏳️ShatakVPN768101
-      - 🏳️ShatakVPN282215
-      - 🇬🇧GB_1|⬇️2.5MB/s
-      - 🇳🇱NL_14|⬇️3.7MB/s
-      - 🏳️ShatakVPN998366
-      - 🏳️ShatakVPN201045
-      - 未知VLESS-81|free-nodes_1
-      - 🇺🇸US_1|⬇️2.9MB/s_1
-      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa
       - us🇺🇸
       - US
+      - 未知VLESS-81|free-nodes
+      - 🏳️ShatakVPN201045
+      - 🇺🇸US_1|⬇️2.9MB/s_1
+      - 🇳🇱NL_14|⬇️3.7MB/s
+      - 🇬🇧GB_1|⬇️3.9MB/s
+      - 🇬🇧GB_1|⬇️2.5MB/s
+      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_1
+      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_2
+      - 🇩🇪DE_8|⬇️3.9MB/s
       - 🇳🇱NL_5|⬇️4.2MB/s
-      - 🇺🇸美国02
-      - 🇺🇸美国09
-      - 未知VLESS-81|free-nodes_2
+      - 🇩🇪DE_12|⬇️1.0MB/s
+      - 🇩🇪DE_10|⬇️1.8MB/s
+      - 🇳🇱NL_4|⬇️2.2MB/s
+      - 🇩🇪DE_2|⬇️6.1MB/s
+      - 美國
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 美國
       - 🇬🇧GB_1|1.2MB/s
-      - hk-vless-reality
       - 🇳🇱NL_2|⬇️3.6MB/s
       - 🇳🇱NL_7|⬇️8.3MB/s
       - 🇺🇸ShatakVPN569904
-      - 🏳️ShatakVPN768101
-      - 🏳️ShatakVPN282215
-      - 🇬🇧GB_1|⬇️2.5MB/s
-      - 🇳🇱NL_14|⬇️3.7MB/s
-      - 🏳️ShatakVPN998366
-      - 🏳️ShatakVPN201045
-      - 未知VLESS-81|free-nodes_1
-      - 🇺🇸US_1|⬇️2.9MB/s_1
-      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa
       - us🇺🇸
       - US
+      - 未知VLESS-81|free-nodes
+      - 🏳️ShatakVPN201045
+      - 🇺🇸US_1|⬇️2.9MB/s_1
+      - 🇳🇱NL_14|⬇️3.7MB/s
+      - 🇬🇧GB_1|⬇️3.9MB/s
+      - 🇬🇧GB_1|⬇️2.5MB/s
+      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_1
+      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_2
+      - 🇩🇪DE_8|⬇️3.9MB/s
       - 🇳🇱NL_5|⬇️4.2MB/s
-      - 🇺🇸美国02
-      - 🇺🇸美国09
-      - 未知VLESS-81|free-nodes_2
+      - 🇩🇪DE_12|⬇️1.0MB/s
+      - 🇩🇪DE_10|⬇️1.8MB/s
+      - 🇳🇱NL_4|⬇️2.2MB/s
+      - 🇩🇪DE_2|⬇️6.1MB/s
+      - 美國
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美國
       - 🇬🇧GB_1|1.2MB/s
-      - hk-vless-reality
       - 🇳🇱NL_2|⬇️3.6MB/s
       - 🇳🇱NL_7|⬇️8.3MB/s
       - 🇺🇸ShatakVPN569904
-      - 🏳️ShatakVPN768101
-      - 🏳️ShatakVPN282215
-      - 🇬🇧GB_1|⬇️2.5MB/s
-      - 🇳🇱NL_14|⬇️3.7MB/s
-      - 🏳️ShatakVPN998366
-      - 🏳️ShatakVPN201045
-      - 未知VLESS-81|free-nodes_1
-      - 🇺🇸US_1|⬇️2.9MB/s_1
-      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa
       - us🇺🇸
       - US
+      - 未知VLESS-81|free-nodes
+      - 🏳️ShatakVPN201045
+      - 🇺🇸US_1|⬇️2.9MB/s_1
+      - 🇳🇱NL_14|⬇️3.7MB/s
+      - 🇬🇧GB_1|⬇️3.9MB/s
+      - 🇬🇧GB_1|⬇️2.5MB/s
+      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_1
+      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_2
+      - 🇩🇪DE_8|⬇️3.9MB/s
       - 🇳🇱NL_5|⬇️4.2MB/s
-      - 🇺🇸美国02
-      - 🇺🇸美国09
-      - 未知VLESS-81|free-nodes_2
+      - 🇩🇪DE_12|⬇️1.0MB/s
+      - 🇩🇪DE_10|⬇️1.8MB/s
+      - 🇳🇱NL_4|⬇️2.2MB/s
+      - 🇩🇪DE_2|⬇️6.1MB/s
+      - 美國
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 美國
       - 🇬🇧GB_1|1.2MB/s
-      - hk-vless-reality
       - 🇳🇱NL_2|⬇️3.6MB/s
       - 🇳🇱NL_7|⬇️8.3MB/s
       - 🇺🇸ShatakVPN569904
-      - 🏳️ShatakVPN768101
-      - 🏳️ShatakVPN282215
-      - 🇬🇧GB_1|⬇️2.5MB/s
-      - 🇳🇱NL_14|⬇️3.7MB/s
-      - 🏳️ShatakVPN998366
-      - 🏳️ShatakVPN201045
-      - 未知VLESS-81|free-nodes_1
-      - 🇺🇸US_1|⬇️2.9MB/s_1
-      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa
       - us🇺🇸
       - US
+      - 未知VLESS-81|free-nodes
+      - 🏳️ShatakVPN201045
+      - 🇺🇸US_1|⬇️2.9MB/s_1
+      - 🇳🇱NL_14|⬇️3.7MB/s
+      - 🇬🇧GB_1|⬇️3.9MB/s
+      - 🇬🇧GB_1|⬇️2.5MB/s
+      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_1
+      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_2
+      - 🇩🇪DE_8|⬇️3.9MB/s
       - 🇳🇱NL_5|⬇️4.2MB/s
-      - 🇺🇸美国02
-      - 🇺🇸美国09
-      - 未知VLESS-81|free-nodes_2
+      - 🇩🇪DE_12|⬇️1.0MB/s
+      - 🇩🇪DE_10|⬇️1.8MB/s
+      - 🇳🇱NL_4|⬇️2.2MB/s
+      - 🇩🇪DE_2|⬇️6.1MB/s
+      - 美國
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 美國
       - 🇬🇧GB_1|1.2MB/s
-      - hk-vless-reality
       - 🇳🇱NL_2|⬇️3.6MB/s
       - 🇳🇱NL_7|⬇️8.3MB/s
       - 🇺🇸ShatakVPN569904
-      - 🏳️ShatakVPN768101
-      - 🏳️ShatakVPN282215
-      - 🇬🇧GB_1|⬇️2.5MB/s
-      - 🇳🇱NL_14|⬇️3.7MB/s
-      - 🏳️ShatakVPN998366
-      - 🏳️ShatakVPN201045
-      - 未知VLESS-81|free-nodes_1
-      - 🇺🇸US_1|⬇️2.9MB/s_1
-      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa
       - us🇺🇸
       - US
+      - 未知VLESS-81|free-nodes
+      - 🏳️ShatakVPN201045
+      - 🇺🇸US_1|⬇️2.9MB/s_1
+      - 🇳🇱NL_14|⬇️3.7MB/s
+      - 🇬🇧GB_1|⬇️3.9MB/s
+      - 🇬🇧GB_1|⬇️2.5MB/s
+      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_1
+      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_2
+      - 🇩🇪DE_8|⬇️3.9MB/s
       - 🇳🇱NL_5|⬇️4.2MB/s
-      - 🇺🇸美国02
-      - 🇺🇸美国09
-      - 未知VLESS-81|free-nodes_2
+      - 🇩🇪DE_12|⬇️1.0MB/s
+      - 🇩🇪DE_10|⬇️1.8MB/s
+      - 🇳🇱NL_4|⬇️2.2MB/s
+      - 🇩🇪DE_2|⬇️6.1MB/s
+      - 美國
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 美國
       - 🇬🇧GB_1|1.2MB/s
-      - hk-vless-reality
       - 🇳🇱NL_2|⬇️3.6MB/s
       - 🇳🇱NL_7|⬇️8.3MB/s
       - 🇺🇸ShatakVPN569904
-      - 🏳️ShatakVPN768101
-      - 🏳️ShatakVPN282215
-      - 🇬🇧GB_1|⬇️2.5MB/s
-      - 🇳🇱NL_14|⬇️3.7MB/s
-      - 🏳️ShatakVPN998366
-      - 🏳️ShatakVPN201045
-      - 未知VLESS-81|free-nodes_1
-      - 🇺🇸US_1|⬇️2.9MB/s_1
-      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa
       - us🇺🇸
       - US
+      - 未知VLESS-81|free-nodes
+      - 🏳️ShatakVPN201045
+      - 🇺🇸US_1|⬇️2.9MB/s_1
+      - 🇳🇱NL_14|⬇️3.7MB/s
+      - 🇬🇧GB_1|⬇️3.9MB/s
+      - 🇬🇧GB_1|⬇️2.5MB/s
+      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_1
+      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_2
+      - 🇩🇪DE_8|⬇️3.9MB/s
       - 🇳🇱NL_5|⬇️4.2MB/s
-      - 🇺🇸美国02
-      - 🇺🇸美国09
-      - 未知VLESS-81|free-nodes_2
+      - 🇩🇪DE_12|⬇️1.0MB/s
+      - 🇩🇪DE_10|⬇️1.8MB/s
+      - 🇳🇱NL_4|⬇️2.2MB/s
+      - 🇩🇪DE_2|⬇️6.1MB/s
+      - 美國
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -207,27 +207,27 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美國
       - 🇬🇧GB_1|1.2MB/s
-      - hk-vless-reality
       - 🇳🇱NL_2|⬇️3.6MB/s
       - 🇳🇱NL_7|⬇️8.3MB/s
       - 🇺🇸ShatakVPN569904
-      - 🏳️ShatakVPN768101
-      - 🏳️ShatakVPN282215
-      - 🇬🇧GB_1|⬇️2.5MB/s
-      - 🇳🇱NL_14|⬇️3.7MB/s
-      - 🏳️ShatakVPN998366
-      - 🏳️ShatakVPN201045
-      - 未知VLESS-81|free-nodes_1
-      - 🇺🇸US_1|⬇️2.9MB/s_1
-      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa
       - us🇺🇸
       - US
+      - 未知VLESS-81|free-nodes
+      - 🏳️ShatakVPN201045
+      - 🇺🇸US_1|⬇️2.9MB/s_1
+      - 🇳🇱NL_14|⬇️3.7MB/s
+      - 🇬🇧GB_1|⬇️3.9MB/s
+      - 🇬🇧GB_1|⬇️2.5MB/s
+      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_1
+      - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_2
+      - 🇩🇪DE_8|⬇️3.9MB/s
       - 🇳🇱NL_5|⬇️4.2MB/s
-      - 🇺🇸美国02
-      - 🇺🇸美国09
-      - 未知VLESS-81|free-nodes_2
+      - 🇩🇪DE_12|⬇️1.0MB/s
+      - 🇩🇪DE_10|⬇️1.8MB/s
+      - 🇳🇱NL_4|⬇️2.2MB/s
+      - 🇩🇪DE_2|⬇️6.1MB/s
+      - 美國
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
