@@ -7,25 +7,46 @@ external-controller: 0.0.0.0:9090
 proxies:
   - {"type":"vless","name":"🇺🇸ShatakVPN569904","server":"104.18.32.47","port":2052,"uuid":"2271c50f-ac7a-4d7f-8b04-64085b0daa56","skip-cert-verify":true}
   - {"type":"vless","name":"🇳🇱NL_14|⬇️3.7MB/s","server":"141.11.21.219","port":17191,"uuid":"54635a5b-8638-452a-c9b2-805b157025a8","skip-cert-verify":true,"network":"tcp","servername":"a.sezar.top","tls":true,"udp":true}
-  - {"type":"vless","name":"🇬🇧GB_1|⬇️3.9MB/s_1","server":"198.62.62.235","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"bank.alaska-tigr.info","ws-opts":{"path":"/love","headers":{"host":"bank.alaska-tigr.info"}}}
   - {"type":"vless","name":"🇦🇲亚美尼亚|AM-063@zyzzzoaoa_1","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇦🇲亚美尼亚|AM-063@zyzzzoaoa_2","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇳🇱NL_5|⬇️4.2MB/s","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇬🇧GB_1|⬇️3.9MB/s_2","server":"198.62.62.235","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"bank.alaska-tigr.info","ws-opts":{"path":"/love","headers":{"host":"bank.alaska-tigr.info"}}}
   - {"type":"vless","name":"🇳🇱NL_1|⬇️4.5MB/s_1","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇬🇧GB_1|⬇️3.6MB/s","server":"198.62.62.235","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"bank.alaska-tigr.info","ws-opts":{"path":"/love","headers":{"host":"bank.alaska-tigr.info"}}}
   - {"type":"vless","name":"🇳🇱NL_2|⬇️2.3MB/s","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇳🇱NL_5|⬇️4.1MB/s","server":"141.11.21.219","port":17191,"uuid":"54635a5b-8638-452a-c9b2-805b157025a8","skip-cert-verify":true,"network":"tcp","servername":"a.sezar.top","tls":true,"udp":true}
   - {"type":"vless","name":"🇺🇸US_3|⬇️2.9MB/s","server":"157.254.223.44","port":18959,"uuid":"d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa","skip-cert-verify":true,"network":"tcp","servername":"itunes.apple.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸US_44|⬇️4.7MB/s","server":"157.254.223.44","port":18959,"uuid":"d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa","skip-cert-verify":true,"network":"tcp","servername":"itunes.apple.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇳🇱NL_4|⬇️2.9MB/s","server":"141.11.21.219","port":17191,"uuid":"54635a5b-8638-452a-c9b2-805b157025a8","skip-cert-verify":true,"network":"tcp","servername":"a.sezar.top","tls":true,"udp":true}
-  - {"type":"vless","name":"🇬🇧GB_1|⬇️3.9MB/s_3","server":"198.62.62.235","port":443,"uuid":"5a4abb78-ecd7-4d68-ab2a-c11a3842f261","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"bank.alaska-tigr.info","ws-opts":{"path":"/love","headers":{"host":"bank.alaska-tigr.info"}}}
   - {"type":"vless","name":"🇳🇱NL_1|⬇️4.5MB/s_2","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸US_1|⬇️1.1MB/s","server":"157.254.223.44","port":18959,"uuid":"d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa","skip-cert-verify":true,"network":"tcp","servername":"itunes.apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸US_2|⬇️2.3MB/s","server":"157.254.223.44","port":18959,"uuid":"d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa","skip-cert-verify":true,"network":"tcp","servername":"itunes.apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_2|⬇️2.3MB/s_1","server":"157.254.223.44","port":18959,"uuid":"d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa","skip-cert-verify":true,"network":"tcp","servername":"itunes.apple.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇳🇱NL_1|⬇️4.5MB/s_3","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇩🇪DE_4|⬇️5.3MB/s","server":"144.31.63.7","port":443,"uuid":"1472b7a6-da03-4999-8247-adf67830bc14","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"deout.funvideorus.net","tls":false,"udp":true}
+  - {"type":"vless","name":"🇳🇱NL_1|⬇️4.5MB/s_4","server":"143.20.236.51","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇵🇱PL_1|⬇️3.9MB/s","server":"92.62.251.205","port":8443,"uuid":"a68c90a4-a560-489a-ab4b-d918e78e9dee","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"github.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_2|⬇️2.3MB/s_2","server":"157.254.223.44","port":18959,"uuid":"d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa","skip-cert-verify":true,"network":"tcp","servername":"itunes.apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"广播JP","server":"8.216.2.135","port":12853,"uuid":"2cee7a70-d867-48ea-ba98-cda478ee7cd4","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"新加坡-3A-广东移动","server":"203.rushrushnode.org","port":10203,"uuid":"14d36639-0d42-4b3d-acd3-ff1c0ceae0ad","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"img14.360buyimg.com","tls":false,"udp":true}
+  - {"type":"vless","name":"英国-1A-广东移动","server":"701.rushrushnode.org","port":10701,"uuid":"370696cb-57bf-4cf4-ad27-b98000ea6c1b","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"img14.360buyimg.com","tls":false,"udp":true}
+  - {"type":"vless","name":"AkileKrp01-vless-reality|px87.love@xray.com","server":"krp01.jumperservice.com","port":19001,"uuid":"455fc271-3ee2-493b-8c75-9324b4851e2f","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"addons.mozilla.org","tls":false,"udp":true}
+  - {"type":"vless","name":"AkileKrp01-vless-reality|qEiK.love@xray.com","server":"krp01.jumperservice.com","port":19001,"uuid":"6eeb820e-89ef-4b60-9060-ddcaea0580f0","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"addons.mozilla.org","tls":false,"udp":true}
+  - {"type":"vless","name":"AkileUsap01-vless-reality|tqTG.love@xray.com","server":"usap01.jumperservice.com","port":19001,"uuid":"4e607c90-e3cf-4e02-9d3e-5aa5a5567f71","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.icloud.com","tls":false,"udp":true}
+  - {"type":"vless","name":"AkileUsap01-vless-reality|YL10.love@xray.com","server":"usap01.jumperservice.com","port":19001,"uuid":"0deff678-f177-4cb3-e905-50724ab89f48","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.icloud.com","tls":false,"udp":true}
+  - {"type":"vless","name":"DMIT01-vless-reality|AKdn.love@xray.com","server":"usadt01.jumperservice.com","port":19001,"uuid":"b5be8e3f-a17d-479c-ebdb-9c3265c2cab7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.speedtest.org","tls":false,"udp":true}
+  - {"type":"vless","name":"DMIT01-vless-reality|s0f0.love@xray.com","server":"usadt01.jumperservice.com","port":19001,"uuid":"719b17cb-004b-4029-b3fb-e98fafdb0271","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.speedtest.org","tls":false,"udp":true}
+  - {"type":"vless","name":"EvoxtHk01-vless-reality|9MwF.love@xray.com","server":"hke01.jumperservice.com","port":19001,"uuid":"5ab22628-9dc7-48c4-c56e-f129da583baa","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.speedtest.org","tls":false,"udp":true}
+  - {"type":"vless","name":"EvoxtHk01-vless-reality|ZzAH.love@xray.com","server":"hke01.jumperservice.com","port":19001,"uuid":"1a8c4353-8aa9-4038-99a8-b613ad47000e","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.speedtest.org","tls":false,"udp":true}
+  - {"type":"vless","name":"EvoxtMala01-vless-reality|jBNs.love@xray.com","server":"malaysia01.jumperservice.com","port":19001,"uuid":"d13545be-5c06-4283-cdf3-a364201bf9fb","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.speedtest.net","tls":false,"udp":true}
+  - {"type":"vless","name":"EvoxtMala01-vless-reality|QOT8.love@xray.com","server":"malaysia01.jumperservice.com","port":19001,"uuid":"e675787a-48db-45f9-9902-13b1b941446c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.speedtest.net","tls":false,"udp":true}
+  - {"type":"vless","name":"fra01-vless-reality|E8D5.love@xray.com","server":"fra01.jumperservice.com","port":19001,"uuid":"12eac926-c4ec-4040-8fb8-f316e9fc0fd6","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.speedtest.net","tls":false,"udp":true}
+  - {"type":"vless","name":"ISIF02-vless-reality|dEgK.love@xray.com","server":"sig03.jumperservice.com","port":19001,"uuid":"80fa3672-567c-469d-a0b6-b8d8d54f01d4","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.speedtest.org","tls":false,"udp":true}
+  - {"type":"vless","name":"ISIF02-vless-reality|JK9l.love@xray.com","server":"sig03.jumperservice.com","port":19001,"uuid":"c31d4cc6-7c15-4e20-9928-1cfc4a22527b","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.speedtest.org","tls":false,"udp":true}
+  - {"type":"vless","name":"LisahostUsa01-vless-reality|18DZ.love@xray.com","server":"usalh01.jumperservice.com","port":19001,"uuid":"723e6520-ddb1-4dab-d4b0-2da6736b9f8a","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.speedtest.net","tls":false,"udp":true}
+  - {"type":"vless","name":"LisahostUsa01-vless-reality|ujy2.love@xray.com","server":"usalh01.jumperservice.com","port":19001,"uuid":"68f5f3fd-fbf6-42a0-e8bc-d0a6285e766e","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.speedtest.net","tls":false,"udp":true}
+  - {"type":"vless","name":"nyc01-vless-reality|XQfi.love@xray.com","server":"nyc01.jumperservice.com","port":19001,"uuid":"1773e4cf-cf60-4801-ea3e-872bb63b8b16","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"icloud.cdn-apple.com","tls":false,"udp":true}
   - {"type":"trojan","name":"美國","server":"172.66.44.230","port":8443,"password":"8r%3C%5B9%27l6hAO%238ZQi","udp":true,"skip-cert-verify":true,"sni":"Koma-YT.PAGeS.Dev","network":"ws","ws-opts":{"path":"/tro8sFW1S91B6sZrM1?ed=2560","headers":{"host":"Koma-YT.PAGeS.Dev"}}}
-  - {"type":"trojan","name":"❓Other_1|⬇️3.5MB/s","server":"152.53.200.167","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/"}}
+  - {"type":"trojan","name":"❓Other_1|⬇️3.5MB/s_1","server":"152.53.200.167","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/"}}
+  - {"type":"trojan","name":"❓Other_1|⬇️3.5MB/s_2","server":"152.53.200.167","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/"}}
+  - {"type":"trojan","name":"❓Other_3|⬇️2.5MB/s","server":"211.252.46.215","port":27015,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"jflsjlaf.pages.dev"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -34,25 +55,46 @@ proxy-groups:
       - DIRECT
       - 🇺🇸ShatakVPN569904
       - 🇳🇱NL_14|⬇️3.7MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_1
       - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_1
       - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_2
       - 🇳🇱NL_5|⬇️4.2MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_2
       - 🇳🇱NL_1|⬇️4.5MB/s_1
-      - 🇬🇧GB_1|⬇️3.6MB/s
       - 🇳🇱NL_2|⬇️2.3MB/s
       - 🇳🇱NL_5|⬇️4.1MB/s
       - 🇺🇸US_3|⬇️2.9MB/s
       - 🇺🇸US_44|⬇️4.7MB/s
       - 🇳🇱NL_4|⬇️2.9MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_3
       - 🇳🇱NL_1|⬇️4.5MB/s_2
       - 🇺🇸US_1|⬇️1.1MB/s
-      - 🇺🇸US_2|⬇️2.3MB/s
+      - 🇺🇸US_2|⬇️2.3MB/s_1
       - 🇳🇱NL_1|⬇️4.5MB/s_3
+      - 🇩🇪DE_4|⬇️5.3MB/s
+      - 🇳🇱NL_1|⬇️4.5MB/s_4
+      - 🇵🇱PL_1|⬇️3.9MB/s
+      - 🇺🇸US_2|⬇️2.3MB/s_2
+      - 广播JP
+      - 新加坡-3A-广东移动
+      - 英国-1A-广东移动
+      - AkileKrp01-vless-reality|px87.love@xray.com
+      - AkileKrp01-vless-reality|qEiK.love@xray.com
+      - AkileUsap01-vless-reality|tqTG.love@xray.com
+      - AkileUsap01-vless-reality|YL10.love@xray.com
+      - DMIT01-vless-reality|AKdn.love@xray.com
+      - DMIT01-vless-reality|s0f0.love@xray.com
+      - EvoxtHk01-vless-reality|9MwF.love@xray.com
+      - EvoxtHk01-vless-reality|ZzAH.love@xray.com
+      - EvoxtMala01-vless-reality|jBNs.love@xray.com
+      - EvoxtMala01-vless-reality|QOT8.love@xray.com
+      - fra01-vless-reality|E8D5.love@xray.com
+      - ISIF02-vless-reality|dEgK.love@xray.com
+      - ISIF02-vless-reality|JK9l.love@xray.com
+      - LisahostUsa01-vless-reality|18DZ.love@xray.com
+      - LisahostUsa01-vless-reality|ujy2.love@xray.com
+      - nyc01-vless-reality|XQfi.love@xray.com
       - 美國
-      - ❓Other_1|⬇️3.5MB/s
+      - ❓Other_1|⬇️3.5MB/s_1
+      - ❓Other_1|⬇️3.5MB/s_2
+      - ❓Other_3|⬇️2.5MB/s
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -61,25 +103,46 @@ proxy-groups:
     proxies:
       - 🇺🇸ShatakVPN569904
       - 🇳🇱NL_14|⬇️3.7MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_1
       - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_1
       - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_2
       - 🇳🇱NL_5|⬇️4.2MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_2
       - 🇳🇱NL_1|⬇️4.5MB/s_1
-      - 🇬🇧GB_1|⬇️3.6MB/s
       - 🇳🇱NL_2|⬇️2.3MB/s
       - 🇳🇱NL_5|⬇️4.1MB/s
       - 🇺🇸US_3|⬇️2.9MB/s
       - 🇺🇸US_44|⬇️4.7MB/s
       - 🇳🇱NL_4|⬇️2.9MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_3
       - 🇳🇱NL_1|⬇️4.5MB/s_2
       - 🇺🇸US_1|⬇️1.1MB/s
-      - 🇺🇸US_2|⬇️2.3MB/s
+      - 🇺🇸US_2|⬇️2.3MB/s_1
       - 🇳🇱NL_1|⬇️4.5MB/s_3
+      - 🇩🇪DE_4|⬇️5.3MB/s
+      - 🇳🇱NL_1|⬇️4.5MB/s_4
+      - 🇵🇱PL_1|⬇️3.9MB/s
+      - 🇺🇸US_2|⬇️2.3MB/s_2
+      - 广播JP
+      - 新加坡-3A-广东移动
+      - 英国-1A-广东移动
+      - AkileKrp01-vless-reality|px87.love@xray.com
+      - AkileKrp01-vless-reality|qEiK.love@xray.com
+      - AkileUsap01-vless-reality|tqTG.love@xray.com
+      - AkileUsap01-vless-reality|YL10.love@xray.com
+      - DMIT01-vless-reality|AKdn.love@xray.com
+      - DMIT01-vless-reality|s0f0.love@xray.com
+      - EvoxtHk01-vless-reality|9MwF.love@xray.com
+      - EvoxtHk01-vless-reality|ZzAH.love@xray.com
+      - EvoxtMala01-vless-reality|jBNs.love@xray.com
+      - EvoxtMala01-vless-reality|QOT8.love@xray.com
+      - fra01-vless-reality|E8D5.love@xray.com
+      - ISIF02-vless-reality|dEgK.love@xray.com
+      - ISIF02-vless-reality|JK9l.love@xray.com
+      - LisahostUsa01-vless-reality|18DZ.love@xray.com
+      - LisahostUsa01-vless-reality|ujy2.love@xray.com
+      - nyc01-vless-reality|XQfi.love@xray.com
       - 美國
-      - ❓Other_1|⬇️3.5MB/s
+      - ❓Other_1|⬇️3.5MB/s_1
+      - ❓Other_1|⬇️3.5MB/s_2
+      - ❓Other_3|⬇️2.5MB/s
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -88,25 +151,46 @@ proxy-groups:
       - 🎯 全球直连
       - 🇺🇸ShatakVPN569904
       - 🇳🇱NL_14|⬇️3.7MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_1
       - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_1
       - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_2
       - 🇳🇱NL_5|⬇️4.2MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_2
       - 🇳🇱NL_1|⬇️4.5MB/s_1
-      - 🇬🇧GB_1|⬇️3.6MB/s
       - 🇳🇱NL_2|⬇️2.3MB/s
       - 🇳🇱NL_5|⬇️4.1MB/s
       - 🇺🇸US_3|⬇️2.9MB/s
       - 🇺🇸US_44|⬇️4.7MB/s
       - 🇳🇱NL_4|⬇️2.9MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_3
       - 🇳🇱NL_1|⬇️4.5MB/s_2
       - 🇺🇸US_1|⬇️1.1MB/s
-      - 🇺🇸US_2|⬇️2.3MB/s
+      - 🇺🇸US_2|⬇️2.3MB/s_1
       - 🇳🇱NL_1|⬇️4.5MB/s_3
+      - 🇩🇪DE_4|⬇️5.3MB/s
+      - 🇳🇱NL_1|⬇️4.5MB/s_4
+      - 🇵🇱PL_1|⬇️3.9MB/s
+      - 🇺🇸US_2|⬇️2.3MB/s_2
+      - 广播JP
+      - 新加坡-3A-广东移动
+      - 英国-1A-广东移动
+      - AkileKrp01-vless-reality|px87.love@xray.com
+      - AkileKrp01-vless-reality|qEiK.love@xray.com
+      - AkileUsap01-vless-reality|tqTG.love@xray.com
+      - AkileUsap01-vless-reality|YL10.love@xray.com
+      - DMIT01-vless-reality|AKdn.love@xray.com
+      - DMIT01-vless-reality|s0f0.love@xray.com
+      - EvoxtHk01-vless-reality|9MwF.love@xray.com
+      - EvoxtHk01-vless-reality|ZzAH.love@xray.com
+      - EvoxtMala01-vless-reality|jBNs.love@xray.com
+      - EvoxtMala01-vless-reality|QOT8.love@xray.com
+      - fra01-vless-reality|E8D5.love@xray.com
+      - ISIF02-vless-reality|dEgK.love@xray.com
+      - ISIF02-vless-reality|JK9l.love@xray.com
+      - LisahostUsa01-vless-reality|18DZ.love@xray.com
+      - LisahostUsa01-vless-reality|ujy2.love@xray.com
+      - nyc01-vless-reality|XQfi.love@xray.com
       - 美國
-      - ❓Other_1|⬇️3.5MB/s
+      - ❓Other_1|⬇️3.5MB/s_1
+      - ❓Other_1|⬇️3.5MB/s_2
+      - ❓Other_3|⬇️2.5MB/s
   - name: 📲 电报信息
     type: select
     proxies:
@@ -114,25 +198,46 @@ proxy-groups:
       - 🎯 全球直连
       - 🇺🇸ShatakVPN569904
       - 🇳🇱NL_14|⬇️3.7MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_1
       - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_1
       - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_2
       - 🇳🇱NL_5|⬇️4.2MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_2
       - 🇳🇱NL_1|⬇️4.5MB/s_1
-      - 🇬🇧GB_1|⬇️3.6MB/s
       - 🇳🇱NL_2|⬇️2.3MB/s
       - 🇳🇱NL_5|⬇️4.1MB/s
       - 🇺🇸US_3|⬇️2.9MB/s
       - 🇺🇸US_44|⬇️4.7MB/s
       - 🇳🇱NL_4|⬇️2.9MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_3
       - 🇳🇱NL_1|⬇️4.5MB/s_2
       - 🇺🇸US_1|⬇️1.1MB/s
-      - 🇺🇸US_2|⬇️2.3MB/s
+      - 🇺🇸US_2|⬇️2.3MB/s_1
       - 🇳🇱NL_1|⬇️4.5MB/s_3
+      - 🇩🇪DE_4|⬇️5.3MB/s
+      - 🇳🇱NL_1|⬇️4.5MB/s_4
+      - 🇵🇱PL_1|⬇️3.9MB/s
+      - 🇺🇸US_2|⬇️2.3MB/s_2
+      - 广播JP
+      - 新加坡-3A-广东移动
+      - 英国-1A-广东移动
+      - AkileKrp01-vless-reality|px87.love@xray.com
+      - AkileKrp01-vless-reality|qEiK.love@xray.com
+      - AkileUsap01-vless-reality|tqTG.love@xray.com
+      - AkileUsap01-vless-reality|YL10.love@xray.com
+      - DMIT01-vless-reality|AKdn.love@xray.com
+      - DMIT01-vless-reality|s0f0.love@xray.com
+      - EvoxtHk01-vless-reality|9MwF.love@xray.com
+      - EvoxtHk01-vless-reality|ZzAH.love@xray.com
+      - EvoxtMala01-vless-reality|jBNs.love@xray.com
+      - EvoxtMala01-vless-reality|QOT8.love@xray.com
+      - fra01-vless-reality|E8D5.love@xray.com
+      - ISIF02-vless-reality|dEgK.love@xray.com
+      - ISIF02-vless-reality|JK9l.love@xray.com
+      - LisahostUsa01-vless-reality|18DZ.love@xray.com
+      - LisahostUsa01-vless-reality|ujy2.love@xray.com
+      - nyc01-vless-reality|XQfi.love@xray.com
       - 美國
-      - ❓Other_1|⬇️3.5MB/s
+      - ❓Other_1|⬇️3.5MB/s_1
+      - ❓Other_1|⬇️3.5MB/s_2
+      - ❓Other_3|⬇️2.5MB/s
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -140,25 +245,46 @@ proxy-groups:
       - 🚀 节点选择
       - 🇺🇸ShatakVPN569904
       - 🇳🇱NL_14|⬇️3.7MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_1
       - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_1
       - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_2
       - 🇳🇱NL_5|⬇️4.2MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_2
       - 🇳🇱NL_1|⬇️4.5MB/s_1
-      - 🇬🇧GB_1|⬇️3.6MB/s
       - 🇳🇱NL_2|⬇️2.3MB/s
       - 🇳🇱NL_5|⬇️4.1MB/s
       - 🇺🇸US_3|⬇️2.9MB/s
       - 🇺🇸US_44|⬇️4.7MB/s
       - 🇳🇱NL_4|⬇️2.9MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_3
       - 🇳🇱NL_1|⬇️4.5MB/s_2
       - 🇺🇸US_1|⬇️1.1MB/s
-      - 🇺🇸US_2|⬇️2.3MB/s
+      - 🇺🇸US_2|⬇️2.3MB/s_1
       - 🇳🇱NL_1|⬇️4.5MB/s_3
+      - 🇩🇪DE_4|⬇️5.3MB/s
+      - 🇳🇱NL_1|⬇️4.5MB/s_4
+      - 🇵🇱PL_1|⬇️3.9MB/s
+      - 🇺🇸US_2|⬇️2.3MB/s_2
+      - 广播JP
+      - 新加坡-3A-广东移动
+      - 英国-1A-广东移动
+      - AkileKrp01-vless-reality|px87.love@xray.com
+      - AkileKrp01-vless-reality|qEiK.love@xray.com
+      - AkileUsap01-vless-reality|tqTG.love@xray.com
+      - AkileUsap01-vless-reality|YL10.love@xray.com
+      - DMIT01-vless-reality|AKdn.love@xray.com
+      - DMIT01-vless-reality|s0f0.love@xray.com
+      - EvoxtHk01-vless-reality|9MwF.love@xray.com
+      - EvoxtHk01-vless-reality|ZzAH.love@xray.com
+      - EvoxtMala01-vless-reality|jBNs.love@xray.com
+      - EvoxtMala01-vless-reality|QOT8.love@xray.com
+      - fra01-vless-reality|E8D5.love@xray.com
+      - ISIF02-vless-reality|dEgK.love@xray.com
+      - ISIF02-vless-reality|JK9l.love@xray.com
+      - LisahostUsa01-vless-reality|18DZ.love@xray.com
+      - LisahostUsa01-vless-reality|ujy2.love@xray.com
+      - nyc01-vless-reality|XQfi.love@xray.com
       - 美國
-      - ❓Other_1|⬇️3.5MB/s
+      - ❓Other_1|⬇️3.5MB/s_1
+      - ❓Other_1|⬇️3.5MB/s_2
+      - ❓Other_3|⬇️2.5MB/s
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -166,25 +292,46 @@ proxy-groups:
       - 🎯 全球直连
       - 🇺🇸ShatakVPN569904
       - 🇳🇱NL_14|⬇️3.7MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_1
       - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_1
       - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_2
       - 🇳🇱NL_5|⬇️4.2MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_2
       - 🇳🇱NL_1|⬇️4.5MB/s_1
-      - 🇬🇧GB_1|⬇️3.6MB/s
       - 🇳🇱NL_2|⬇️2.3MB/s
       - 🇳🇱NL_5|⬇️4.1MB/s
       - 🇺🇸US_3|⬇️2.9MB/s
       - 🇺🇸US_44|⬇️4.7MB/s
       - 🇳🇱NL_4|⬇️2.9MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_3
       - 🇳🇱NL_1|⬇️4.5MB/s_2
       - 🇺🇸US_1|⬇️1.1MB/s
-      - 🇺🇸US_2|⬇️2.3MB/s
+      - 🇺🇸US_2|⬇️2.3MB/s_1
       - 🇳🇱NL_1|⬇️4.5MB/s_3
+      - 🇩🇪DE_4|⬇️5.3MB/s
+      - 🇳🇱NL_1|⬇️4.5MB/s_4
+      - 🇵🇱PL_1|⬇️3.9MB/s
+      - 🇺🇸US_2|⬇️2.3MB/s_2
+      - 广播JP
+      - 新加坡-3A-广东移动
+      - 英国-1A-广东移动
+      - AkileKrp01-vless-reality|px87.love@xray.com
+      - AkileKrp01-vless-reality|qEiK.love@xray.com
+      - AkileUsap01-vless-reality|tqTG.love@xray.com
+      - AkileUsap01-vless-reality|YL10.love@xray.com
+      - DMIT01-vless-reality|AKdn.love@xray.com
+      - DMIT01-vless-reality|s0f0.love@xray.com
+      - EvoxtHk01-vless-reality|9MwF.love@xray.com
+      - EvoxtHk01-vless-reality|ZzAH.love@xray.com
+      - EvoxtMala01-vless-reality|jBNs.love@xray.com
+      - EvoxtMala01-vless-reality|QOT8.love@xray.com
+      - fra01-vless-reality|E8D5.love@xray.com
+      - ISIF02-vless-reality|dEgK.love@xray.com
+      - ISIF02-vless-reality|JK9l.love@xray.com
+      - LisahostUsa01-vless-reality|18DZ.love@xray.com
+      - LisahostUsa01-vless-reality|ujy2.love@xray.com
+      - nyc01-vless-reality|XQfi.love@xray.com
       - 美國
-      - ❓Other_1|⬇️3.5MB/s
+      - ❓Other_1|⬇️3.5MB/s_1
+      - ❓Other_1|⬇️3.5MB/s_2
+      - ❓Other_3|⬇️2.5MB/s
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -209,25 +356,46 @@ proxy-groups:
       - ♻️ 自动选择
       - 🇺🇸ShatakVPN569904
       - 🇳🇱NL_14|⬇️3.7MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_1
       - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_1
       - 🇦🇲亚美尼亚|AM-063@zyzzzoaoa_2
       - 🇳🇱NL_5|⬇️4.2MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_2
       - 🇳🇱NL_1|⬇️4.5MB/s_1
-      - 🇬🇧GB_1|⬇️3.6MB/s
       - 🇳🇱NL_2|⬇️2.3MB/s
       - 🇳🇱NL_5|⬇️4.1MB/s
       - 🇺🇸US_3|⬇️2.9MB/s
       - 🇺🇸US_44|⬇️4.7MB/s
       - 🇳🇱NL_4|⬇️2.9MB/s
-      - 🇬🇧GB_1|⬇️3.9MB/s_3
       - 🇳🇱NL_1|⬇️4.5MB/s_2
       - 🇺🇸US_1|⬇️1.1MB/s
-      - 🇺🇸US_2|⬇️2.3MB/s
+      - 🇺🇸US_2|⬇️2.3MB/s_1
       - 🇳🇱NL_1|⬇️4.5MB/s_3
+      - 🇩🇪DE_4|⬇️5.3MB/s
+      - 🇳🇱NL_1|⬇️4.5MB/s_4
+      - 🇵🇱PL_1|⬇️3.9MB/s
+      - 🇺🇸US_2|⬇️2.3MB/s_2
+      - 广播JP
+      - 新加坡-3A-广东移动
+      - 英国-1A-广东移动
+      - AkileKrp01-vless-reality|px87.love@xray.com
+      - AkileKrp01-vless-reality|qEiK.love@xray.com
+      - AkileUsap01-vless-reality|tqTG.love@xray.com
+      - AkileUsap01-vless-reality|YL10.love@xray.com
+      - DMIT01-vless-reality|AKdn.love@xray.com
+      - DMIT01-vless-reality|s0f0.love@xray.com
+      - EvoxtHk01-vless-reality|9MwF.love@xray.com
+      - EvoxtHk01-vless-reality|ZzAH.love@xray.com
+      - EvoxtMala01-vless-reality|jBNs.love@xray.com
+      - EvoxtMala01-vless-reality|QOT8.love@xray.com
+      - fra01-vless-reality|E8D5.love@xray.com
+      - ISIF02-vless-reality|dEgK.love@xray.com
+      - ISIF02-vless-reality|JK9l.love@xray.com
+      - LisahostUsa01-vless-reality|18DZ.love@xray.com
+      - LisahostUsa01-vless-reality|ujy2.love@xray.com
+      - nyc01-vless-reality|XQfi.love@xray.com
       - 美國
-      - ❓Other_1|⬇️3.5MB/s
+      - ❓Other_1|⬇️3.5MB/s_1
+      - ❓Other_1|⬇️3.5MB/s_2
+      - ❓Other_3|⬇️2.5MB/s
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
