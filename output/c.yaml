@@ -5,179 +5,669 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vless","name":"🇺🇸ShatakVPN569904","server":"104.18.32.47","port":2052,"uuid":"2271c50f-ac7a-4d7f-8b04-64085b0daa56","skip-cert-verify":true}
-  - {"type":"vless","name":"🇩🇪DE_2|⬇️5.1MB/s","server":"192.200.160.20","port":443,"uuid":"dc08d353-44f5-45b6-b273-703ff5e955dc","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"639073677243308853.camry-perma.info","ws-opts":{"path":"/jxyughws?ed=2560","headers":{"host":"639073677243308853.camry-perma.info"}}}
-  - {"type":"vless","name":"🇯🇵JP_3|⬇️3.2MB/s","server":"116.80.44.144","port":27724,"uuid":"ebd8539d-e249-4a39-8f90-e8585e8cc35e","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.yahoo.co.jp","tls":false,"udp":true}
-  - {"type":"vless","name":"🇳🇱NL_1|⬇️4.3MB/s","server":"192.200.160.20","port":443,"uuid":"ee248e40-9468-4ef6-81b7-707a1e47c54a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"639073677243557970.camry-perma.info","ws-opts":{"path":"/yaeungws?ed=2560","headers":{"host":"639073677243557970.camry-perma.info"}}}
-  - {"type":"vless","name":"CCS+｜+洛杉矶","server":"107.172.67.59","port":44439,"uuid":"0f780c56-a708-44d9-a1a1-7c210b65e44f","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.amazon.com","tls":false,"udp":true}
   - {"type":"vless","name":"US","server":"157.254.223.44","port":18959,"uuid":"d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa","skip-cert-verify":true,"network":"tcp","servername":"itunes.apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸US_6|1.6MB/s|网盘搜宝:https://t.me/diskseeker","server":"157.254.223.44","port":18959,"uuid":"d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa","skip-cert-verify":true,"network":"tcp","servername":"itunes.apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇸🇪SE_1|2.2MB/s|更多节点:https://t.me/byxiaoxi","server":"sub.himikvpn.online","port":8443,"uuid":"f7f18360-fbdf-45b5-93f4-4e47a29e595b","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"pimg.mycdn.me","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US_6|1.6MB/s","server":"157.254.223.44","port":18959,"uuid":"d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa","skip-cert-verify":true,"network":"tcp","servername":"itunes.apple.com","tls":false,"udp":true}
   - {"type":"trojan","name":"美國","server":"172.66.44.230","port":8443,"password":"8r%3C%5B9%27l6hAO%238ZQi","udp":true,"skip-cert-verify":true,"sni":"Koma-YT.PAGeS.Dev","network":"ws","ws-opts":{"path":"/tro8sFW1S91B6sZrM1?ed=2560","headers":{"host":"Koma-YT.PAGeS.Dev"}}}
   - {"type":"trojan","name":"🇳🇱NL_2|⬇️2.1MB/s","server":"apt-magpie.rooster465.autos","port":443,"password":"IL37892054","udp":true,"skip-cert-verify":true,"sni":"apt-magpie.rooster465.autos","network":"tcp"}
   - {"type":"trojan","name":"🇳🇱NL_3|⬇️2.9MB/s","server":"upright-rhino.rooster465.autos","port":443,"password":"IL37892054","udp":true,"skip-cert-verify":true,"sni":"upright-rhino.rooster465.autos","network":"tcp"}
   - {"type":"trojan","name":"🇵🇱PL_1|⬇️3.0MB/s","server":"outgoing-ladybird.rooster465.autos","port":443,"password":"IL37892054","udp":true,"skip-cert-verify":true,"sni":"outgoing-ladybird.rooster465.autos","network":"tcp"}
-  - {"type":"trojan","name":"🇵🇱PL_2|⬇️3.1MB/s","server":"just-alpaca.rooster465.autos","port":443,"password":"IL37892054","udp":true,"skip-cert-verify":true,"sni":"just-alpaca.rooster465.autos","network":"tcp"}
-  - {"type":"trojan","name":"❓Other_1|⬇️4.3MB/s","server":"152.53.200.167","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/"}}
-  - {"type":"trojan","name":"00-Trojan-jp-AI","server":"jp.111000.cc.cd","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
-  - {"type":"trojan","name":"01-Trojan-030101.xyz","server":"bestcf.030101.xyz","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
-  - {"type":"trojan","name":"03-Trojan-cloudflare88","server":"freeyx.cloudflare88.eu.org","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
-  - {"type":"trojan","name":"JP","server":"152.53.200.167","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"jflsjlaf.pages.dev"}}}
+  - {"type":"trojan","name":"00-Trojan-jp-AI_1","server":"jp.111000.cc.cd","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
+  - {"type":"trojan","name":"01-Trojan-030101.xyz_1","server":"bestcf.030101.xyz","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
+  - {"type":"trojan","name":"03-Trojan-cloudflare88_1","server":"freeyx.cloudflare88.eu.org","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
   - {"type":"trojan","name":"加拿大","server":"saas.sin.fan","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
+  - {"type":"trojan","name":"❓Other_1|⬇️1.1MB/s","server":"152.53.200.167","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/"}}
+  - {"type":"trojan","name":"00-Trojan-jp-AI_2","server":"jp.111000.cc.cd","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
+  - {"type":"trojan","name":"01-Trojan-030101.xyz_2","server":"bestcf.030101.xyz","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
+  - {"type":"trojan","name":"02-Trojan-saas.sin.fan","server":"saas.sin.fan","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
+  - {"type":"trojan","name":"03-Trojan-cloudflare88_2","server":"freeyx.cloudflare88.eu.org","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
+  - {"type":"trojan","name":"AT","server":"152.53.200.167","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"jflsjlaf.pages.dev"}}}
+  - {"type":"trojan","name":"bestcf.030101.xyz","server":"bestcf.030101.xyz","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"cdn.2020111.xyz","server":"cdn.2020111.xyz","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"cdn.204910.best","server":"cdn.204910.best","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"cdns.doon.eu.org","server":"cdns.doon.eu.org","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"cf-cname.xingpingcn.top","server":"cf-cname.xingpingcn.top","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"cf.008500.xyz","server":"cf.008500.xyz","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"cf.130519.xyz","server":"cf.130519.xyz","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"cf.877774.xyz","server":"cf.877774.xyz","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"cf.tencentapp.cn","server":"cf.tencentapp.cn","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"cf.zhetengsha.eu.org","server":"cf.zhetengsha.eu.org","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"cfip.1323123.xyz","server":"cfip.1323123.xyz","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"cfsaas.080112.xyz","server":"cfsaas.080112.xyz","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"cloudflare-ip.mofashi.ltd","server":"cloudflare-ip.mofashi.ltd","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"cloudflare.cfgo.cc","server":"cloudflare.cfgo.cc","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"fn.130519.xyz","server":"fn.130519.xyz","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"freeyx.cloudflare88.eu.org","server":"freeyx.cloudflare88.eu.org","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"HK","server":"nrtcfdns.zone.id","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"img.yust.eu.org","server":"img.yust.eu.org","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"JP官方优选102ms","server":"108.162.198.155","port":8443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"JP|官方优选|100ms_1","server":"108.162.198.249","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"JP|官方优选|100ms_2","server":"108.162.198.178","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"JP|官方优选|100ms_3","server":"108.162.198.106","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"JP|官方优选|101ms_1","server":"108.162.198.51","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"JP|官方优选|101ms_2","server":"162.159.38.233","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"JP|官方优选|101ms_3","server":"108.162.198.89","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"JP|官方优选|102ms_1","server":"108.162.198.145","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"JP|官方优选|102ms_2","server":"108.162.198.221","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"JP|官方优选|102ms_3","server":"108.162.198.163","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"JP|官方优选|103ms_1","server":"108.162.198.26","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"JP|官方优选|103ms_2","server":"162.159.45.11","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"JP|官方优选|103ms_3","server":"172.64.229.73","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"JP|官方优选|99ms_1","server":"108.162.198.8","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"JP|官方优选|99ms_2","server":"162.159.38.225","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"JP|官方优选|99ms_3","server":"108.162.198.147","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
   - {"type":"trojan","name":"OTHER","server":"152.53.200.167","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/"}}
+  - {"type":"trojan","name":"SG官方优选138ms","server":"108.162.194.36","port":8443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG官方优选140ms_1","server":"172.64.33.225","port":8443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG官方优选140ms_2","server":"173.245.58.197","port":8443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG官方优选141ms","server":"108.162.192.90","port":8443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG官方优选142ms_1","server":"173.245.59.74","port":8443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG官方优选142ms_2","server":"104.18.43.138","port":8443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG官方优选143ms","server":"198.41.211.60","port":8443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG官方优选144ms","server":"173.245.58.190","port":8443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG官方优选146ms","server":"108.162.194.70","port":8443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SGSenflare优选.1","server":"172.64.144.4","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SGSenflare优选.10","server":"172.64.154.242","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SGSenflare优选.11","server":"104.18.33.192","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SGSenflare优选.2","server":"104.18.43.58","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SGSenflare优选.3","server":"172.64.156.154","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SGSenflare优选.4","server":"172.64.146.47","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SGSenflare优选.5","server":"104.18.46.91","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SGSenflare优选.6","server":"104.18.35.59","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SGSenflare优选.7","server":"172.64.153.4","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SGSenflare优选.9","server":"104.18.42.33","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|136ms_1","server":"104.18.37.240","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|136ms_2","server":"173.245.58.159","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|137ms_1","server":"8.35.211.216","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|137ms_2","server":"8.39.125.97","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|137ms_3","server":"8.35.211.219","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|138ms_1","server":"104.18.44.197","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|138ms_2","server":"162.159.35.241","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|138ms_3","server":"8.39.125.148","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|138ms_4","server":"8.39.125.158","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|138ms_5","server":"172.64.144.157","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|138ms_6","server":"8.39.125.42","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|138ms_7","server":"8.39.125.116","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|138ms_8","server":"8.35.211.159","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|139ms_1","server":"172.64.145.109","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|139ms_2","server":"198.41.223.241","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|139ms_3","server":"104.18.35.96","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|141ms","server":"8.39.125.101","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|143ms","server":"172.64.148.169","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"SG|官方优选|144ms","server":"8.35.211.1","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
+  - {"type":"trojan","name":"sub.danfeng.eu.org","server":"sub.danfeng.eu.org","port":443,"password":"123456","udp":true,"skip-cert-verify":true,"sni":"sub.oobiaoooo.de5.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"sub.oobiaoooo.de5.net"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸ShatakVPN569904
-      - 🇩🇪DE_2|⬇️5.1MB/s
-      - 🇯🇵JP_3|⬇️3.2MB/s
-      - 🇳🇱NL_1|⬇️4.3MB/s
-      - CCS+｜+洛杉矶
       - US
-      - 🇺🇸US_6|1.6MB/s|网盘搜宝:https://t.me/diskseeker
-      - 🇸🇪SE_1|2.2MB/s|更多节点:https://t.me/byxiaoxi
+      - 🇺🇸US_6|1.6MB/s
       - 美國
       - 🇳🇱NL_2|⬇️2.1MB/s
       - 🇳🇱NL_3|⬇️2.9MB/s
       - 🇵🇱PL_1|⬇️3.0MB/s
-      - 🇵🇱PL_2|⬇️3.1MB/s
-      - ❓Other_1|⬇️4.3MB/s
-      - 00-Trojan-jp-AI
-      - 01-Trojan-030101.xyz
-      - 03-Trojan-cloudflare88
-      - JP
+      - 00-Trojan-jp-AI_1
+      - 01-Trojan-030101.xyz_1
+      - 03-Trojan-cloudflare88_1
       - 加拿大
+      - ❓Other_1|⬇️1.1MB/s
+      - 00-Trojan-jp-AI_2
+      - 01-Trojan-030101.xyz_2
+      - 02-Trojan-saas.sin.fan
+      - 03-Trojan-cloudflare88_2
+      - AT
+      - bestcf.030101.xyz
+      - cdn.2020111.xyz
+      - cdn.204910.best
+      - cdns.doon.eu.org
+      - cf-cname.xingpingcn.top
+      - cf.008500.xyz
+      - cf.130519.xyz
+      - cf.877774.xyz
+      - cf.tencentapp.cn
+      - cf.zhetengsha.eu.org
+      - cfip.1323123.xyz
+      - cfsaas.080112.xyz
+      - cloudflare-ip.mofashi.ltd
+      - cloudflare.cfgo.cc
+      - fn.130519.xyz
+      - freeyx.cloudflare88.eu.org
+      - HK
+      - img.yust.eu.org
+      - JP官方优选102ms
+      - JP|官方优选|100ms_1
+      - JP|官方优选|100ms_2
+      - JP|官方优选|100ms_3
+      - JP|官方优选|101ms_1
+      - JP|官方优选|101ms_2
+      - JP|官方优选|101ms_3
+      - JP|官方优选|102ms_1
+      - JP|官方优选|102ms_2
+      - JP|官方优选|102ms_3
+      - JP|官方优选|103ms_1
+      - JP|官方优选|103ms_2
+      - JP|官方优选|103ms_3
+      - JP|官方优选|99ms_1
+      - JP|官方优选|99ms_2
+      - JP|官方优选|99ms_3
       - OTHER
+      - SG官方优选138ms
+      - SG官方优选140ms_1
+      - SG官方优选140ms_2
+      - SG官方优选141ms
+      - SG官方优选142ms_1
+      - SG官方优选142ms_2
+      - SG官方优选143ms
+      - SG官方优选144ms
+      - SG官方优选146ms
+      - SGSenflare优选.1
+      - SGSenflare优选.10
+      - SGSenflare优选.11
+      - SGSenflare优选.2
+      - SGSenflare优选.3
+      - SGSenflare优选.4
+      - SGSenflare优选.5
+      - SGSenflare优选.6
+      - SGSenflare优选.7
+      - SGSenflare优选.9
+      - SG|官方优选|136ms_1
+      - SG|官方优选|136ms_2
+      - SG|官方优选|137ms_1
+      - SG|官方优选|137ms_2
+      - SG|官方优选|137ms_3
+      - SG|官方优选|138ms_1
+      - SG|官方优选|138ms_2
+      - SG|官方优选|138ms_3
+      - SG|官方优选|138ms_4
+      - SG|官方优选|138ms_5
+      - SG|官方优选|138ms_6
+      - SG|官方优选|138ms_7
+      - SG|官方优选|138ms_8
+      - SG|官方优选|139ms_1
+      - SG|官方优选|139ms_2
+      - SG|官方优选|139ms_3
+      - SG|官方优选|141ms
+      - SG|官方优选|143ms
+      - SG|官方优选|144ms
+      - sub.danfeng.eu.org
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸ShatakVPN569904
-      - 🇩🇪DE_2|⬇️5.1MB/s
-      - 🇯🇵JP_3|⬇️3.2MB/s
-      - 🇳🇱NL_1|⬇️4.3MB/s
-      - CCS+｜+洛杉矶
       - US
-      - 🇺🇸US_6|1.6MB/s|网盘搜宝:https://t.me/diskseeker
-      - 🇸🇪SE_1|2.2MB/s|更多节点:https://t.me/byxiaoxi
+      - 🇺🇸US_6|1.6MB/s
       - 美國
       - 🇳🇱NL_2|⬇️2.1MB/s
       - 🇳🇱NL_3|⬇️2.9MB/s
       - 🇵🇱PL_1|⬇️3.0MB/s
-      - 🇵🇱PL_2|⬇️3.1MB/s
-      - ❓Other_1|⬇️4.3MB/s
-      - 00-Trojan-jp-AI
-      - 01-Trojan-030101.xyz
-      - 03-Trojan-cloudflare88
-      - JP
+      - 00-Trojan-jp-AI_1
+      - 01-Trojan-030101.xyz_1
+      - 03-Trojan-cloudflare88_1
       - 加拿大
+      - ❓Other_1|⬇️1.1MB/s
+      - 00-Trojan-jp-AI_2
+      - 01-Trojan-030101.xyz_2
+      - 02-Trojan-saas.sin.fan
+      - 03-Trojan-cloudflare88_2
+      - AT
+      - bestcf.030101.xyz
+      - cdn.2020111.xyz
+      - cdn.204910.best
+      - cdns.doon.eu.org
+      - cf-cname.xingpingcn.top
+      - cf.008500.xyz
+      - cf.130519.xyz
+      - cf.877774.xyz
+      - cf.tencentapp.cn
+      - cf.zhetengsha.eu.org
+      - cfip.1323123.xyz
+      - cfsaas.080112.xyz
+      - cloudflare-ip.mofashi.ltd
+      - cloudflare.cfgo.cc
+      - fn.130519.xyz
+      - freeyx.cloudflare88.eu.org
+      - HK
+      - img.yust.eu.org
+      - JP官方优选102ms
+      - JP|官方优选|100ms_1
+      - JP|官方优选|100ms_2
+      - JP|官方优选|100ms_3
+      - JP|官方优选|101ms_1
+      - JP|官方优选|101ms_2
+      - JP|官方优选|101ms_3
+      - JP|官方优选|102ms_1
+      - JP|官方优选|102ms_2
+      - JP|官方优选|102ms_3
+      - JP|官方优选|103ms_1
+      - JP|官方优选|103ms_2
+      - JP|官方优选|103ms_3
+      - JP|官方优选|99ms_1
+      - JP|官方优选|99ms_2
+      - JP|官方优选|99ms_3
       - OTHER
+      - SG官方优选138ms
+      - SG官方优选140ms_1
+      - SG官方优选140ms_2
+      - SG官方优选141ms
+      - SG官方优选142ms_1
+      - SG官方优选142ms_2
+      - SG官方优选143ms
+      - SG官方优选144ms
+      - SG官方优选146ms
+      - SGSenflare优选.1
+      - SGSenflare优选.10
+      - SGSenflare优选.11
+      - SGSenflare优选.2
+      - SGSenflare优选.3
+      - SGSenflare优选.4
+      - SGSenflare优选.5
+      - SGSenflare优选.6
+      - SGSenflare优选.7
+      - SGSenflare优选.9
+      - SG|官方优选|136ms_1
+      - SG|官方优选|136ms_2
+      - SG|官方优选|137ms_1
+      - SG|官方优选|137ms_2
+      - SG|官方优选|137ms_3
+      - SG|官方优选|138ms_1
+      - SG|官方优选|138ms_2
+      - SG|官方优选|138ms_3
+      - SG|官方优选|138ms_4
+      - SG|官方优选|138ms_5
+      - SG|官方优选|138ms_6
+      - SG|官方优选|138ms_7
+      - SG|官方优选|138ms_8
+      - SG|官方优选|139ms_1
+      - SG|官方优选|139ms_2
+      - SG|官方优选|139ms_3
+      - SG|官方优选|141ms
+      - SG|官方优选|143ms
+      - SG|官方优选|144ms
+      - sub.danfeng.eu.org
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸ShatakVPN569904
-      - 🇩🇪DE_2|⬇️5.1MB/s
-      - 🇯🇵JP_3|⬇️3.2MB/s
-      - 🇳🇱NL_1|⬇️4.3MB/s
-      - CCS+｜+洛杉矶
       - US
-      - 🇺🇸US_6|1.6MB/s|网盘搜宝:https://t.me/diskseeker
-      - 🇸🇪SE_1|2.2MB/s|更多节点:https://t.me/byxiaoxi
+      - 🇺🇸US_6|1.6MB/s
       - 美國
       - 🇳🇱NL_2|⬇️2.1MB/s
       - 🇳🇱NL_3|⬇️2.9MB/s
       - 🇵🇱PL_1|⬇️3.0MB/s
-      - 🇵🇱PL_2|⬇️3.1MB/s
-      - ❓Other_1|⬇️4.3MB/s
-      - 00-Trojan-jp-AI
-      - 01-Trojan-030101.xyz
-      - 03-Trojan-cloudflare88
-      - JP
+      - 00-Trojan-jp-AI_1
+      - 01-Trojan-030101.xyz_1
+      - 03-Trojan-cloudflare88_1
       - 加拿大
+      - ❓Other_1|⬇️1.1MB/s
+      - 00-Trojan-jp-AI_2
+      - 01-Trojan-030101.xyz_2
+      - 02-Trojan-saas.sin.fan
+      - 03-Trojan-cloudflare88_2
+      - AT
+      - bestcf.030101.xyz
+      - cdn.2020111.xyz
+      - cdn.204910.best
+      - cdns.doon.eu.org
+      - cf-cname.xingpingcn.top
+      - cf.008500.xyz
+      - cf.130519.xyz
+      - cf.877774.xyz
+      - cf.tencentapp.cn
+      - cf.zhetengsha.eu.org
+      - cfip.1323123.xyz
+      - cfsaas.080112.xyz
+      - cloudflare-ip.mofashi.ltd
+      - cloudflare.cfgo.cc
+      - fn.130519.xyz
+      - freeyx.cloudflare88.eu.org
+      - HK
+      - img.yust.eu.org
+      - JP官方优选102ms
+      - JP|官方优选|100ms_1
+      - JP|官方优选|100ms_2
+      - JP|官方优选|100ms_3
+      - JP|官方优选|101ms_1
+      - JP|官方优选|101ms_2
+      - JP|官方优选|101ms_3
+      - JP|官方优选|102ms_1
+      - JP|官方优选|102ms_2
+      - JP|官方优选|102ms_3
+      - JP|官方优选|103ms_1
+      - JP|官方优选|103ms_2
+      - JP|官方优选|103ms_3
+      - JP|官方优选|99ms_1
+      - JP|官方优选|99ms_2
+      - JP|官方优选|99ms_3
       - OTHER
+      - SG官方优选138ms
+      - SG官方优选140ms_1
+      - SG官方优选140ms_2
+      - SG官方优选141ms
+      - SG官方优选142ms_1
+      - SG官方优选142ms_2
+      - SG官方优选143ms
+      - SG官方优选144ms
+      - SG官方优选146ms
+      - SGSenflare优选.1
+      - SGSenflare优选.10
+      - SGSenflare优选.11
+      - SGSenflare优选.2
+      - SGSenflare优选.3
+      - SGSenflare优选.4
+      - SGSenflare优选.5
+      - SGSenflare优选.6
+      - SGSenflare优选.7
+      - SGSenflare优选.9
+      - SG|官方优选|136ms_1
+      - SG|官方优选|136ms_2
+      - SG|官方优选|137ms_1
+      - SG|官方优选|137ms_2
+      - SG|官方优选|137ms_3
+      - SG|官方优选|138ms_1
+      - SG|官方优选|138ms_2
+      - SG|官方优选|138ms_3
+      - SG|官方优选|138ms_4
+      - SG|官方优选|138ms_5
+      - SG|官方优选|138ms_6
+      - SG|官方优选|138ms_7
+      - SG|官方优选|138ms_8
+      - SG|官方优选|139ms_1
+      - SG|官方优选|139ms_2
+      - SG|官方优选|139ms_3
+      - SG|官方优选|141ms
+      - SG|官方优选|143ms
+      - SG|官方优选|144ms
+      - sub.danfeng.eu.org
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸ShatakVPN569904
-      - 🇩🇪DE_2|⬇️5.1MB/s
-      - 🇯🇵JP_3|⬇️3.2MB/s
-      - 🇳🇱NL_1|⬇️4.3MB/s
-      - CCS+｜+洛杉矶
       - US
-      - 🇺🇸US_6|1.6MB/s|网盘搜宝:https://t.me/diskseeker
-      - 🇸🇪SE_1|2.2MB/s|更多节点:https://t.me/byxiaoxi
+      - 🇺🇸US_6|1.6MB/s
       - 美國
       - 🇳🇱NL_2|⬇️2.1MB/s
       - 🇳🇱NL_3|⬇️2.9MB/s
       - 🇵🇱PL_1|⬇️3.0MB/s
-      - 🇵🇱PL_2|⬇️3.1MB/s
-      - ❓Other_1|⬇️4.3MB/s
-      - 00-Trojan-jp-AI
-      - 01-Trojan-030101.xyz
-      - 03-Trojan-cloudflare88
-      - JP
+      - 00-Trojan-jp-AI_1
+      - 01-Trojan-030101.xyz_1
+      - 03-Trojan-cloudflare88_1
       - 加拿大
+      - ❓Other_1|⬇️1.1MB/s
+      - 00-Trojan-jp-AI_2
+      - 01-Trojan-030101.xyz_2
+      - 02-Trojan-saas.sin.fan
+      - 03-Trojan-cloudflare88_2
+      - AT
+      - bestcf.030101.xyz
+      - cdn.2020111.xyz
+      - cdn.204910.best
+      - cdns.doon.eu.org
+      - cf-cname.xingpingcn.top
+      - cf.008500.xyz
+      - cf.130519.xyz
+      - cf.877774.xyz
+      - cf.tencentapp.cn
+      - cf.zhetengsha.eu.org
+      - cfip.1323123.xyz
+      - cfsaas.080112.xyz
+      - cloudflare-ip.mofashi.ltd
+      - cloudflare.cfgo.cc
+      - fn.130519.xyz
+      - freeyx.cloudflare88.eu.org
+      - HK
+      - img.yust.eu.org
+      - JP官方优选102ms
+      - JP|官方优选|100ms_1
+      - JP|官方优选|100ms_2
+      - JP|官方优选|100ms_3
+      - JP|官方优选|101ms_1
+      - JP|官方优选|101ms_2
+      - JP|官方优选|101ms_3
+      - JP|官方优选|102ms_1
+      - JP|官方优选|102ms_2
+      - JP|官方优选|102ms_3
+      - JP|官方优选|103ms_1
+      - JP|官方优选|103ms_2
+      - JP|官方优选|103ms_3
+      - JP|官方优选|99ms_1
+      - JP|官方优选|99ms_2
+      - JP|官方优选|99ms_3
       - OTHER
+      - SG官方优选138ms
+      - SG官方优选140ms_1
+      - SG官方优选140ms_2
+      - SG官方优选141ms
+      - SG官方优选142ms_1
+      - SG官方优选142ms_2
+      - SG官方优选143ms
+      - SG官方优选144ms
+      - SG官方优选146ms
+      - SGSenflare优选.1
+      - SGSenflare优选.10
+      - SGSenflare优选.11
+      - SGSenflare优选.2
+      - SGSenflare优选.3
+      - SGSenflare优选.4
+      - SGSenflare优选.5
+      - SGSenflare优选.6
+      - SGSenflare优选.7
+      - SGSenflare优选.9
+      - SG|官方优选|136ms_1
+      - SG|官方优选|136ms_2
+      - SG|官方优选|137ms_1
+      - SG|官方优选|137ms_2
+      - SG|官方优选|137ms_3
+      - SG|官方优选|138ms_1
+      - SG|官方优选|138ms_2
+      - SG|官方优选|138ms_3
+      - SG|官方优选|138ms_4
+      - SG|官方优选|138ms_5
+      - SG|官方优选|138ms_6
+      - SG|官方优选|138ms_7
+      - SG|官方优选|138ms_8
+      - SG|官方优选|139ms_1
+      - SG|官方优选|139ms_2
+      - SG|官方优选|139ms_3
+      - SG|官方优选|141ms
+      - SG|官方优选|143ms
+      - SG|官方优选|144ms
+      - sub.danfeng.eu.org
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸ShatakVPN569904
-      - 🇩🇪DE_2|⬇️5.1MB/s
-      - 🇯🇵JP_3|⬇️3.2MB/s
-      - 🇳🇱NL_1|⬇️4.3MB/s
-      - CCS+｜+洛杉矶
       - US
-      - 🇺🇸US_6|1.6MB/s|网盘搜宝:https://t.me/diskseeker
-      - 🇸🇪SE_1|2.2MB/s|更多节点:https://t.me/byxiaoxi
+      - 🇺🇸US_6|1.6MB/s
       - 美國
       - 🇳🇱NL_2|⬇️2.1MB/s
       - 🇳🇱NL_3|⬇️2.9MB/s
       - 🇵🇱PL_1|⬇️3.0MB/s
-      - 🇵🇱PL_2|⬇️3.1MB/s
-      - ❓Other_1|⬇️4.3MB/s
-      - 00-Trojan-jp-AI
-      - 01-Trojan-030101.xyz
-      - 03-Trojan-cloudflare88
-      - JP
+      - 00-Trojan-jp-AI_1
+      - 01-Trojan-030101.xyz_1
+      - 03-Trojan-cloudflare88_1
       - 加拿大
+      - ❓Other_1|⬇️1.1MB/s
+      - 00-Trojan-jp-AI_2
+      - 01-Trojan-030101.xyz_2
+      - 02-Trojan-saas.sin.fan
+      - 03-Trojan-cloudflare88_2
+      - AT
+      - bestcf.030101.xyz
+      - cdn.2020111.xyz
+      - cdn.204910.best
+      - cdns.doon.eu.org
+      - cf-cname.xingpingcn.top
+      - cf.008500.xyz
+      - cf.130519.xyz
+      - cf.877774.xyz
+      - cf.tencentapp.cn
+      - cf.zhetengsha.eu.org
+      - cfip.1323123.xyz
+      - cfsaas.080112.xyz
+      - cloudflare-ip.mofashi.ltd
+      - cloudflare.cfgo.cc
+      - fn.130519.xyz
+      - freeyx.cloudflare88.eu.org
+      - HK
+      - img.yust.eu.org
+      - JP官方优选102ms
+      - JP|官方优选|100ms_1
+      - JP|官方优选|100ms_2
+      - JP|官方优选|100ms_3
+      - JP|官方优选|101ms_1
+      - JP|官方优选|101ms_2
+      - JP|官方优选|101ms_3
+      - JP|官方优选|102ms_1
+      - JP|官方优选|102ms_2
+      - JP|官方优选|102ms_3
+      - JP|官方优选|103ms_1
+      - JP|官方优选|103ms_2
+      - JP|官方优选|103ms_3
+      - JP|官方优选|99ms_1
+      - JP|官方优选|99ms_2
+      - JP|官方优选|99ms_3
       - OTHER
+      - SG官方优选138ms
+      - SG官方优选140ms_1
+      - SG官方优选140ms_2
+      - SG官方优选141ms
+      - SG官方优选142ms_1
+      - SG官方优选142ms_2
+      - SG官方优选143ms
+      - SG官方优选144ms
+      - SG官方优选146ms
+      - SGSenflare优选.1
+      - SGSenflare优选.10
+      - SGSenflare优选.11
+      - SGSenflare优选.2
+      - SGSenflare优选.3
+      - SGSenflare优选.4
+      - SGSenflare优选.5
+      - SGSenflare优选.6
+      - SGSenflare优选.7
+      - SGSenflare优选.9
+      - SG|官方优选|136ms_1
+      - SG|官方优选|136ms_2
+      - SG|官方优选|137ms_1
+      - SG|官方优选|137ms_2
+      - SG|官方优选|137ms_3
+      - SG|官方优选|138ms_1
+      - SG|官方优选|138ms_2
+      - SG|官方优选|138ms_3
+      - SG|官方优选|138ms_4
+      - SG|官方优选|138ms_5
+      - SG|官方优选|138ms_6
+      - SG|官方优选|138ms_7
+      - SG|官方优选|138ms_8
+      - SG|官方优选|139ms_1
+      - SG|官方优选|139ms_2
+      - SG|官方优选|139ms_3
+      - SG|官方优选|141ms
+      - SG|官方优选|143ms
+      - SG|官方优选|144ms
+      - sub.danfeng.eu.org
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸ShatakVPN569904
-      - 🇩🇪DE_2|⬇️5.1MB/s
-      - 🇯🇵JP_3|⬇️3.2MB/s
-      - 🇳🇱NL_1|⬇️4.3MB/s
-      - CCS+｜+洛杉矶
       - US
-      - 🇺🇸US_6|1.6MB/s|网盘搜宝:https://t.me/diskseeker
-      - 🇸🇪SE_1|2.2MB/s|更多节点:https://t.me/byxiaoxi
+      - 🇺🇸US_6|1.6MB/s
       - 美國
       - 🇳🇱NL_2|⬇️2.1MB/s
       - 🇳🇱NL_3|⬇️2.9MB/s
       - 🇵🇱PL_1|⬇️3.0MB/s
-      - 🇵🇱PL_2|⬇️3.1MB/s
-      - ❓Other_1|⬇️4.3MB/s
-      - 00-Trojan-jp-AI
-      - 01-Trojan-030101.xyz
-      - 03-Trojan-cloudflare88
-      - JP
+      - 00-Trojan-jp-AI_1
+      - 01-Trojan-030101.xyz_1
+      - 03-Trojan-cloudflare88_1
       - 加拿大
+      - ❓Other_1|⬇️1.1MB/s
+      - 00-Trojan-jp-AI_2
+      - 01-Trojan-030101.xyz_2
+      - 02-Trojan-saas.sin.fan
+      - 03-Trojan-cloudflare88_2
+      - AT
+      - bestcf.030101.xyz
+      - cdn.2020111.xyz
+      - cdn.204910.best
+      - cdns.doon.eu.org
+      - cf-cname.xingpingcn.top
+      - cf.008500.xyz
+      - cf.130519.xyz
+      - cf.877774.xyz
+      - cf.tencentapp.cn
+      - cf.zhetengsha.eu.org
+      - cfip.1323123.xyz
+      - cfsaas.080112.xyz
+      - cloudflare-ip.mofashi.ltd
+      - cloudflare.cfgo.cc
+      - fn.130519.xyz
+      - freeyx.cloudflare88.eu.org
+      - HK
+      - img.yust.eu.org
+      - JP官方优选102ms
+      - JP|官方优选|100ms_1
+      - JP|官方优选|100ms_2
+      - JP|官方优选|100ms_3
+      - JP|官方优选|101ms_1
+      - JP|官方优选|101ms_2
+      - JP|官方优选|101ms_3
+      - JP|官方优选|102ms_1
+      - JP|官方优选|102ms_2
+      - JP|官方优选|102ms_3
+      - JP|官方优选|103ms_1
+      - JP|官方优选|103ms_2
+      - JP|官方优选|103ms_3
+      - JP|官方优选|99ms_1
+      - JP|官方优选|99ms_2
+      - JP|官方优选|99ms_3
       - OTHER
+      - SG官方优选138ms
+      - SG官方优选140ms_1
+      - SG官方优选140ms_2
+      - SG官方优选141ms
+      - SG官方优选142ms_1
+      - SG官方优选142ms_2
+      - SG官方优选143ms
+      - SG官方优选144ms
+      - SG官方优选146ms
+      - SGSenflare优选.1
+      - SGSenflare优选.10
+      - SGSenflare优选.11
+      - SGSenflare优选.2
+      - SGSenflare优选.3
+      - SGSenflare优选.4
+      - SGSenflare优选.5
+      - SGSenflare优选.6
+      - SGSenflare优选.7
+      - SGSenflare优选.9
+      - SG|官方优选|136ms_1
+      - SG|官方优选|136ms_2
+      - SG|官方优选|137ms_1
+      - SG|官方优选|137ms_2
+      - SG|官方优选|137ms_3
+      - SG|官方优选|138ms_1
+      - SG|官方优选|138ms_2
+      - SG|官方优选|138ms_3
+      - SG|官方优选|138ms_4
+      - SG|官方优选|138ms_5
+      - SG|官方优选|138ms_6
+      - SG|官方优选|138ms_7
+      - SG|官方优选|138ms_8
+      - SG|官方优选|139ms_1
+      - SG|官方优选|139ms_2
+      - SG|官方优选|139ms_3
+      - SG|官方优选|141ms
+      - SG|官方优选|143ms
+      - SG|官方优选|144ms
+      - sub.danfeng.eu.org
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -200,26 +690,96 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸ShatakVPN569904
-      - 🇩🇪DE_2|⬇️5.1MB/s
-      - 🇯🇵JP_3|⬇️3.2MB/s
-      - 🇳🇱NL_1|⬇️4.3MB/s
-      - CCS+｜+洛杉矶
       - US
-      - 🇺🇸US_6|1.6MB/s|网盘搜宝:https://t.me/diskseeker
-      - 🇸🇪SE_1|2.2MB/s|更多节点:https://t.me/byxiaoxi
+      - 🇺🇸US_6|1.6MB/s
       - 美國
       - 🇳🇱NL_2|⬇️2.1MB/s
       - 🇳🇱NL_3|⬇️2.9MB/s
       - 🇵🇱PL_1|⬇️3.0MB/s
-      - 🇵🇱PL_2|⬇️3.1MB/s
-      - ❓Other_1|⬇️4.3MB/s
-      - 00-Trojan-jp-AI
-      - 01-Trojan-030101.xyz
-      - 03-Trojan-cloudflare88
-      - JP
+      - 00-Trojan-jp-AI_1
+      - 01-Trojan-030101.xyz_1
+      - 03-Trojan-cloudflare88_1
       - 加拿大
+      - ❓Other_1|⬇️1.1MB/s
+      - 00-Trojan-jp-AI_2
+      - 01-Trojan-030101.xyz_2
+      - 02-Trojan-saas.sin.fan
+      - 03-Trojan-cloudflare88_2
+      - AT
+      - bestcf.030101.xyz
+      - cdn.2020111.xyz
+      - cdn.204910.best
+      - cdns.doon.eu.org
+      - cf-cname.xingpingcn.top
+      - cf.008500.xyz
+      - cf.130519.xyz
+      - cf.877774.xyz
+      - cf.tencentapp.cn
+      - cf.zhetengsha.eu.org
+      - cfip.1323123.xyz
+      - cfsaas.080112.xyz
+      - cloudflare-ip.mofashi.ltd
+      - cloudflare.cfgo.cc
+      - fn.130519.xyz
+      - freeyx.cloudflare88.eu.org
+      - HK
+      - img.yust.eu.org
+      - JP官方优选102ms
+      - JP|官方优选|100ms_1
+      - JP|官方优选|100ms_2
+      - JP|官方优选|100ms_3
+      - JP|官方优选|101ms_1
+      - JP|官方优选|101ms_2
+      - JP|官方优选|101ms_3
+      - JP|官方优选|102ms_1
+      - JP|官方优选|102ms_2
+      - JP|官方优选|102ms_3
+      - JP|官方优选|103ms_1
+      - JP|官方优选|103ms_2
+      - JP|官方优选|103ms_3
+      - JP|官方优选|99ms_1
+      - JP|官方优选|99ms_2
+      - JP|官方优选|99ms_3
       - OTHER
+      - SG官方优选138ms
+      - SG官方优选140ms_1
+      - SG官方优选140ms_2
+      - SG官方优选141ms
+      - SG官方优选142ms_1
+      - SG官方优选142ms_2
+      - SG官方优选143ms
+      - SG官方优选144ms
+      - SG官方优选146ms
+      - SGSenflare优选.1
+      - SGSenflare优选.10
+      - SGSenflare优选.11
+      - SGSenflare优选.2
+      - SGSenflare优选.3
+      - SGSenflare优选.4
+      - SGSenflare优选.5
+      - SGSenflare优选.6
+      - SGSenflare优选.7
+      - SGSenflare优选.9
+      - SG|官方优选|136ms_1
+      - SG|官方优选|136ms_2
+      - SG|官方优选|137ms_1
+      - SG|官方优选|137ms_2
+      - SG|官方优选|137ms_3
+      - SG|官方优选|138ms_1
+      - SG|官方优选|138ms_2
+      - SG|官方优选|138ms_3
+      - SG|官方优选|138ms_4
+      - SG|官方优选|138ms_5
+      - SG|官方优选|138ms_6
+      - SG|官方优选|138ms_7
+      - SG|官方优选|138ms_8
+      - SG|官方优选|139ms_1
+      - SG|官方优选|139ms_2
+      - SG|官方优选|139ms_3
+      - SG|官方优选|141ms
+      - SG|官方优选|143ms
+      - SG|官方优选|144ms
+      - sub.danfeng.eu.org
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
