@@ -12,15 +12,14 @@ proxies:
   - {"type":"vless","name":"🇹🇭泰国01","server":"47.81.12.38","port":443,"uuid":"3e7f67de-648e-4871-b51a-a225214d41ee","skip-cert-verify":true,"network":"tcp","servername":"api.digital-help-prd.autodesk.com","tls":false,"udp":true}
   - {"type":"vless","name":"未知VLESS-113|free-nodes_1","server":"192.200.160.20","port":443,"uuid":"ee248e40-9468-4ef6-81b7-707a1e47c54a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"639073677243557970.camry-perma.info","ws-opts":{"path":"/yaeungws","headers":{"host":"639073677243557970.camry-perma.info"}}}
   - {"type":"vless","name":"🏳️ShatakVPN690322_1","server":"192.200.160.20","port":443,"uuid":"ee248e40-9468-4ef6-81b7-707a1e47c54a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"639073677243557970.camry-perma.info","ws-opts":{"path":"/yaeungws","headers":{"host":"639073677243557970.camry-perma.info"}}}
-  - {"type":"vless","name":"DEVLESS-116|free-nodes","server":"desta.axinode.sbs","port":10965,"uuid":"d1209ffb-c159-48d5-b40d-542ce11fc768","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"deepl.com","tls":false,"udp":true}
   - {"type":"vless","name":"未知VLESS-127|free-nodes","server":"192.200.160.20","port":443,"uuid":"ee248e40-9468-4ef6-81b7-707a1e47c54a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"639073677243557970.camry-perma.info","ws-opts":{"path":"/yaeungws","headers":{"host":"639073677243557970.camry-perma.info"}}}
   - {"type":"vless","name":"🇺🇸_US_美国","server":"192.200.160.20","port":443,"uuid":"ee248e40-9468-4ef6-81b7-707a1e47c54a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"639073677243557970.camry-perma.info","ws-opts":{"path":"/yaeungws","headers":{"host":"639073677243557970.camry-perma.info"}}}
   - {"type":"vless","name":"🏳️ShatakVPN690322_2","server":"192.200.160.20","port":443,"uuid":"ee248e40-9468-4ef6-81b7-707a1e47c54a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"639073677243557970.camry-perma.info","ws-opts":{"path":"/yaeungws","headers":{"host":"639073677243557970.camry-perma.info"}}}
-  - {"type":"vless","name":"DEVLESS-110|free-nodes","server":"desta.axinode.sbs","port":10965,"uuid":"d1209ffb-c159-48d5-b40d-542ce11fc768","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"deepl.com","tls":false,"udp":true}
   - {"type":"vless","name":"未知VLESS-122|free-nodes","server":"192.200.160.20","port":443,"uuid":"ee248e40-9468-4ef6-81b7-707a1e47c54a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"639073677243557970.camry-perma.info","ws-opts":{"path":"/yaeungws","headers":{"host":"639073677243557970.camry-perma.info"}}}
   - {"type":"vless","name":"🏳️ShatakVPN690322_3","server":"192.200.160.20","port":443,"uuid":"ee248e40-9468-4ef6-81b7-707a1e47c54a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"639073677243557970.camry-perma.info","ws-opts":{"path":"/yaeungws","headers":{"host":"639073677243557970.camry-perma.info"}}}
-  - {"type":"vless","name":"DEVLESS-107|free-nodes","server":"94.141.123.146","port":10965,"uuid":"d1209ffb-c159-48d5-b40d-542ce11fc768","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"deepl.com","tls":false,"udp":true}
   - {"type":"vless","name":"未知VLESS-113|free-nodes_2","server":"192.200.160.20","port":443,"uuid":"ee248e40-9468-4ef6-81b7-707a1e47c54a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"639073677243557970.camry-perma.info","ws-opts":{"path":"/yaeungws","headers":{"host":"639073677243557970.camry-perma.info"}}}
+  - {"type":"vless","name":"🇲🇩MD_1|⬇️1.7MB/s","server":"45.67.229.119","port":2443,"uuid":"c01733dd-3e58-4da9-910b-cdd4560295bc","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"TestChatGRPC"},"servername":"eh.vk.com"}
+  - {"type":"vless","name":"🇺🇸US_3|⬇️1.2MB/s","server":"150.241.83.152","port":10121,"uuid":"d1209ffb-c159-48d5-b40d-542ce11fc768","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
   - {"type":"trojan","name":"01-Trojan-030101.xyz_1","server":"bestcf.030101.xyz","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
   - {"type":"trojan","name":"US_1","server":"freeyx.cloudflare88.eu.org","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
   - {"type":"trojan","name":"01-Trojan-030101.xyz_2","server":"bestcf.030101.xyz","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
@@ -34,6 +33,9 @@ proxies:
   - {"type":"trojan","name":"00-Trojan-jp-AI_3","server":"jp.111000.cc.cd","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
   - {"type":"trojan","name":"00-Trojan-jp-AI_4","server":"jp.111000.cc.cd","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
   - {"type":"trojan","name":"01-Trojan-030101.xyz_5","server":"bestcf.030101.xyz","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
+  - {"type":"trojan","name":"🇭🇰香港14","server":"58.152.25.253","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇵🇱PL_1|⬇️1.7MB/s","server":"top-goshawk.rooster465.autos","port":443,"password":"WF42809561","udp":true,"skip-cert-verify":true,"sni":"top-goshawk.rooster465.autos","network":"tcp"}
+  - {"type":"trojan","name":"US_3","server":"jp.111000.cc.cd","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -47,15 +49,14 @@ proxy-groups:
       - 🇹🇭泰国01
       - 未知VLESS-113|free-nodes_1
       - 🏳️ShatakVPN690322_1
-      - DEVLESS-116|free-nodes
       - 未知VLESS-127|free-nodes
       - 🇺🇸_US_美国
       - 🏳️ShatakVPN690322_2
-      - DEVLESS-110|free-nodes
       - 未知VLESS-122|free-nodes
       - 🏳️ShatakVPN690322_3
-      - DEVLESS-107|free-nodes
       - 未知VLESS-113|free-nodes_2
+      - 🇲🇩MD_1|⬇️1.7MB/s
+      - 🇺🇸US_3|⬇️1.2MB/s
       - 01-Trojan-030101.xyz_1
       - US_1
       - 01-Trojan-030101.xyz_2
@@ -69,6 +70,9 @@ proxy-groups:
       - 00-Trojan-jp-AI_3
       - 00-Trojan-jp-AI_4
       - 01-Trojan-030101.xyz_5
+      - 🇭🇰香港14
+      - 🇵🇱PL_1|⬇️1.7MB/s
+      - US_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -82,15 +86,14 @@ proxy-groups:
       - 🇹🇭泰国01
       - 未知VLESS-113|free-nodes_1
       - 🏳️ShatakVPN690322_1
-      - DEVLESS-116|free-nodes
       - 未知VLESS-127|free-nodes
       - 🇺🇸_US_美国
       - 🏳️ShatakVPN690322_2
-      - DEVLESS-110|free-nodes
       - 未知VLESS-122|free-nodes
       - 🏳️ShatakVPN690322_3
-      - DEVLESS-107|free-nodes
       - 未知VLESS-113|free-nodes_2
+      - 🇲🇩MD_1|⬇️1.7MB/s
+      - 🇺🇸US_3|⬇️1.2MB/s
       - 01-Trojan-030101.xyz_1
       - US_1
       - 01-Trojan-030101.xyz_2
@@ -104,6 +107,9 @@ proxy-groups:
       - 00-Trojan-jp-AI_3
       - 00-Trojan-jp-AI_4
       - 01-Trojan-030101.xyz_5
+      - 🇭🇰香港14
+      - 🇵🇱PL_1|⬇️1.7MB/s
+      - US_3
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -117,15 +123,14 @@ proxy-groups:
       - 🇹🇭泰国01
       - 未知VLESS-113|free-nodes_1
       - 🏳️ShatakVPN690322_1
-      - DEVLESS-116|free-nodes
       - 未知VLESS-127|free-nodes
       - 🇺🇸_US_美国
       - 🏳️ShatakVPN690322_2
-      - DEVLESS-110|free-nodes
       - 未知VLESS-122|free-nodes
       - 🏳️ShatakVPN690322_3
-      - DEVLESS-107|free-nodes
       - 未知VLESS-113|free-nodes_2
+      - 🇲🇩MD_1|⬇️1.7MB/s
+      - 🇺🇸US_3|⬇️1.2MB/s
       - 01-Trojan-030101.xyz_1
       - US_1
       - 01-Trojan-030101.xyz_2
@@ -139,6 +144,9 @@ proxy-groups:
       - 00-Trojan-jp-AI_3
       - 00-Trojan-jp-AI_4
       - 01-Trojan-030101.xyz_5
+      - 🇭🇰香港14
+      - 🇵🇱PL_1|⬇️1.7MB/s
+      - US_3
   - name: 📲 电报信息
     type: select
     proxies:
@@ -151,15 +159,14 @@ proxy-groups:
       - 🇹🇭泰国01
       - 未知VLESS-113|free-nodes_1
       - 🏳️ShatakVPN690322_1
-      - DEVLESS-116|free-nodes
       - 未知VLESS-127|free-nodes
       - 🇺🇸_US_美国
       - 🏳️ShatakVPN690322_2
-      - DEVLESS-110|free-nodes
       - 未知VLESS-122|free-nodes
       - 🏳️ShatakVPN690322_3
-      - DEVLESS-107|free-nodes
       - 未知VLESS-113|free-nodes_2
+      - 🇲🇩MD_1|⬇️1.7MB/s
+      - 🇺🇸US_3|⬇️1.2MB/s
       - 01-Trojan-030101.xyz_1
       - US_1
       - 01-Trojan-030101.xyz_2
@@ -173,6 +180,9 @@ proxy-groups:
       - 00-Trojan-jp-AI_3
       - 00-Trojan-jp-AI_4
       - 01-Trojan-030101.xyz_5
+      - 🇭🇰香港14
+      - 🇵🇱PL_1|⬇️1.7MB/s
+      - US_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -185,15 +195,14 @@ proxy-groups:
       - 🇹🇭泰国01
       - 未知VLESS-113|free-nodes_1
       - 🏳️ShatakVPN690322_1
-      - DEVLESS-116|free-nodes
       - 未知VLESS-127|free-nodes
       - 🇺🇸_US_美国
       - 🏳️ShatakVPN690322_2
-      - DEVLESS-110|free-nodes
       - 未知VLESS-122|free-nodes
       - 🏳️ShatakVPN690322_3
-      - DEVLESS-107|free-nodes
       - 未知VLESS-113|free-nodes_2
+      - 🇲🇩MD_1|⬇️1.7MB/s
+      - 🇺🇸US_3|⬇️1.2MB/s
       - 01-Trojan-030101.xyz_1
       - US_1
       - 01-Trojan-030101.xyz_2
@@ -207,6 +216,9 @@ proxy-groups:
       - 00-Trojan-jp-AI_3
       - 00-Trojan-jp-AI_4
       - 01-Trojan-030101.xyz_5
+      - 🇭🇰香港14
+      - 🇵🇱PL_1|⬇️1.7MB/s
+      - US_3
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -219,15 +231,14 @@ proxy-groups:
       - 🇹🇭泰国01
       - 未知VLESS-113|free-nodes_1
       - 🏳️ShatakVPN690322_1
-      - DEVLESS-116|free-nodes
       - 未知VLESS-127|free-nodes
       - 🇺🇸_US_美国
       - 🏳️ShatakVPN690322_2
-      - DEVLESS-110|free-nodes
       - 未知VLESS-122|free-nodes
       - 🏳️ShatakVPN690322_3
-      - DEVLESS-107|free-nodes
       - 未知VLESS-113|free-nodes_2
+      - 🇲🇩MD_1|⬇️1.7MB/s
+      - 🇺🇸US_3|⬇️1.2MB/s
       - 01-Trojan-030101.xyz_1
       - US_1
       - 01-Trojan-030101.xyz_2
@@ -241,6 +252,9 @@ proxy-groups:
       - 00-Trojan-jp-AI_3
       - 00-Trojan-jp-AI_4
       - 01-Trojan-030101.xyz_5
+      - 🇭🇰香港14
+      - 🇵🇱PL_1|⬇️1.7MB/s
+      - US_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -270,15 +284,14 @@ proxy-groups:
       - 🇹🇭泰国01
       - 未知VLESS-113|free-nodes_1
       - 🏳️ShatakVPN690322_1
-      - DEVLESS-116|free-nodes
       - 未知VLESS-127|free-nodes
       - 🇺🇸_US_美国
       - 🏳️ShatakVPN690322_2
-      - DEVLESS-110|free-nodes
       - 未知VLESS-122|free-nodes
       - 🏳️ShatakVPN690322_3
-      - DEVLESS-107|free-nodes
       - 未知VLESS-113|free-nodes_2
+      - 🇲🇩MD_1|⬇️1.7MB/s
+      - 🇺🇸US_3|⬇️1.2MB/s
       - 01-Trojan-030101.xyz_1
       - US_1
       - 01-Trojan-030101.xyz_2
@@ -292,6 +305,9 @@ proxy-groups:
       - 00-Trojan-jp-AI_3
       - 00-Trojan-jp-AI_4
       - 01-Trojan-030101.xyz_5
+      - 🇭🇰香港14
+      - 🇵🇱PL_1|⬇️1.7MB/s
+      - US_3
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
