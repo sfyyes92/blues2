@@ -5,7 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vless","name":"🇰🇷韩国03","server":"47.80.13.250","port":443,"uuid":"3e7f67de-648e-4871-b51a-a225214d41ee","skip-cert-verify":true,"network":"tcp","servername":"api.company-target.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇹🇭泰国05","server":"47.81.39.100","port":443,"uuid":"3e7f67de-648e-4871-b51a-a225214d41ee","skip-cert-verify":true,"network":"tcp","servername":"api.digital-help-prd.autodesk.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇹🇭泰国01","server":"47.81.12.38","port":443,"uuid":"3e7f67de-648e-4871-b51a-a225214d41ee","skip-cert-verify":true,"network":"tcp","servername":"api.digital-help-prd.autodesk.com","tls":false,"udp":true}
   - {"type":"vless","name":"🏳️ShatakVPN690322","server":"192.200.160.20","port":443,"uuid":"ee248e40-9468-4ef6-81b7-707a1e47c54a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"639073677243557970.camry-perma.info","ws-opts":{"path":"/yaeungws","headers":{"host":"639073677243557970.camry-perma.info"}}}
@@ -17,42 +16,33 @@ proxies:
   - {"type":"vless","name":"未知VLESS-117|free-nodes","server":"192.200.160.20","port":443,"uuid":"c1a5ecfa-8a01-4070-91e0-0328b82388ad","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"639073677243396643.camry-perma.info","ws-opts":{"path":"/phnkfhws","headers":{"host":"639073677243396643.camry-perma.info"}}}
   - {"type":"vless","name":"VLESS-xhttp-Reality-Vision","server":"195.154.56.101","port":32202,"uuid":"28148be2-61a7-4f36-8adb-030cc9f82bd0","skip-cert-verify":true}
   - {"type":"vless","name":"US_1","server":"195.181.173.199","port":8443,"uuid":"394f6981-a782-4779-9a85-e6cf22935d93","skip-cert-verify":true,"network":"tcp","servername":"ams1.fromblancwithlove.com","tls":true,"udp":true}
-  - {"type":"vless","name":"KR","server":"106.242.64.238","port":50000,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/doujin/video","headers":{"host":"edt2.btxst.eu.cc"}}}
-  - {"type":"vless","name":"NL_1","server":"171.22.124.215","port":443,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/game","headers":{"host":"edt2.btxst.eu.cc"}}}
-  - {"type":"vless","name":"IT","server":"194.165.59.20","port":443,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/player/redirect/site","headers":{"host":"edt2.btxst.eu.cc"}}}
-  - {"type":"vless","name":"vl-reality-","server":"157.254.27.41","port":43504,"uuid":"09ec436b-930a-42b1-8d2c-6addbafc8832","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"NL_2","server":"188.226.158.93","port":443,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/page/groups","headers":{"host":"edt2.btxst.eu.cc"}}}
-  - {"type":"vless","name":"US_2","server":"216.126.224.117","port":2053,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/albums","headers":{"host":"edt2.btxst.eu.cc"}}}
-  - {"type":"vless","name":"NL_3","server":"5.35.36.146","port":8443,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/dl/store","headers":{"host":"edt2.btxst.eu.cc"}}}
-  - {"type":"vless","name":"ccnew","server":"162.159.45.202","port":8443,"uuid":"d39ddd0b-8d20-4d13-df63-752ad78c69c5","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccnew.jakesolo.eu.org","ws-opts":{"path":"/ws","headers":{"host":"ccnew.jakesolo.eu.org"}}}
-  - {"type":"vless","name":"NL_4","server":"188.166.17.13","port":2053,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/programs/channels/document","headers":{"host":"edt2.btxst.eu.cc"}}}
-  - {"type":"vless","name":"cc80","server":"162.159.45.202","port":2082,"uuid":"a13bcbf2-9df7-476d-defc-8c5fafd56fbd","skip-cert-verify":true}
-  - {"type":"vless","name":"DE_1","server":"141.147.10.210","port":8881,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/event","headers":{"host":"edt2.btxst.eu.cc"}}}
-  - {"type":"vless","name":"cc","server":"162.159.45.202","port":8443,"uuid":"b8c35aa4-c35d-4f0e-9803-476932197d48","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"cc.jakesolo.eu.org","ws-opts":{"path":"/ws","headers":{"host":"cc.jakesolo.eu.org"}}}
-  - {"type":"vless","name":"NL_5","server":"152.53.200.241","port":8443,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/channels","headers":{"host":"edt2.btxst.eu.cc"}}}
-  - {"type":"vless","name":"orus2new","server":"162.159.45.202","port":8443,"uuid":"3ab9683f-0d56-40b3-dbf6-94b79e2d094c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"orus2.jakesolo.eu.org","ws-opts":{"path":"/ws","headers":{"host":"orus2.jakesolo.eu.org"}}}
-  - {"type":"vless","name":"usarmnew","server":"162.159.45.202","port":8443,"uuid":"ff684525-e0d7-4fad-a6b8-4b565a297e0b","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"usarm.jakesolo.eu.org","ws-opts":{"path":"/ws","headers":{"host":"usarm.jakesolo.eu.org"}}}
-  - {"type":"vless","name":"DE_2","server":"194.26.192.251","port":5004,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/lesson/mall","headers":{"host":"edt2.btxst.eu.cc"}}}
+  - {"type":"vless","name":"KR_1","server":"106.242.64.238","port":50000,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/doujin/video","headers":{"host":"edt2.btxst.eu.cc"}}}
+  - {"type":"vless","name":"NL_1","server":"5.35.36.146","port":8443,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/dl/store","headers":{"host":"edt2.btxst.eu.cc"}}}
+  - {"type":"vless","name":"NL_2","server":"152.53.200.241","port":8443,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/channels","headers":{"host":"edt2.btxst.eu.cc"}}}
+  - {"type":"vless","name":"DE_1","server":"194.26.192.251","port":5004,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/lesson/mall","headers":{"host":"edt2.btxst.eu.cc"}}}
   - {"type":"vless","name":"FI","server":"31.58.171.230","port":8443,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/jp/seller","headers":{"host":"edt2.btxst.eu.cc"}}}
-  - {"type":"vless","name":"LV","server":"37.128.204.4","port":8443,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/rank/wenku/online","headers":{"host":"edt2.btxst.eu.cc"}}}
-  - {"type":"vless","name":"DE_3","server":"37.221.197.112","port":8443,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/users/episodes/document","headers":{"host":"edt2.btxst.eu.cc"}}}
-  - {"type":"vless","name":"HK","server":"89.185.25.124","port":443,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/version/collection","headers":{"host":"edt2.btxst.eu.cc"}}}
-  - {"type":"vless","name":"GB","server":"95.163.153.32","port":443,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/friend","headers":{"host":"edt2.btxst.eu.cc"}}}
-  - {"type":"vless","name":"zoro_new","server":"162.159.45.202","port":8443,"uuid":"dcda262b-0d36-4032-edd9-da4fd2d53711","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"zoro.jakesolo.eu.org","ws-opts":{"path":"/ws","headers":{"host":"zoro.jakesolo.eu.org"}}}
+  - {"type":"vless","name":"HK_1","server":"89.185.25.124","port":443,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/version/collection","headers":{"host":"edt2.btxst.eu.cc"}}}
+  - {"type":"vless","name":"US_2","server":"43.153.61.80","port":40874,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/temp/edu","headers":{"host":"edt2.btxst.eu.cc"}}}
+  - {"type":"vless","name":"🇨🇦CA","server":"192.200.160.20","port":443,"uuid":"92b82d0f-d2f8-4f6f-b177-08f681a337e6","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"639073677243791121.camry-perma.info","ws-opts":{"path":"/njvqoews","headers":{"host":"639073677243791121.camry-perma.info"}}}
+  - {"type":"vless","name":"🇭🇺HU","server":"192.200.160.20","port":443,"uuid":"92b82d0f-d2f8-4f6f-b177-08f681a337e6","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"639073677243791121.camry-perma.info","ws-opts":{"path":"/njvqoews?ed=2560","headers":{"host":"639073677243791121.camry-perma.info"}}}
+  - {"type":"vless","name":"🇵🇱PL","server":"192.200.160.20","port":443,"uuid":"3b034275-27f8-437d-9ac0-5982708ae143","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"639073677243249982.camry-perma.info","ws-opts":{"path":"/ferhbiws?ed=2560","headers":{"host":"639073677243249982.camry-perma.info"}}}
+  - {"type":"vless","name":"DE_2","server":"194.26.192.251","port":5004,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/lesson/mall","headers":{"host":"edt2.btxst.eu.cc"}}}
+  - {"type":"vless","name":"HK_2","server":"89.185.25.124","port":443,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/version/collection","headers":{"host":"edt2.btxst.eu.cc"}}}
+  - {"type":"vless","name":"KR_2","server":"106.242.64.238","port":50000,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/doujin/video","headers":{"host":"edt2.btxst.eu.cc"}}}
+  - {"type":"vless","name":"NL_3","server":"5.35.36.146","port":8443,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/dl/store","headers":{"host":"edt2.btxst.eu.cc"}}}
+  - {"type":"vless","name":"NL_4","server":"152.53.200.241","port":8443,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/channels","headers":{"host":"edt2.btxst.eu.cc"}}}
   - {"type":"vless","name":"US_3","server":"43.153.61.80","port":40874,"uuid":"8d2aeab8-ce98-47a6-84ec-d5b45d060b66","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edt2.btxst.eu.cc","ws-opts":{"path":"/temp/edu","headers":{"host":"edt2.btxst.eu.cc"}}}
+  - {"type":"vless","name":"US_4","server":"216.236.26.19","port":43229,"uuid":"bb7d8763-4afa-465f-b066-35786781ced2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
   - {"type":"trojan","name":"03-Trojan-cloudflare88","server":"freeyx.cloudflare88.eu.org","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
   - {"type":"trojan","name":"01-Trojan-030101.xyz","server":"bestcf.030101.xyz","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
-  - {"type":"trojan","name":"US_4","server":"jp.111000.cc.cd","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
-  - {"type":"trojan","name":"🇭🇰香港10","server":"31.192.233.38","port":8443,"password":"nodes-d2ac438d","udp":true,"skip-cert-verify":true,"sni":"node-hk-1.v2sv.top","network":"tcp"}
+  - {"type":"trojan","name":"US_5","server":"jp.111000.cc.cd","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
   - {"type":"trojan","name":"🇨🇳_CN_中国","server":"58.152.25.253","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"type":"trojan","name":"ccnewT","server":"ccnew.jakesolo.eu.org","port":39126,"password":"KB09sLgezt","udp":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/tro","headers":{"host":"ccnew.jakesolo.eu.org"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇰🇷韩国03
       - 🇹🇭泰国05
       - 🇹🇭泰国01
       - 🏳️ShatakVPN690322
@@ -64,42 +54,33 @@ proxy-groups:
       - 未知VLESS-117|free-nodes
       - VLESS-xhttp-Reality-Vision
       - US_1
-      - KR
+      - KR_1
       - NL_1
-      - IT
-      - vl-reality-
       - NL_2
-      - US_2
-      - NL_3
-      - ccnew
-      - NL_4
-      - cc80
       - DE_1
-      - cc
-      - NL_5
-      - orus2new
-      - usarmnew
-      - DE_2
       - FI
-      - LV
-      - DE_3
-      - HK
-      - GB
-      - zoro_new
+      - HK_1
+      - US_2
+      - 🇨🇦CA
+      - 🇭🇺HU
+      - 🇵🇱PL
+      - DE_2
+      - HK_2
+      - KR_2
+      - NL_3
+      - NL_4
       - US_3
+      - US_4
       - 03-Trojan-cloudflare88
       - 01-Trojan-030101.xyz
-      - US_4
-      - 🇭🇰香港10
+      - US_5
       - 🇨🇳_CN_中国
-      - ccnewT
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷韩国03
       - 🇹🇭泰国05
       - 🇹🇭泰国01
       - 🏳️ShatakVPN690322
@@ -111,42 +92,33 @@ proxy-groups:
       - 未知VLESS-117|free-nodes
       - VLESS-xhttp-Reality-Vision
       - US_1
-      - KR
+      - KR_1
       - NL_1
-      - IT
-      - vl-reality-
       - NL_2
-      - US_2
-      - NL_3
-      - ccnew
-      - NL_4
-      - cc80
       - DE_1
-      - cc
-      - NL_5
-      - orus2new
-      - usarmnew
-      - DE_2
       - FI
-      - LV
-      - DE_3
-      - HK
-      - GB
-      - zoro_new
+      - HK_1
+      - US_2
+      - 🇨🇦CA
+      - 🇭🇺HU
+      - 🇵🇱PL
+      - DE_2
+      - HK_2
+      - KR_2
+      - NL_3
+      - NL_4
       - US_3
+      - US_4
       - 03-Trojan-cloudflare88
       - 01-Trojan-030101.xyz
-      - US_4
-      - 🇭🇰香港10
+      - US_5
       - 🇨🇳_CN_中国
-      - ccnewT
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇰🇷韩国03
       - 🇹🇭泰国05
       - 🇹🇭泰国01
       - 🏳️ShatakVPN690322
@@ -158,41 +130,32 @@ proxy-groups:
       - 未知VLESS-117|free-nodes
       - VLESS-xhttp-Reality-Vision
       - US_1
-      - KR
+      - KR_1
       - NL_1
-      - IT
-      - vl-reality-
       - NL_2
-      - US_2
-      - NL_3
-      - ccnew
-      - NL_4
-      - cc80
       - DE_1
-      - cc
-      - NL_5
-      - orus2new
-      - usarmnew
-      - DE_2
       - FI
-      - LV
-      - DE_3
-      - HK
-      - GB
-      - zoro_new
+      - HK_1
+      - US_2
+      - 🇨🇦CA
+      - 🇭🇺HU
+      - 🇵🇱PL
+      - DE_2
+      - HK_2
+      - KR_2
+      - NL_3
+      - NL_4
       - US_3
+      - US_4
       - 03-Trojan-cloudflare88
       - 01-Trojan-030101.xyz
-      - US_4
-      - 🇭🇰香港10
+      - US_5
       - 🇨🇳_CN_中国
-      - ccnewT
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇰🇷韩国03
       - 🇹🇭泰国05
       - 🇹🇭泰国01
       - 🏳️ShatakVPN690322
@@ -204,41 +167,32 @@ proxy-groups:
       - 未知VLESS-117|free-nodes
       - VLESS-xhttp-Reality-Vision
       - US_1
-      - KR
+      - KR_1
       - NL_1
-      - IT
-      - vl-reality-
       - NL_2
-      - US_2
-      - NL_3
-      - ccnew
-      - NL_4
-      - cc80
       - DE_1
-      - cc
-      - NL_5
-      - orus2new
-      - usarmnew
-      - DE_2
       - FI
-      - LV
-      - DE_3
-      - HK
-      - GB
-      - zoro_new
+      - HK_1
+      - US_2
+      - 🇨🇦CA
+      - 🇭🇺HU
+      - 🇵🇱PL
+      - DE_2
+      - HK_2
+      - KR_2
+      - NL_3
+      - NL_4
       - US_3
+      - US_4
       - 03-Trojan-cloudflare88
       - 01-Trojan-030101.xyz
-      - US_4
-      - 🇭🇰香港10
+      - US_5
       - 🇨🇳_CN_中国
-      - ccnewT
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇰🇷韩国03
       - 🇹🇭泰国05
       - 🇹🇭泰国01
       - 🏳️ShatakVPN690322
@@ -250,41 +204,32 @@ proxy-groups:
       - 未知VLESS-117|free-nodes
       - VLESS-xhttp-Reality-Vision
       - US_1
-      - KR
+      - KR_1
       - NL_1
-      - IT
-      - vl-reality-
       - NL_2
-      - US_2
-      - NL_3
-      - ccnew
-      - NL_4
-      - cc80
       - DE_1
-      - cc
-      - NL_5
-      - orus2new
-      - usarmnew
-      - DE_2
       - FI
-      - LV
-      - DE_3
-      - HK
-      - GB
-      - zoro_new
+      - HK_1
+      - US_2
+      - 🇨🇦CA
+      - 🇭🇺HU
+      - 🇵🇱PL
+      - DE_2
+      - HK_2
+      - KR_2
+      - NL_3
+      - NL_4
       - US_3
+      - US_4
       - 03-Trojan-cloudflare88
       - 01-Trojan-030101.xyz
-      - US_4
-      - 🇭🇰香港10
+      - US_5
       - 🇨🇳_CN_中国
-      - ccnewT
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇰🇷韩国03
       - 🇹🇭泰国05
       - 🇹🇭泰国01
       - 🏳️ShatakVPN690322
@@ -296,35 +241,27 @@ proxy-groups:
       - 未知VLESS-117|free-nodes
       - VLESS-xhttp-Reality-Vision
       - US_1
-      - KR
+      - KR_1
       - NL_1
-      - IT
-      - vl-reality-
       - NL_2
-      - US_2
-      - NL_3
-      - ccnew
-      - NL_4
-      - cc80
       - DE_1
-      - cc
-      - NL_5
-      - orus2new
-      - usarmnew
-      - DE_2
       - FI
-      - LV
-      - DE_3
-      - HK
-      - GB
-      - zoro_new
+      - HK_1
+      - US_2
+      - 🇨🇦CA
+      - 🇭🇺HU
+      - 🇵🇱PL
+      - DE_2
+      - HK_2
+      - KR_2
+      - NL_3
+      - NL_4
       - US_3
+      - US_4
       - 03-Trojan-cloudflare88
       - 01-Trojan-030101.xyz
-      - US_4
-      - 🇭🇰香港10
+      - US_5
       - 🇨🇳_CN_中国
-      - ccnewT
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -347,7 +284,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇰🇷韩国03
       - 🇹🇭泰国05
       - 🇹🇭泰国01
       - 🏳️ShatakVPN690322
@@ -359,35 +295,27 @@ proxy-groups:
       - 未知VLESS-117|free-nodes
       - VLESS-xhttp-Reality-Vision
       - US_1
-      - KR
+      - KR_1
       - NL_1
-      - IT
-      - vl-reality-
       - NL_2
-      - US_2
-      - NL_3
-      - ccnew
-      - NL_4
-      - cc80
       - DE_1
-      - cc
-      - NL_5
-      - orus2new
-      - usarmnew
-      - DE_2
       - FI
-      - LV
-      - DE_3
-      - HK
-      - GB
-      - zoro_new
+      - HK_1
+      - US_2
+      - 🇨🇦CA
+      - 🇭🇺HU
+      - 🇵🇱PL
+      - DE_2
+      - HK_2
+      - KR_2
+      - NL_3
+      - NL_4
       - US_3
+      - US_4
       - 03-Trojan-cloudflare88
       - 01-Trojan-030101.xyz
-      - US_4
-      - 🇭🇰香港10
+      - US_5
       - 🇨🇳_CN_中国
-      - ccnewT
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
