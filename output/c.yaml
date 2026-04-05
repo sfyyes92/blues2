@@ -37,8 +37,6 @@ proxies:
   - {"type":"vless","name":"01-WS-030101.xyz","server":"bestcf.030101.xyz","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.dynv6.net","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
   - {"type":"vless","name":"02-WS-saas.sin.fan","server":"saas.sin.fan","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.dynv6.net","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
   - {"type":"vless","name":"03-WS-cloudflare88","server":"freeyx.cloudflare88.eu.org","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.dynv6.net","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
-  - {"type":"vless","name":"RU_1","server":"lv89.mechvpn.online","port":443,"uuid":"6d916d55-fead-4ff3-a3a9-83e175ea8ad7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","tls":true,"udp":true}
-  - {"type":"vless","name":"RU_2","server":"lv89.mechvpn.online","port":443,"uuid":"6d916d55-fead-4ff3-a3a9-83e175ea8ad7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","tls":true,"udp":true}
   - {"type":"vless","name":"HK_1","server":"222.167.202.52","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.52:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
   - {"type":"vless","name":"HK_2","server":"222.167.202.2","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.2:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
   - {"type":"vless","name":"HK_3","server":"222.167.202.47","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.47:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
@@ -140,8 +138,6 @@ proxy-groups:
       - 01-WS-030101.xyz
       - 02-WS-saas.sin.fan
       - 03-WS-cloudflare88
-      - RU_1
-      - RU_2
       - HK_1
       - HK_2
       - HK_3
@@ -243,8 +239,6 @@ proxy-groups:
       - 01-WS-030101.xyz
       - 02-WS-saas.sin.fan
       - 03-WS-cloudflare88
-      - RU_1
-      - RU_2
       - HK_1
       - HK_2
       - HK_3
@@ -346,8 +340,6 @@ proxy-groups:
       - 01-WS-030101.xyz
       - 02-WS-saas.sin.fan
       - 03-WS-cloudflare88
-      - RU_1
-      - RU_2
       - HK_1
       - HK_2
       - HK_3
@@ -448,8 +440,6 @@ proxy-groups:
       - 01-WS-030101.xyz
       - 02-WS-saas.sin.fan
       - 03-WS-cloudflare88
-      - RU_1
-      - RU_2
       - HK_1
       - HK_2
       - HK_3
@@ -550,8 +540,6 @@ proxy-groups:
       - 01-WS-030101.xyz
       - 02-WS-saas.sin.fan
       - 03-WS-cloudflare88
-      - RU_1
-      - RU_2
       - HK_1
       - HK_2
       - HK_3
@@ -652,8 +640,6 @@ proxy-groups:
       - 01-WS-030101.xyz
       - 02-WS-saas.sin.fan
       - 03-WS-cloudflare88
-      - RU_1
-      - RU_2
       - HK_1
       - HK_2
       - HK_3
@@ -771,8 +757,6 @@ proxy-groups:
       - 01-WS-030101.xyz
       - 02-WS-saas.sin.fan
       - 03-WS-cloudflare88
-      - RU_1
-      - RU_2
       - HK_1
       - HK_2
       - HK_3
