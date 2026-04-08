@@ -5,6 +5,19 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
+  - {"type":"trojan","name":"03-Trojan-cloudflare88","server":"freeyx.cloudflare88.eu.org","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
+  - {"type":"trojan","name":"AT_1","server":"152.53.60.198","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"jflsjlaf.pages.dev"}}}
+  - {"type":"trojan","name":"AT_2","server":"152.53.200.98","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"//","headers":{"host":"jflsjlaf.pages.dev"}}}
+  - {"type":"trojan","name":"AT_3","server":"152.53.60.198","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/"}}
+  - {"type":"trojan","name":"AT_4","server":"152.53.200.98","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"jflsjlaf.pages.dev"}}}
+  - {"type":"trojan","name":"NL_1","server":"94.131.105.125","port":4443,"password":"strong-secret-pass-777","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"AT_5","server":"152.53.200.167","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"jflsjlaf.pages.dev"}}}
+  - {"type":"trojan","name":"NL_2","server":"94.131.105.125","port":4443,"password":"strong-secret-pass-777","udp":true,"skip-cert-verify":true,"sni":"94.131.105.125","network":"tcp"}
+  - {"type":"trojan","name":"AT_6","server":"152.53.200.167","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/"}}
+  - {"type":"trojan","name":"02-Trojan-saas.sin.fan","server":"saas.sin.fan","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
+  - {"type":"trojan","name":"01-Trojan-030101.xyz","server":"bestcf.030101.xyz","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
+  - {"type":"trojan","name":"00-Trojan-jp-AI","server":"jp.111000.cc.cd","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
+  - {"type":"trojan","name":"🇺🇸US180|⬇️8MB/s","server":"fbxt0765gh0pielsss.ftisthebest.com","port":56251,"password":"e4895ea3-7b4a-3f46-ba5a-44ac4a691635","udp":true,"skip-cert-verify":true,"sni":"fbxt0765gh0pielsss.ftisthebest.com","network":"tcp"}
   - {"type":"vless","name":"01-WS","server":"bestcf.030101.xyz","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.dynv6.net","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
   - {"type":"vless","name":"DE_1","server":"185.94.29.156","port":4001,"uuid":"00000000-0000-4000-8000-000000000000","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sub.mot.ip-ddns.com","ws-opts":{"path":"/","headers":{"host":"sub.mot.ip-ddns.com"}}}
   - {"type":"vless","name":"HK_1","server":"222.167.202.52","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.52:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
@@ -27,10 +40,10 @@ proxies:
   - {"type":"vless","name":"HK_16","server":"222.167.202.33","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.33:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
   - {"type":"vless","name":"HK_17","server":"222.167.202.3","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.3:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
   - {"type":"vless","name":"HK_18","server":"222.167.202.22","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.22:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
-  - {"type":"vless","name":"NL_1","server":"185.94.29.156","port":4001,"uuid":"00000000-0000-4000-8000-000000000000","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sub.mot.ip-ddns.com","ws-opts":{"path":"/","headers":{"host":"sub.mot.ip-ddns.com"}}}
+  - {"type":"vless","name":"NL_3","server":"185.94.29.156","port":4001,"uuid":"00000000-0000-4000-8000-000000000000","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sub.mot.ip-ddns.com","ws-opts":{"path":"/","headers":{"host":"sub.mot.ip-ddns.com"}}}
   - {"type":"vless","name":"HK_19","server":"222.167.202.10","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.10:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
   - {"type":"vless","name":"HK_20","server":"222.167.202.3","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.3:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
-  - {"type":"vless","name":"NL_2","server":"185.94.29.156","port":4001,"uuid":"00000000-0000-4000-8000-000000000000","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sub.mot.ip-ddns.com","ws-opts":{"path":"/","headers":{"host":"sub.mot.ip-ddns.com"}}}
+  - {"type":"vless","name":"NL_4","server":"185.94.29.156","port":4001,"uuid":"00000000-0000-4000-8000-000000000000","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sub.mot.ip-ddns.com","ws-opts":{"path":"/","headers":{"host":"sub.mot.ip-ddns.com"}}}
   - {"type":"vless","name":"HK_21","server":"222.167.202.16","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.16:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
   - {"type":"vless","name":"HK_22","server":"222.167.202.4","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.4:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
   - {"type":"vless","name":"HK_23","server":"222.167.202.32","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.32:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
@@ -47,41 +60,87 @@ proxies:
   - {"type":"vless","name":"US_1","server":"162.159.44.217","port":443,"uuid":"5ca37755-ee04-431b-8b9a-9740d396b29b","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"snip.syt.pp.ua","ws-opts":{"path":"/Telegram@lsmoo&?ed=2560","headers":{"host":"snip.syt.pp.ua"}}}
   - {"type":"vless","name":"US_2","server":"172.64.52.232","port":443,"uuid":"5ca37755-ee04-431b-8b9a-9740d396b29b","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"snip.zrfs.nn.kg","ws-opts":{"path":"/Telegram@lsmoo&?ed=2560","headers":{"host":"snip.zrfs.nn.kg"}}}
   - {"type":"vless","name":"US_3","server":"108.162.198.172","port":443,"uuid":"5ca37755-ee04-431b-8b9a-9740d396b29b","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"snip.cfv.pp.ua","ws-opts":{"path":"/Telegram@lsmoo&?ed=2560","headers":{"host":"snip.cfv.pp.ua"}}}
-  - {"type":"vless","name":"意大利5","server":"222.167.202.32","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.32:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
-  - {"type":"vless","name":"意大利3","server":"222.167.202.23","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.23:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
   - {"type":"vless","name":"美国_1","server":"172.64.52.29","port":443,"uuid":"5ca37755-ee04-431b-8b9a-9740d396b29b","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"snip.zrr.pp.ua","ws-opts":{"path":"/Telegram@lsmoo&?ed=2560","headers":{"host":"snip.zrr.pp.ua"}}}
   - {"type":"vless","name":"美国_2","server":"162.159.38.197","port":443,"uuid":"5ca37755-ee04-431b-8b9a-9740d396b29b","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"snip.wrr.pp.ua","ws-opts":{"path":"/Telegram@lsmoo&?ed=2560","headers":{"host":"snip.wrr.pp.ua"}}}
   - {"type":"vless","name":"03-WS-cloudflare88","server":"freeyx.cloudflare88.eu.org","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.dynv6.net","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
   - {"type":"vless","name":"02-WS-saas.sin.fan","server":"saas.sin.fan","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.dynv6.net","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
   - {"type":"vless","name":"01-WS-030101.xyz","server":"bestcf.030101.xyz","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.dynv6.net","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
   - {"type":"vless","name":"00-WS-jp-AI","server":"jp.111000.cc.cd","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.dynv6.net","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
-  - {"type":"vless","name":"🇭🇰香港18","server":"222.167.202.31","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.31:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
-  - {"type":"vless","name":"🇭🇰香港14","server":"222.167.202.47","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.47:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
-  - {"type":"vless","name":"🇭🇰香港13","server":"222.167.202.26","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.26:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
-  - {"type":"vless","name":"🇭🇰香港12","server":"222.167.202.15","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.15:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
-  - {"type":"vless","name":"🇭🇰香港09","server":"222.167.202.2","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.2:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
   - {"type":"vless","name":"🇭🇰香港08","server":"222.167.202.4","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.4:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
-  - {"type":"vless","name":"🇭🇰香港07","server":"222.167.202.36","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.36:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"意大利5","server":"222.167.202.32","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.32:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"意大利4","server":"222.167.202.47","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.47:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
   - {"type":"vless","name":"🇭🇰香港05","server":"222.167.202.6","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.6:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
-  - {"type":"vless","name":"🇭🇰香港01","server":"222.167.202.14","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.14:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
-  - {"type":"trojan","name":"03-Trojan-cloudflare88","server":"freeyx.cloudflare88.eu.org","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
-  - {"type":"trojan","name":"AT_1","server":"152.53.60.198","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"jflsjlaf.pages.dev"}}}
-  - {"type":"trojan","name":"AT_2","server":"152.53.200.98","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"//","headers":{"host":"jflsjlaf.pages.dev"}}}
-  - {"type":"trojan","name":"AT_3","server":"152.53.60.198","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/"}}
-  - {"type":"trojan","name":"AT_4","server":"152.53.200.98","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"jflsjlaf.pages.dev"}}}
-  - {"type":"trojan","name":"NL_3","server":"94.131.105.125","port":4443,"password":"strong-secret-pass-777","udp":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"type":"trojan","name":"AT_5","server":"152.53.200.167","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"jflsjlaf.pages.dev"}}}
-  - {"type":"trojan","name":"NL_4","server":"94.131.105.125","port":4443,"password":"strong-secret-pass-777","udp":true,"skip-cert-verify":true,"sni":"94.131.105.125","network":"tcp"}
-  - {"type":"trojan","name":"AT_6","server":"152.53.200.167","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/"}}
-  - {"type":"trojan","name":"02-Trojan-saas.sin.fan","server":"saas.sin.fan","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
-  - {"type":"trojan","name":"01-Trojan-030101.xyz","server":"bestcf.030101.xyz","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
-  - {"type":"trojan","name":"00-Trojan-jp-AI","server":"jp.111000.cc.cd","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
+  - {"type":"vless","name":"意大利1","server":"222.167.202.26","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.26:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"🇭🇰香港12","server":"222.167.202.15","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.15:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"香港","server":"222.167.202.36","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.36:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"🇭🇰香港10","server":"222.167.202.31","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.31:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"意大利3","server":"222.167.202.23","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.23:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"🇳🇱NL127|⬇️2MB/s","server":"45.143.167.170","port":8443,"uuid":"4b056394-2f40-11f1-bffe-46c4782ac1a7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇭🇰香港09","server":"222.167.202.2","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.2:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"🇭🇰香港02","server":"222.167.202.14","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.14:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"🇨🇦CA116|⬇️2MB/s","server":"135.84.74.43","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.v6.navy","ws-opts":{"path":"/","headers":{"host":"sni.111000.v6.navy"}}}
+  - {"type":"vless","name":"🇳🇱NL104|⬇️1MB/s","server":"150.251.145.242","port":8443,"uuid":"4b056394-2f40-11f1-bffe-46c4782ac1a7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"5D-法国-0x-01","server":"94.183.186.27","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.v6.navy","ws-opts":{"path":"/?ed=2560&telegram🇨🇳@wangcai2","headers":{"host":"sni.111000.v6.navy"}}}
+  - {"type":"vless","name":"5D-法国-0x-02","server":"217.60.252.232","port":2053,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.v6.navy","ws-opts":{"path":"/","headers":{"host":"sni.111000.v6.navy"}}}
+  - {"type":"vless","name":"5D-法国-0x-03","server":"188.130.207.92","port":8443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.v6.navy","ws-opts":{"path":"/?ed=2560&Telegram🇨🇳+@WangCai2","headers":{"host":"sni.111000.v6.navy"}}}
+  - {"type":"vless","name":"5D-荷兰-0x-04","server":"150.251.145.242","port":8443,"uuid":"4b056394-2f40-11f1-bffe-46c4782ac1a7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"5D-荷兰-0x-05","server":"185.243.112.61","port":2053,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.v6.navy","ws-opts":{"path":"/","headers":{"host":"sni.111000.v6.navy"}}}
+  - {"type":"vless","name":"5D-加拿大-0x-01","server":"77.221.152.21","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.v6.navy","ws-opts":{"path":"/?ed=2560","headers":{"host":"sni.111000.v6.navy"}}}
+  - {"type":"vless","name":"5D-加拿大-0x-03","server":"209.102.207.120","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.v6.navy","ws-opts":{"path":"/","headers":{"host":"sni.111000.v6.navy"}}}
+  - {"type":"vless","name":"5D-加拿大-0x-05","server":"82.117.245.125","port":2053,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.v6.navy","ws-opts":{"path":"/","headers":{"host":"sni.111000.v6.navy"}}}
+  - {"type":"vless","name":"5D-美国-0x-03","server":"135.84.74.43","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.v6.navy","ws-opts":{"path":"/","headers":{"host":"sni.111000.v6.navy"}}}
+  - {"type":"vless","name":"5D-美国-0x-08","server":"77.110.122.205","port":26946,"uuid":"99f06929-4311-489c-91cc-ef1c582e5dfa","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
+  - {"type":"vless","name":"5D-美国-0x-09","server":"192.200.160.19","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.v6.navy","ws-opts":{"path":"/?ed=2560","headers":{"host":"sni.111000.v6.navy"}}}
+  - {"type":"vless","name":"5D-美国-0x-18","server":"94.131.101.135","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.v6.navy","ws-opts":{"path":"/","headers":{"host":"sni.111000.v6.navy"}}}
+  - {"type":"vless","name":"5D-美国-0x-19","server":"152.53.1.32","port":7443,"uuid":"8f8380ae-9f5d-4cb5-8f5f-0f70fbe054a9","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"chat.deepseek.com","tls":false,"udp":true}
+  - {"type":"vless","name":"5D-美国-0x-21","server":"95.164.36.217","port":443,"uuid":"43488128-319e-f480-64ea-0acdc712e2a8","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.booking.com","tls":false,"udp":true}
+  - {"type":"vless","name":"5D-日本-0x-02","server":"dongjing1.zqjsqapi.com","port":443,"uuid":"8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dongjing1.zqjsqapi.com","ws-opts":{"path":"/proxy","headers":{"host":"dongjing1.zqjsqapi.com"}}}
+  - {"type":"vless","name":"5D-日本-0x-03","server":"45.153.245.222","port":19002,"uuid":"9bd35224-a67d-499b-ae1c-ea383132e422","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"mirrors-package-mc.aki-game.net","tls":false,"udp":true}
+  - {"type":"vless","name":"5D-日本-0x-05","server":"dongjing2.zqjsqapi.com","port":443,"uuid":"8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dongjing2.zqjsqapi.com","ws-opts":{"path":"/proxy","headers":{"host":"dongjing2.zqjsqapi.com"}}}
+  - {"type":"vless","name":"5D-日本-0x-07","server":"dongjing3.zqjsqapi.com","port":443,"uuid":"8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dongjing3.zqjsqapi.com","ws-opts":{"path":"/proxy","headers":{"host":"dongjing3.zqjsqapi.com"}}}
+  - {"type":"vless","name":"5D-瑞典-0x-01","server":"31.128.32.98","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.v6.navy","ws-opts":{"path":"/","headers":{"host":"sni.111000.v6.navy"}}}
+  - {"type":"vless","name":"5D-瑞典-0x-02","server":"185.82.126.185","port":2053,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.v6.navy","ws-opts":{"path":"/","headers":{"host":"sni.111000.v6.navy"}}}
+  - {"type":"vless","name":"5D-泰国-0x-02","server":"47.81.39.100","port":443,"uuid":"3e7f67de-648e-4871-b51a-a225214d41ee","skip-cert-verify":true,"network":"tcp","servername":"api.digital-help-prd.autodesk.com","tls":false,"udp":true}
+  - {"type":"vless","name":"5D-香港-0x-02","server":"222.167.202.4","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.4:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"5D-香港-0x-03","server":"s5.db-link.in","port":17820,"uuid":"75d4d24d-ba8d-3676-a5c6-edd6ea6dbfb6","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"48afa0c5c9.shopify.com","ws-opts":{"path":"/db102448afa0c5c9","headers":{"host":"48afa0c5c9.shopify.com"}}}
+  - {"type":"vless","name":"5D-香港-0x-04","server":"s5.db-link.in","port":14351,"uuid":"75d4d24d-ba8d-3676-a5c6-edd6ea6dbfb6","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"199745db08.shopify.com","ws-opts":{"path":"/db1024199745db08","headers":{"host":"199745db08.shopify.com"}}}
+  - {"type":"vless","name":"5D-香港-0x-05","server":"222.167.202.33","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.33:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"5D-香港-0x-06","server":"222.167.202.15","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.15:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"5D-香港-0x-07","server":"222.167.202.36","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.36:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"5D-香港-0x-08","server":"222.167.202.52","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.52:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"5D-香港-0x-09","server":"xianggang2.zqjsqapi.com","port":443,"uuid":"8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xianggang2.zqjsqapi.com","ws-opts":{"path":"/proxy","headers":{"host":"xianggang2.zqjsqapi.com"}}}
+  - {"type":"vless","name":"5D-香港-0x-10","server":"xianggang3.zqjsqapi.com","port":443,"uuid":"8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xianggang3.zqjsqapi.com","ws-opts":{"path":"/proxy","headers":{"host":"xianggang3.zqjsqapi.com"}}}
+  - {"type":"vless","name":"5D-香港-0x-11","server":"222.167.202.47","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.47:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"5D-香港-0x-12","server":"222.167.202.2","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.2:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"5D-香港-0x-13","server":"222.167.202.31","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.31:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"5D-新加坡-0x-01","server":"xinjiapo1.zqjsqapi.com","port":443,"uuid":"8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xinjiapo1.zqjsqapi.com","ws-opts":{"path":"/proxy","headers":{"host":"xinjiapo1.zqjsqapi.com"}}}
+  - {"type":"vless","name":"5D-意大利-0x-01","server":"222.167.202.26","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.26:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"5D-意大利-0x-02","server":"222.167.202.45","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.45:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"5D-意大利-0x-03","server":"222.167.202.32","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.32:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"5D-意大利-0x-04","server":"222.167.202.10","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.10:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"5D-意大利-0x-05","server":"222.167.202.60","port":7443,"uuid":"06ef598c-1555-4887-b3f9-08214a2f6792","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"2026.hhhhh.eu.org","ws-opts":{"path":"/222.167.202.60:7443","headers":{"host":"2026.hhhhh.eu.org"}}}
+  - {"type":"vless","name":"5D-印度-0x-01","server":"202.155.11.73","port":8443,"uuid":"4b056394-2f40-11f1-bffe-46c4782ac1a7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"5D-印度-0x-02","server":"202.155.11.137","port":8443,"uuid":"f3a1017d-1ebf-11f1-8cae-c3845d39d2de","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"5D-英国-0x-02","server":"135.84.74.155","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.v6.navy","ws-opts":{"path":"/?Telegram🇨🇳+@WangCai2=","headers":{"host":"sni.111000.v6.navy"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 03-Trojan-cloudflare88
+      - AT_1
+      - AT_2
+      - AT_3
+      - AT_4
+      - NL_1
+      - AT_5
+      - NL_2
+      - AT_6
+      - 02-Trojan-saas.sin.fan
+      - 01-Trojan-030101.xyz
+      - 00-Trojan-jp-AI
+      - 🇺🇸US180|⬇️8MB/s
       - 01-WS
       - DE_1
       - HK_1
@@ -104,10 +163,10 @@ proxy-groups:
       - HK_16
       - HK_17
       - HK_18
-      - NL_1
+      - NL_3
       - HK_19
       - HK_20
-      - NL_2
+      - NL_4
       - HK_21
       - HK_22
       - HK_23
@@ -124,41 +183,87 @@ proxy-groups:
       - US_1
       - US_2
       - US_3
-      - 意大利5
-      - 意大利3
       - 美国_1
       - 美国_2
       - 03-WS-cloudflare88
       - 02-WS-saas.sin.fan
       - 01-WS-030101.xyz
       - 00-WS-jp-AI
-      - 🇭🇰香港18
-      - 🇭🇰香港14
-      - 🇭🇰香港13
-      - 🇭🇰香港12
-      - 🇭🇰香港09
       - 🇭🇰香港08
-      - 🇭🇰香港07
+      - 意大利5
+      - 意大利4
       - 🇭🇰香港05
-      - 🇭🇰香港01
-      - 03-Trojan-cloudflare88
-      - AT_1
-      - AT_2
-      - AT_3
-      - AT_4
-      - NL_3
-      - AT_5
-      - NL_4
-      - AT_6
-      - 02-Trojan-saas.sin.fan
-      - 01-Trojan-030101.xyz
-      - 00-Trojan-jp-AI
+      - 意大利1
+      - 🇭🇰香港12
+      - 香港
+      - 🇭🇰香港10
+      - 意大利3
+      - 🇳🇱NL127|⬇️2MB/s
+      - 🇭🇰香港09
+      - 🇭🇰香港02
+      - 🇨🇦CA116|⬇️2MB/s
+      - 🇳🇱NL104|⬇️1MB/s
+      - 5D-法国-0x-01
+      - 5D-法国-0x-02
+      - 5D-法国-0x-03
+      - 5D-荷兰-0x-04
+      - 5D-荷兰-0x-05
+      - 5D-加拿大-0x-01
+      - 5D-加拿大-0x-03
+      - 5D-加拿大-0x-05
+      - 5D-美国-0x-03
+      - 5D-美国-0x-08
+      - 5D-美国-0x-09
+      - 5D-美国-0x-18
+      - 5D-美国-0x-19
+      - 5D-美国-0x-21
+      - 5D-日本-0x-02
+      - 5D-日本-0x-03
+      - 5D-日本-0x-05
+      - 5D-日本-0x-07
+      - 5D-瑞典-0x-01
+      - 5D-瑞典-0x-02
+      - 5D-泰国-0x-02
+      - 5D-香港-0x-02
+      - 5D-香港-0x-03
+      - 5D-香港-0x-04
+      - 5D-香港-0x-05
+      - 5D-香港-0x-06
+      - 5D-香港-0x-07
+      - 5D-香港-0x-08
+      - 5D-香港-0x-09
+      - 5D-香港-0x-10
+      - 5D-香港-0x-11
+      - 5D-香港-0x-12
+      - 5D-香港-0x-13
+      - 5D-新加坡-0x-01
+      - 5D-意大利-0x-01
+      - 5D-意大利-0x-02
+      - 5D-意大利-0x-03
+      - 5D-意大利-0x-04
+      - 5D-意大利-0x-05
+      - 5D-印度-0x-01
+      - 5D-印度-0x-02
+      - 5D-英国-0x-02
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 03-Trojan-cloudflare88
+      - AT_1
+      - AT_2
+      - AT_3
+      - AT_4
+      - NL_1
+      - AT_5
+      - NL_2
+      - AT_6
+      - 02-Trojan-saas.sin.fan
+      - 01-Trojan-030101.xyz
+      - 00-Trojan-jp-AI
+      - 🇺🇸US180|⬇️8MB/s
       - 01-WS
       - DE_1
       - HK_1
@@ -181,10 +286,10 @@ proxy-groups:
       - HK_16
       - HK_17
       - HK_18
-      - NL_1
+      - NL_3
       - HK_19
       - HK_20
-      - NL_2
+      - NL_4
       - HK_21
       - HK_22
       - HK_23
@@ -201,41 +306,87 @@ proxy-groups:
       - US_1
       - US_2
       - US_3
-      - 意大利5
-      - 意大利3
       - 美国_1
       - 美国_2
       - 03-WS-cloudflare88
       - 02-WS-saas.sin.fan
       - 01-WS-030101.xyz
       - 00-WS-jp-AI
-      - 🇭🇰香港18
-      - 🇭🇰香港14
-      - 🇭🇰香港13
-      - 🇭🇰香港12
-      - 🇭🇰香港09
       - 🇭🇰香港08
-      - 🇭🇰香港07
+      - 意大利5
+      - 意大利4
       - 🇭🇰香港05
-      - 🇭🇰香港01
-      - 03-Trojan-cloudflare88
-      - AT_1
-      - AT_2
-      - AT_3
-      - AT_4
-      - NL_3
-      - AT_5
-      - NL_4
-      - AT_6
-      - 02-Trojan-saas.sin.fan
-      - 01-Trojan-030101.xyz
-      - 00-Trojan-jp-AI
+      - 意大利1
+      - 🇭🇰香港12
+      - 香港
+      - 🇭🇰香港10
+      - 意大利3
+      - 🇳🇱NL127|⬇️2MB/s
+      - 🇭🇰香港09
+      - 🇭🇰香港02
+      - 🇨🇦CA116|⬇️2MB/s
+      - 🇳🇱NL104|⬇️1MB/s
+      - 5D-法国-0x-01
+      - 5D-法国-0x-02
+      - 5D-法国-0x-03
+      - 5D-荷兰-0x-04
+      - 5D-荷兰-0x-05
+      - 5D-加拿大-0x-01
+      - 5D-加拿大-0x-03
+      - 5D-加拿大-0x-05
+      - 5D-美国-0x-03
+      - 5D-美国-0x-08
+      - 5D-美国-0x-09
+      - 5D-美国-0x-18
+      - 5D-美国-0x-19
+      - 5D-美国-0x-21
+      - 5D-日本-0x-02
+      - 5D-日本-0x-03
+      - 5D-日本-0x-05
+      - 5D-日本-0x-07
+      - 5D-瑞典-0x-01
+      - 5D-瑞典-0x-02
+      - 5D-泰国-0x-02
+      - 5D-香港-0x-02
+      - 5D-香港-0x-03
+      - 5D-香港-0x-04
+      - 5D-香港-0x-05
+      - 5D-香港-0x-06
+      - 5D-香港-0x-07
+      - 5D-香港-0x-08
+      - 5D-香港-0x-09
+      - 5D-香港-0x-10
+      - 5D-香港-0x-11
+      - 5D-香港-0x-12
+      - 5D-香港-0x-13
+      - 5D-新加坡-0x-01
+      - 5D-意大利-0x-01
+      - 5D-意大利-0x-02
+      - 5D-意大利-0x-03
+      - 5D-意大利-0x-04
+      - 5D-意大利-0x-05
+      - 5D-印度-0x-01
+      - 5D-印度-0x-02
+      - 5D-英国-0x-02
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 03-Trojan-cloudflare88
+      - AT_1
+      - AT_2
+      - AT_3
+      - AT_4
+      - NL_1
+      - AT_5
+      - NL_2
+      - AT_6
+      - 02-Trojan-saas.sin.fan
+      - 01-Trojan-030101.xyz
+      - 00-Trojan-jp-AI
+      - 🇺🇸US180|⬇️8MB/s
       - 01-WS
       - DE_1
       - HK_1
@@ -258,10 +409,10 @@ proxy-groups:
       - HK_16
       - HK_17
       - HK_18
-      - NL_1
+      - NL_3
       - HK_19
       - HK_20
-      - NL_2
+      - NL_4
       - HK_21
       - HK_22
       - HK_23
@@ -278,40 +429,86 @@ proxy-groups:
       - US_1
       - US_2
       - US_3
-      - 意大利5
-      - 意大利3
       - 美国_1
       - 美国_2
       - 03-WS-cloudflare88
       - 02-WS-saas.sin.fan
       - 01-WS-030101.xyz
       - 00-WS-jp-AI
-      - 🇭🇰香港18
-      - 🇭🇰香港14
-      - 🇭🇰香港13
-      - 🇭🇰香港12
-      - 🇭🇰香港09
       - 🇭🇰香港08
-      - 🇭🇰香港07
+      - 意大利5
+      - 意大利4
       - 🇭🇰香港05
-      - 🇭🇰香港01
-      - 03-Trojan-cloudflare88
-      - AT_1
-      - AT_2
-      - AT_3
-      - AT_4
-      - NL_3
-      - AT_5
-      - NL_4
-      - AT_6
-      - 02-Trojan-saas.sin.fan
-      - 01-Trojan-030101.xyz
-      - 00-Trojan-jp-AI
+      - 意大利1
+      - 🇭🇰香港12
+      - 香港
+      - 🇭🇰香港10
+      - 意大利3
+      - 🇳🇱NL127|⬇️2MB/s
+      - 🇭🇰香港09
+      - 🇭🇰香港02
+      - 🇨🇦CA116|⬇️2MB/s
+      - 🇳🇱NL104|⬇️1MB/s
+      - 5D-法国-0x-01
+      - 5D-法国-0x-02
+      - 5D-法国-0x-03
+      - 5D-荷兰-0x-04
+      - 5D-荷兰-0x-05
+      - 5D-加拿大-0x-01
+      - 5D-加拿大-0x-03
+      - 5D-加拿大-0x-05
+      - 5D-美国-0x-03
+      - 5D-美国-0x-08
+      - 5D-美国-0x-09
+      - 5D-美国-0x-18
+      - 5D-美国-0x-19
+      - 5D-美国-0x-21
+      - 5D-日本-0x-02
+      - 5D-日本-0x-03
+      - 5D-日本-0x-05
+      - 5D-日本-0x-07
+      - 5D-瑞典-0x-01
+      - 5D-瑞典-0x-02
+      - 5D-泰国-0x-02
+      - 5D-香港-0x-02
+      - 5D-香港-0x-03
+      - 5D-香港-0x-04
+      - 5D-香港-0x-05
+      - 5D-香港-0x-06
+      - 5D-香港-0x-07
+      - 5D-香港-0x-08
+      - 5D-香港-0x-09
+      - 5D-香港-0x-10
+      - 5D-香港-0x-11
+      - 5D-香港-0x-12
+      - 5D-香港-0x-13
+      - 5D-新加坡-0x-01
+      - 5D-意大利-0x-01
+      - 5D-意大利-0x-02
+      - 5D-意大利-0x-03
+      - 5D-意大利-0x-04
+      - 5D-意大利-0x-05
+      - 5D-印度-0x-01
+      - 5D-印度-0x-02
+      - 5D-英国-0x-02
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 03-Trojan-cloudflare88
+      - AT_1
+      - AT_2
+      - AT_3
+      - AT_4
+      - NL_1
+      - AT_5
+      - NL_2
+      - AT_6
+      - 02-Trojan-saas.sin.fan
+      - 01-Trojan-030101.xyz
+      - 00-Trojan-jp-AI
+      - 🇺🇸US180|⬇️8MB/s
       - 01-WS
       - DE_1
       - HK_1
@@ -334,10 +531,10 @@ proxy-groups:
       - HK_16
       - HK_17
       - HK_18
-      - NL_1
+      - NL_3
       - HK_19
       - HK_20
-      - NL_2
+      - NL_4
       - HK_21
       - HK_22
       - HK_23
@@ -354,40 +551,86 @@ proxy-groups:
       - US_1
       - US_2
       - US_3
-      - 意大利5
-      - 意大利3
       - 美国_1
       - 美国_2
       - 03-WS-cloudflare88
       - 02-WS-saas.sin.fan
       - 01-WS-030101.xyz
       - 00-WS-jp-AI
-      - 🇭🇰香港18
-      - 🇭🇰香港14
-      - 🇭🇰香港13
-      - 🇭🇰香港12
-      - 🇭🇰香港09
       - 🇭🇰香港08
-      - 🇭🇰香港07
+      - 意大利5
+      - 意大利4
       - 🇭🇰香港05
-      - 🇭🇰香港01
-      - 03-Trojan-cloudflare88
-      - AT_1
-      - AT_2
-      - AT_3
-      - AT_4
-      - NL_3
-      - AT_5
-      - NL_4
-      - AT_6
-      - 02-Trojan-saas.sin.fan
-      - 01-Trojan-030101.xyz
-      - 00-Trojan-jp-AI
+      - 意大利1
+      - 🇭🇰香港12
+      - 香港
+      - 🇭🇰香港10
+      - 意大利3
+      - 🇳🇱NL127|⬇️2MB/s
+      - 🇭🇰香港09
+      - 🇭🇰香港02
+      - 🇨🇦CA116|⬇️2MB/s
+      - 🇳🇱NL104|⬇️1MB/s
+      - 5D-法国-0x-01
+      - 5D-法国-0x-02
+      - 5D-法国-0x-03
+      - 5D-荷兰-0x-04
+      - 5D-荷兰-0x-05
+      - 5D-加拿大-0x-01
+      - 5D-加拿大-0x-03
+      - 5D-加拿大-0x-05
+      - 5D-美国-0x-03
+      - 5D-美国-0x-08
+      - 5D-美国-0x-09
+      - 5D-美国-0x-18
+      - 5D-美国-0x-19
+      - 5D-美国-0x-21
+      - 5D-日本-0x-02
+      - 5D-日本-0x-03
+      - 5D-日本-0x-05
+      - 5D-日本-0x-07
+      - 5D-瑞典-0x-01
+      - 5D-瑞典-0x-02
+      - 5D-泰国-0x-02
+      - 5D-香港-0x-02
+      - 5D-香港-0x-03
+      - 5D-香港-0x-04
+      - 5D-香港-0x-05
+      - 5D-香港-0x-06
+      - 5D-香港-0x-07
+      - 5D-香港-0x-08
+      - 5D-香港-0x-09
+      - 5D-香港-0x-10
+      - 5D-香港-0x-11
+      - 5D-香港-0x-12
+      - 5D-香港-0x-13
+      - 5D-新加坡-0x-01
+      - 5D-意大利-0x-01
+      - 5D-意大利-0x-02
+      - 5D-意大利-0x-03
+      - 5D-意大利-0x-04
+      - 5D-意大利-0x-05
+      - 5D-印度-0x-01
+      - 5D-印度-0x-02
+      - 5D-英国-0x-02
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 03-Trojan-cloudflare88
+      - AT_1
+      - AT_2
+      - AT_3
+      - AT_4
+      - NL_1
+      - AT_5
+      - NL_2
+      - AT_6
+      - 02-Trojan-saas.sin.fan
+      - 01-Trojan-030101.xyz
+      - 00-Trojan-jp-AI
+      - 🇺🇸US180|⬇️8MB/s
       - 01-WS
       - DE_1
       - HK_1
@@ -410,10 +653,10 @@ proxy-groups:
       - HK_16
       - HK_17
       - HK_18
-      - NL_1
+      - NL_3
       - HK_19
       - HK_20
-      - NL_2
+      - NL_4
       - HK_21
       - HK_22
       - HK_23
@@ -430,40 +673,86 @@ proxy-groups:
       - US_1
       - US_2
       - US_3
-      - 意大利5
-      - 意大利3
       - 美国_1
       - 美国_2
       - 03-WS-cloudflare88
       - 02-WS-saas.sin.fan
       - 01-WS-030101.xyz
       - 00-WS-jp-AI
-      - 🇭🇰香港18
-      - 🇭🇰香港14
-      - 🇭🇰香港13
-      - 🇭🇰香港12
-      - 🇭🇰香港09
       - 🇭🇰香港08
-      - 🇭🇰香港07
+      - 意大利5
+      - 意大利4
       - 🇭🇰香港05
-      - 🇭🇰香港01
-      - 03-Trojan-cloudflare88
-      - AT_1
-      - AT_2
-      - AT_3
-      - AT_4
-      - NL_3
-      - AT_5
-      - NL_4
-      - AT_6
-      - 02-Trojan-saas.sin.fan
-      - 01-Trojan-030101.xyz
-      - 00-Trojan-jp-AI
+      - 意大利1
+      - 🇭🇰香港12
+      - 香港
+      - 🇭🇰香港10
+      - 意大利3
+      - 🇳🇱NL127|⬇️2MB/s
+      - 🇭🇰香港09
+      - 🇭🇰香港02
+      - 🇨🇦CA116|⬇️2MB/s
+      - 🇳🇱NL104|⬇️1MB/s
+      - 5D-法国-0x-01
+      - 5D-法国-0x-02
+      - 5D-法国-0x-03
+      - 5D-荷兰-0x-04
+      - 5D-荷兰-0x-05
+      - 5D-加拿大-0x-01
+      - 5D-加拿大-0x-03
+      - 5D-加拿大-0x-05
+      - 5D-美国-0x-03
+      - 5D-美国-0x-08
+      - 5D-美国-0x-09
+      - 5D-美国-0x-18
+      - 5D-美国-0x-19
+      - 5D-美国-0x-21
+      - 5D-日本-0x-02
+      - 5D-日本-0x-03
+      - 5D-日本-0x-05
+      - 5D-日本-0x-07
+      - 5D-瑞典-0x-01
+      - 5D-瑞典-0x-02
+      - 5D-泰国-0x-02
+      - 5D-香港-0x-02
+      - 5D-香港-0x-03
+      - 5D-香港-0x-04
+      - 5D-香港-0x-05
+      - 5D-香港-0x-06
+      - 5D-香港-0x-07
+      - 5D-香港-0x-08
+      - 5D-香港-0x-09
+      - 5D-香港-0x-10
+      - 5D-香港-0x-11
+      - 5D-香港-0x-12
+      - 5D-香港-0x-13
+      - 5D-新加坡-0x-01
+      - 5D-意大利-0x-01
+      - 5D-意大利-0x-02
+      - 5D-意大利-0x-03
+      - 5D-意大利-0x-04
+      - 5D-意大利-0x-05
+      - 5D-印度-0x-01
+      - 5D-印度-0x-02
+      - 5D-英国-0x-02
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 03-Trojan-cloudflare88
+      - AT_1
+      - AT_2
+      - AT_3
+      - AT_4
+      - NL_1
+      - AT_5
+      - NL_2
+      - AT_6
+      - 02-Trojan-saas.sin.fan
+      - 01-Trojan-030101.xyz
+      - 00-Trojan-jp-AI
+      - 🇺🇸US180|⬇️8MB/s
       - 01-WS
       - DE_1
       - HK_1
@@ -486,10 +775,10 @@ proxy-groups:
       - HK_16
       - HK_17
       - HK_18
-      - NL_1
+      - NL_3
       - HK_19
       - HK_20
-      - NL_2
+      - NL_4
       - HK_21
       - HK_22
       - HK_23
@@ -506,35 +795,68 @@ proxy-groups:
       - US_1
       - US_2
       - US_3
-      - 意大利5
-      - 意大利3
       - 美国_1
       - 美国_2
       - 03-WS-cloudflare88
       - 02-WS-saas.sin.fan
       - 01-WS-030101.xyz
       - 00-WS-jp-AI
-      - 🇭🇰香港18
-      - 🇭🇰香港14
-      - 🇭🇰香港13
-      - 🇭🇰香港12
-      - 🇭🇰香港09
       - 🇭🇰香港08
-      - 🇭🇰香港07
+      - 意大利5
+      - 意大利4
       - 🇭🇰香港05
-      - 🇭🇰香港01
-      - 03-Trojan-cloudflare88
-      - AT_1
-      - AT_2
-      - AT_3
-      - AT_4
-      - NL_3
-      - AT_5
-      - NL_4
-      - AT_6
-      - 02-Trojan-saas.sin.fan
-      - 01-Trojan-030101.xyz
-      - 00-Trojan-jp-AI
+      - 意大利1
+      - 🇭🇰香港12
+      - 香港
+      - 🇭🇰香港10
+      - 意大利3
+      - 🇳🇱NL127|⬇️2MB/s
+      - 🇭🇰香港09
+      - 🇭🇰香港02
+      - 🇨🇦CA116|⬇️2MB/s
+      - 🇳🇱NL104|⬇️1MB/s
+      - 5D-法国-0x-01
+      - 5D-法国-0x-02
+      - 5D-法国-0x-03
+      - 5D-荷兰-0x-04
+      - 5D-荷兰-0x-05
+      - 5D-加拿大-0x-01
+      - 5D-加拿大-0x-03
+      - 5D-加拿大-0x-05
+      - 5D-美国-0x-03
+      - 5D-美国-0x-08
+      - 5D-美国-0x-09
+      - 5D-美国-0x-18
+      - 5D-美国-0x-19
+      - 5D-美国-0x-21
+      - 5D-日本-0x-02
+      - 5D-日本-0x-03
+      - 5D-日本-0x-05
+      - 5D-日本-0x-07
+      - 5D-瑞典-0x-01
+      - 5D-瑞典-0x-02
+      - 5D-泰国-0x-02
+      - 5D-香港-0x-02
+      - 5D-香港-0x-03
+      - 5D-香港-0x-04
+      - 5D-香港-0x-05
+      - 5D-香港-0x-06
+      - 5D-香港-0x-07
+      - 5D-香港-0x-08
+      - 5D-香港-0x-09
+      - 5D-香港-0x-10
+      - 5D-香港-0x-11
+      - 5D-香港-0x-12
+      - 5D-香港-0x-13
+      - 5D-新加坡-0x-01
+      - 5D-意大利-0x-01
+      - 5D-意大利-0x-02
+      - 5D-意大利-0x-03
+      - 5D-意大利-0x-04
+      - 5D-意大利-0x-05
+      - 5D-印度-0x-01
+      - 5D-印度-0x-02
+      - 5D-英国-0x-02
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -557,6 +879,19 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 03-Trojan-cloudflare88
+      - AT_1
+      - AT_2
+      - AT_3
+      - AT_4
+      - NL_1
+      - AT_5
+      - NL_2
+      - AT_6
+      - 02-Trojan-saas.sin.fan
+      - 01-Trojan-030101.xyz
+      - 00-Trojan-jp-AI
+      - 🇺🇸US180|⬇️8MB/s
       - 01-WS
       - DE_1
       - HK_1
@@ -579,10 +914,10 @@ proxy-groups:
       - HK_16
       - HK_17
       - HK_18
-      - NL_1
+      - NL_3
       - HK_19
       - HK_20
-      - NL_2
+      - NL_4
       - HK_21
       - HK_22
       - HK_23
@@ -599,35 +934,68 @@ proxy-groups:
       - US_1
       - US_2
       - US_3
-      - 意大利5
-      - 意大利3
       - 美国_1
       - 美国_2
       - 03-WS-cloudflare88
       - 02-WS-saas.sin.fan
       - 01-WS-030101.xyz
       - 00-WS-jp-AI
-      - 🇭🇰香港18
-      - 🇭🇰香港14
-      - 🇭🇰香港13
-      - 🇭🇰香港12
-      - 🇭🇰香港09
       - 🇭🇰香港08
-      - 🇭🇰香港07
+      - 意大利5
+      - 意大利4
       - 🇭🇰香港05
-      - 🇭🇰香港01
-      - 03-Trojan-cloudflare88
-      - AT_1
-      - AT_2
-      - AT_3
-      - AT_4
-      - NL_3
-      - AT_5
-      - NL_4
-      - AT_6
-      - 02-Trojan-saas.sin.fan
-      - 01-Trojan-030101.xyz
-      - 00-Trojan-jp-AI
+      - 意大利1
+      - 🇭🇰香港12
+      - 香港
+      - 🇭🇰香港10
+      - 意大利3
+      - 🇳🇱NL127|⬇️2MB/s
+      - 🇭🇰香港09
+      - 🇭🇰香港02
+      - 🇨🇦CA116|⬇️2MB/s
+      - 🇳🇱NL104|⬇️1MB/s
+      - 5D-法国-0x-01
+      - 5D-法国-0x-02
+      - 5D-法国-0x-03
+      - 5D-荷兰-0x-04
+      - 5D-荷兰-0x-05
+      - 5D-加拿大-0x-01
+      - 5D-加拿大-0x-03
+      - 5D-加拿大-0x-05
+      - 5D-美国-0x-03
+      - 5D-美国-0x-08
+      - 5D-美国-0x-09
+      - 5D-美国-0x-18
+      - 5D-美国-0x-19
+      - 5D-美国-0x-21
+      - 5D-日本-0x-02
+      - 5D-日本-0x-03
+      - 5D-日本-0x-05
+      - 5D-日本-0x-07
+      - 5D-瑞典-0x-01
+      - 5D-瑞典-0x-02
+      - 5D-泰国-0x-02
+      - 5D-香港-0x-02
+      - 5D-香港-0x-03
+      - 5D-香港-0x-04
+      - 5D-香港-0x-05
+      - 5D-香港-0x-06
+      - 5D-香港-0x-07
+      - 5D-香港-0x-08
+      - 5D-香港-0x-09
+      - 5D-香港-0x-10
+      - 5D-香港-0x-11
+      - 5D-香港-0x-12
+      - 5D-香港-0x-13
+      - 5D-新加坡-0x-01
+      - 5D-意大利-0x-01
+      - 5D-意大利-0x-02
+      - 5D-意大利-0x-03
+      - 5D-意大利-0x-04
+      - 5D-意大利-0x-05
+      - 5D-印度-0x-01
+      - 5D-印度-0x-02
+      - 5D-英国-0x-02
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
