@@ -20,6 +20,8 @@ from Crypto.Util.Padding import unpad
 
 from datetime import datetime
 
+import xml.etree.ElementTree as ET
+
 
 def dump_debug_html(html: str, filename_prefix: str):
     """
@@ -138,6 +140,64 @@ def parse_leading_date(title: str) -> Optional[date]:
         return None
     y, mo, d = map(int, m.groups())
     return date(y, mo, d)
+
+
+def find_latest_dated_video_from_rss(session: requests.Session, channel_id: str) -> Tuple[date, str, str]:
+    """
+    使用 RSS 获取最新“标题以日期打头”的视频
+    返回: (dt, video_url, title)
+    """
+    rss_urls = [
+        f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}",
+        f"https://youtube.com/feeds/videos.xml?channel_id={channel_id}",
+    ]
+
+    last_err = None
+
+    for rss_url in rss_urls:
+        for i in range(4):
+            try:
+                time.sleep(random.uniform(1.0, 2.5))
+
+                r = session.get(rss_url, timeout=20, allow_redirects=True)
+                r.raise_for_status()
+
+                root = ET.fromstring(r.text)
+
+                ns = {
+                    "atom": "http://www.w3.org/2005/Atom"
+                }
+
+                candidates = []
+
+                for entry in root.findall("atom:entry", ns):
+                    title_el = entry.find("atom:title", ns)
+                    link_el = entry.find("atom:link", ns)
+
+                    if title_el is None or link_el is None:
+                        continue
+
+                    title = title_el.text or ""
+                    link = link_el.attrib.get("href", "")
+
+                    dt = parse_leading_date(title)
+                    if dt and link:
+                        candidates.append((dt, link, title))
+
+                if not candidates:
+                    raise ValueError("RSS 中未找到符合条件的视频")
+
+                candidates.sort(key=lambda x: x[0], reverse=True)
+                latest_dt, latest_url, latest_title = candidates[0]
+                return latest_dt, latest_url, latest_title
+
+            except Exception as e:
+                last_err = e
+                wait = (2 ** i) + random.uniform(0.5, 1.5)
+                print(f"[RSS retry {i+1}] {rss_url} -> {e}, wait {wait:.1f}s")
+                time.sleep(wait)
+
+    raise RuntimeError(f"获取 RSS 失败：{last_err}")
 
 
 def find_latest_dated_video_url_from_channel_html(channel_html: str) -> Tuple[str, date, str]:
@@ -413,13 +473,16 @@ def pick_yaml_and_txt(urls: List[str]) -> Tuple[Optional[str], Optional[str]]:
 
 def main():
     channel_url = "https://www.youtube.com/@blue-Youtube"
+    channel_id = "UCtzk4Wh7dwJLDKXbq4w4PRQ"
     out_dir = "../output/"
 
     session = make_session()
 
     # A) 访问频道主页 -> 找最新日期打头的视频
-    channel_html = fetch_html(session, channel_url)
-    video_url, dt, title = find_latest_dated_video_url_from_channel_html(channel_html)
+    #channel_html = fetch_html(session, channel_url)
+    #video_url, dt, title = find_latest_dated_video_url_from_channel_html(channel_html)
+    #video_url = video_url.replace("www.youtube.com", "m.youtube.com")
+    dt, video_url, title = find_latest_dated_video_from_rss(session, channel_id)
     video_url = video_url.replace("www.youtube.com", "m.youtube.com")
 
     print("最新日期视频：")
