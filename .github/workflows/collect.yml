@@ -1,4 +1,4 @@
-name: collect
+name: main_collect
 
 on: 
   push:
