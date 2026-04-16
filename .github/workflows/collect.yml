@@ -3,7 +3,7 @@ name: collect
 on: 
   push:
     branches: 
-      - main
+      - direct_link
 
   workflow_dispatch:
 
@@ -28,7 +28,7 @@ jobs:
           cache: 'pip'
 
       - run: pip install -r python/requirements.txt
-      - run: pip install selenium webdriver-manager bs4 pyperclip tqdm
+      - run: pip install selenium webdriver-manager bs4 pyperclip tqdm beautifulsoup4
 
       - name: Collect
         run: |
