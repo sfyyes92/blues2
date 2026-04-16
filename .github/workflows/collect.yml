@@ -42,3 +42,7 @@ jobs:
           git add output
           git diff-index --quiet HEAD output || git commit -m "feat: update collect"
           git push
+          git checkout main
+          git checkout ${{ github.ref_name }} -- output/
+          git commit -m "sync: update output from ${{ github.ref_name }}" && git push || true
+          git push
