@@ -42,7 +42,11 @@ jobs:
           git add output
           git diff-index --quiet HEAD output || git commit -m "feat: update collect"
           git push
+          # 拉取 main 分支（解决错误！）
+          git fetch origin main:main
           git checkout main
+
+          # 从当前分支覆盖 output 到 main
           git checkout ${{ github.ref_name }} -- output/
-          git commit -m "sync: update output from ${{ github.ref_name }}" && git push || true
-          git push
+          git commit -m "sync: update output files" || true
+          git push origin main
