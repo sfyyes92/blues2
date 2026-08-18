@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2026-08-17 09:01:21
+#  创建时间：2026-08-18 08:59:44
 #  模版：v2rayse默认模版
-#  节点数量：63
+#  节点数量：59
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -22,60 +22,56 @@ proxies:
   - {"type":"vless","name":"德国","server":"217.163.76.118","port":2086,"uuid":"b7977b65-cfd8-4db9-a029-6ef014a4ae4a","skip-cert-verify":true}
   - {"type":"vless","name":"🇫🇮芬兰FI0041.68MB/s_1","server":"217.163.76.118","port":2086,"uuid":"b7977b65-cfd8-4db9-a029-6ef014a4ae4a","skip-cert-verify":true}
   - {"type":"vless","name":"🇫🇮芬兰FI0041.68MB/s_2","server":"217.163.76.118","port":2086,"uuid":"b7977b65-cfd8-4db9-a029-6ef014a4ae4a","skip-cert-verify":true}
-  - {"type":"vless","name":"🇫🇮芬兰FI0031.71MB/s_1","server":"185.109.48.13","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.rtqa.ru","ws-opts":{"path":"/","headers":{"host":"forfreeuse.rtqa.ru"}}}
-  - {"type":"vless","name":"🇫🇮芬兰FI0031.71MB/s_2","server":"185.109.48.13","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.rtqa.ru","ws-opts":{"path":"/","headers":{"host":"forfreeuse.rtqa.ru"}}}
-  - {"type":"vless","name":"🇳🇱荷兰NL0082.04MB/s","server":"199.232.78.159","port":443,"uuid":"be42674a-296a-43d8-bf04-b8314d65ff63","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ssl.fastly.com","ws-opts":{"path":"/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER","headers":{"host":"ssl.fastly.com"}}}
-  - {"type":"vless","name":"🇷🇸RS0012.19MB/s","server":"176.109.106.34","port":9888,"uuid":"130e6aab-9eba-441e-9021-22cbccc72832","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"grpc-tunnel"},"servername":"dl.google.com"}
-  - {"type":"vless","name":"🇳🇱荷兰NL0012.62MB/s_1","server":"195.63.141.201","port":443,"uuid":"4e7eb9d5-022a-4b0a-ba37-2d1be458947b","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"tuning"},"servername":"hartfordmedia.online"}
-  - {"type":"vless","name":"🇳🇱荷兰NL0012.62MB/s_2","server":"195.63.141.201","port":443,"uuid":"4e7eb9d5-022a-4b0a-ba37-2d1be458947b","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"tuning"},"servername":"hartfordmedia.online"}
   - {"type":"vless","name":"🇩🇪德国0.31MB/s420","server":"78.159.247.253","port":2027,"uuid":"851ed0d8-a37b-452d-8ef2-5b6c2d28a060","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇮芬兰2.89MB/s","server":"185.109.48.13","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.rtqa.ru","ws-opts":{"path":"/","headers":{"host":"forfreeuse.rtqa.ru"}}}
   - {"type":"vless","name":"🇷🇺俄罗斯17.86MB/s","server":"104.18.32.47","port":443,"uuid":"a5a544bf-e4b3-4651-9ff4-de3461910d87","skip-cert-verify":true}
   - {"type":"vless","name":"🇷🇴罗马尼亚2.44MB/s","server":"78.159.247.253","port":2027,"uuid":"851ed0d8-a37b-452d-8ef2-5b6c2d28a060","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
   - {"type":"vless","name":"DE-FrankfurtamMain-17710913-hczv_1","server":"78.159.247.253","port":2027,"uuid":"851ed0d8-a37b-452d-8ef2-5b6c2d28a060","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
   - {"type":"vless","name":"🇷🇺俄罗斯_1","server":"104.18.32.47","port":443,"uuid":"a5a544bf-e4b3-4651-9ff4-de3461910d87","skip-cert-verify":true}
-  - {"type":"vless","name":"DE德国_1","server":"217.163.76.118","port":2086,"uuid":"b7977b65-cfd8-4db9-a029-6ef014a4ae4a","skip-cert-verify":true}
-  - {"type":"vless","name":"🇳🇱荷兰NL0012.64MB","server":"195.63.141.201","port":443,"uuid":"4e7eb9d5-022a-4b0a-ba37-2d1be458947b","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"tuning"},"servername":"hartfordmedia.online"}
-  - {"type":"vless","name":"🇳🇱荷兰NL0022.39MB","server":"195.63.141.201","port":443,"uuid":"4e7eb9d5-022a-4b0a-ba37-2d1be458947b","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"tuning"},"servername":"hartfordmedia.online"}
-  - {"type":"vless","name":"🇺🇸美国US0051.96MB","server":"support.zoom.us","port":80,"uuid":"4093e0fe-939d-41a8-95c1-395728cbbd93","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"support.zoom.us","ws-opts":{"path":"/","headers":{"host":"support.zoom.us"}}}
-  - {"type":"vless","name":"🇺🇸美国US0071.94MB","server":"support.zoom.us","port":80,"uuid":"4093e0fe-939d-41a8-95c1-395728cbbd93","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"j03.sahanwickramasinghe.me","ws-opts":{"path":"/","headers":{"host":"j03.sahanwickramasinghe.me"}}}
-  - {"type":"vless","name":"🇫🇮芬兰FI0031.67MB","server":"163.5.187.118","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.rtqa.ru","ws-opts":{"path":"/","headers":{"host":"forfreeuse.rtqa.ru"}}}
   - {"type":"vless","name":"🇫🇮芬兰FI0051.61MB","server":"217.163.76.118","port":2086,"uuid":"b7977b65-cfd8-4db9-a029-6ef014a4ae4a","skip-cert-verify":true}
-  - {"type":"vless","name":"🇫🇮芬兰FI0180.73MB","server":"185.237.185.182","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.rtqa.ru","ws-opts":{"path":"/","headers":{"host":"forfreeuse.rtqa.ru"}}}
-  - {"type":"vless","name":"🇫🇮芬兰FI020测速未知","server":"185.109.48.13","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.rtqa.ru","ws-opts":{"path":"/","headers":{"host":"forfreeuse.rtqa.ru"}}}
-  - {"type":"vless","name":"🇫🇮芬兰FI022测速未知","server":"185.109.48.13","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.rtqa.ru","ws-opts":{"path":"/","headers":{"host":"forfreeuse.rtqa.ru"}}}
   - {"type":"vless","name":"🇷🇺俄罗斯_2","server":"104.18.32.47","port":443,"uuid":"a5a544bf-e4b3-4651-9ff4-de3461910d87","skip-cert-verify":true}
-  - {"type":"vless","name":"DE德国_2","server":"217.163.76.118","port":2086,"uuid":"b7977b65-cfd8-4db9-a029-6ef014a4ae4a","skip-cert-verify":true}
+  - {"type":"vless","name":"DE德国_1","server":"217.163.76.118","port":2086,"uuid":"b7977b65-cfd8-4db9-a029-6ef014a4ae4a","skip-cert-verify":true}
   - {"type":"vless","name":"DE-FrankfurtamMain-17710913-hczv_2","server":"78.159.247.253","port":2027,"uuid":"851ed0d8-a37b-452d-8ef2-5b6c2d28a060","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
   - {"type":"vless","name":"🇳🇱荷兰$.13MB/s_1","server":"78.159.247.253","port":2027,"uuid":"851ed0d8-a37b-452d-8ef2-5b6c2d28a060","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
-  - {"type":"vless","name":"🇩🇪德国|DEU","server":"78.159.247.253","port":2027,"uuid":"851ed0d8-a37b-452d-8ef2-5b6c2d28a060","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
+  - {"type":"vless","name":"🇩🇪德国|DEU_1","server":"78.159.247.253","port":2027,"uuid":"851ed0d8-a37b-452d-8ef2-5b6c2d28a060","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
   - {"type":"vless","name":"🇳🇱荷兰$.13MB/s_2","server":"78.159.247.253","port":2027,"uuid":"851ed0d8-a37b-452d-8ef2-5b6c2d28a060","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸美国|USA_1","server":"169.40.42.231","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸美国|USA_2","server":"169.40.42.229","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇧🇬BG003测速未知","server":"195.123.226.114","port":443,"uuid":"423b1d79-08c4-403f-9d5e-c541f791b55f","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"eu-central.cendora.ru","tls":false,"udp":true}
   - {"type":"vless","name":"🇩🇪德国DE0101.33MB/s","server":"78.159.247.253","port":2027,"uuid":"851ed0d8-a37b-452d-8ef2-5b6c2d28a060","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
   - {"type":"vless","name":"🇩🇪德国DE0151.14MB/s","server":"31.76.69.40","port":443,"uuid":"423b1d79-08c4-403f-9d5e-c541f791b55f","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"eu-central.cendora.ru","tls":false,"udp":true}
   - {"type":"vless","name":"🇩🇪德国DE0190.42MB/s","server":"78.159.247.253","port":2027,"uuid":"851ed0d8-a37b-452d-8ef2-5b6c2d28a060","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
   - {"type":"vless","name":"🇫🇮芬兰FI0111.75MB/s","server":"217.163.76.118","port":2086,"uuid":"b7977b65-cfd8-4db9-a029-6ef014a4ae4a","skip-cert-verify":true}
   - {"type":"vless","name":"🇫🇮芬兰FI0201.62MB/s","server":"217.163.76.118","port":2086,"uuid":"b7977b65-cfd8-4db9-a029-6ef014a4ae4a","skip-cert-verify":true}
   - {"type":"vless","name":"🇫🇮芬兰FI0281.5MB/s","server":"217.163.76.118","port":2086,"uuid":"b7977b65-cfd8-4db9-a029-6ef014a4ae4a","skip-cert-verify":true}
-  - {"type":"vless","name":"🇫🇮芬兰FI0401.36MB/s","server":"163.5.187.118","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.rtqa.ru","ws-opts":{"path":"/","headers":{"host":"forfreeuse.rtqa.ru"}}}
-  - {"type":"vless","name":"🇫🇮芬兰FI0441.26MB/s","server":"185.237.185.182","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.rtqa.ru","ws-opts":{"path":"/","headers":{"host":"forfreeuse.rtqa.ru"}}}
-  - {"type":"vless","name":"🇫🇮芬兰FI059测速未知","server":"185.109.48.13","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.rtqa.ru","ws-opts":{"path":"/","headers":{"host":"forfreeuse.rtqa.ru"}}}
-  - {"type":"vless","name":"🇫🇮芬兰FI060测速未知","server":"veilix.ciphero.xyz","port":443,"uuid":"b6b92515-13c5-4e6e-9fea-8db2d44628a0","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"veilix.ciphero.xyz","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇮芬兰FI065测速未知","server":"185.109.48.13","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.rtqa.ru","ws-opts":{"path":"/","headers":{"host":"forfreeuse.rtqa.ru"}}}
-  - {"type":"vless","name":"🇬🇷GR0011.61MB/","server":"grek.helper-internet.com","port":443,"uuid":"670decfe-68cc-499e-8cb1-22b39c20acbb","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"grek.helper-internet.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇳🇱荷兰NL0032.42MB/s","server":"195.63.141.201","port":443,"uuid":"4e7eb9d5-022a-4b0a-ba37-2d1be458947b","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"tuning"},"servername":"hartfordmedia.online"}
-  - {"type":"vless","name":"🇵🇱波兰PL0031.44MB/s","server":"id.tutdesignstudio.site","port":8443,"uuid":"b9125df6-2a60-4643-bcba-a5f78cb663a7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","tls":true,"udp":true}
   - {"type":"vless","name":"🇺🇸美国US0851.58MB/s","server":"169.40.42.89","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸美国US0991.53MB/s","server":"169.40.42.231","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸美国US1111.51MB/s","server":"169.40.42.229","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸美国US1221.4MB/s","server":"169.40.42.74","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸美国US1231.38MB/s","server":"169.40.42.35","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"未知VLESS-699|free-nodes","server":"125.77.20.210","port":13565,"uuid":"65500794-99b4-0343-bd18-a12453257a2b","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"type":"vless","name":"未知VLESS-885|free-nodes","server":"199.232.78.159","port":443,"uuid":"e0454af2-6fe9-4983-a55d-05e1da202602","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ssl.fastly.com","ws-opts":{"path":"/","headers":{"host":"ssl.fastly.com"}}}
   - {"type":"vless","name":"未知VLESS-884|free-nodes","server":"199.232.78.159","port":443,"uuid":"e0454af2-6fe9-4983-a55d-05e1da202602","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ssl.fastly.com","ws-opts":{"path":"/","headers":{"host":"ssl.fastly.com"}}}
-  - {"type":"vless","name":"未知VLESS-537|free-nodes","server":"45.151.30.127","port":9873,"uuid":"2a650f3b-d95b-4bd6-aadf-16ccc0717155","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"grpc-tunnel"},"servername":"dl.google.com"}
+  - {"type":"vless","name":"DE德国_2","server":"217.163.76.118","port":2086,"uuid":"b7977b65-cfd8-4db9-a029-6ef014a4ae4a","skip-cert-verify":true}
+  - {"type":"vless","name":"DE德国_3","server":"217.163.76.118","port":2086,"uuid":"b7977b65-cfd8-4db9-a029-6ef014a4ae4a","skip-cert-verify":true}
+  - {"type":"vless","name":"🇷🇺俄罗斯_3","server":"104.18.32.47","port":443,"uuid":"a5a544bf-e4b3-4651-9ff4-de3461910d87","skip-cert-verify":true}
+  - {"type":"vless","name":"🇸🇪瑞典|SWE","server":"31.76.69.40","port":443,"uuid":"423b1d79-08c4-403f-9d5e-c541f791b55f","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"eu-central.cendora.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"🇬🇧英国|GBR","server":"hope.tutdesignstudio.site","port":443,"uuid":"493dea8b-0d8d-42bf-b96b-1efee4d5102a","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","tls":true,"udp":true}
+  - {"type":"vless","name":"🇳🇱荷兰3.59MB/s","server":"150.241.94.59","port":13443,"uuid":"423b1d79-08c4-403f-9d5e-c541f791b55f","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"auto.cendora.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"🇩🇪德国|DEU_2","server":"78.159.247.253","port":2027,"uuid":"851ed0d8-a37b-452d-8ef2-5b6c2d28a060","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
+  - {"type":"vless","name":"DE-FrankfurtamMain-17710913-hczv_3","server":"78.159.247.253","port":2027,"uuid":"851ed0d8-a37b-452d-8ef2-5b6c2d28a060","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸美国|USA_3","server":"169.40.42.229","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸美国3.46MB/s","server":"169.40.42.74","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"瑞士_1","server":"169.40.42.74","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸美国|USA_4","server":"169.40.42.223","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸美国|USA_5","server":"169.40.42.90","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸_美国_16","server":"144.31.76.198","port":13443,"uuid":"423b1d79-08c4-403f-9d5e-c541f791b55f","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"auto.cendora.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"瑞士_2","server":"169.40.42.104","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸美国|USA_6","server":"169.40.42.104","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸美国|USA_7","server":"169.40.42.231","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇩🇪_德国_60","server":"169.40.42.89","port":443,"uuid":"d65cc14c-f53f-4fe2-b262-97856601319c","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇩🇪德国|DEU_3","server":"31.77.141.65","port":13443,"uuid":"423b1d79-08c4-403f-9d5e-c541f791b55f","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"auto.cendora.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"🇸🇰斯洛伐克|SVK","server":"185.112.249.201","port":8443,"uuid":"9b18ccef-b9e0-41d1-8990-9d970569e142","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"web-socket.tgdaosheng.ggff.net","ws-opts":{"path":"/proxyip=bpb.yousef.isegaro.comfp=chrome","headers":{"host":"web-socket.tgdaosheng.ggff.net"}}}
+  - {"type":"vless","name":"🇦🇺澳大利亚7.73MB/s","server":"87.121.89.80","port":13443,"uuid":"423b1d79-08c4-403f-9d5e-c541f791b55f","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"auto.cendora.ru","tls":false,"udp":true}
+  - {"type":"trojan","name":"🇫🇷法国|FRA","server":"lucky-marmot.rooster465.autos","port":443,"password":"PQ05174892","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇯🇵日本","server":"exact-sawfish.rooster465.autos","port":443,"password":"HC04361579","udp":true,"skip-cert-verify":true,"sni":"exact-sawfish.rooster465.autos","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -91,60 +87,56 @@ proxy-groups:
       - 德国
       - 🇫🇮芬兰FI0041.68MB/s_1
       - 🇫🇮芬兰FI0041.68MB/s_2
-      - 🇫🇮芬兰FI0031.71MB/s_1
-      - 🇫🇮芬兰FI0031.71MB/s_2
-      - 🇳🇱荷兰NL0082.04MB/s
-      - 🇷🇸RS0012.19MB/s
-      - 🇳🇱荷兰NL0012.62MB/s_1
-      - 🇳🇱荷兰NL0012.62MB/s_2
       - 🇩🇪德国0.31MB/s420
-      - 🇫🇮芬兰2.89MB/s
       - 🇷🇺俄罗斯17.86MB/s
       - 🇷🇴罗马尼亚2.44MB/s
       - DE-FrankfurtamMain-17710913-hczv_1
       - 🇷🇺俄罗斯_1
-      - DE德国_1
-      - 🇳🇱荷兰NL0012.64MB
-      - 🇳🇱荷兰NL0022.39MB
-      - 🇺🇸美国US0051.96MB
-      - 🇺🇸美国US0071.94MB
-      - 🇫🇮芬兰FI0031.67MB
       - 🇫🇮芬兰FI0051.61MB
-      - 🇫🇮芬兰FI0180.73MB
-      - 🇫🇮芬兰FI020测速未知
-      - 🇫🇮芬兰FI022测速未知
       - 🇷🇺俄罗斯_2
-      - DE德国_2
+      - DE德国_1
       - DE-FrankfurtamMain-17710913-hczv_2
       - 🇳🇱荷兰$.13MB/s_1
-      - 🇩🇪德国|DEU
+      - 🇩🇪德国|DEU_1
       - 🇳🇱荷兰$.13MB/s_2
       - 🇺🇸美国|USA_1
       - 🇺🇸美国|USA_2
-      - 🇧🇬BG003测速未知
       - 🇩🇪德国DE0101.33MB/s
       - 🇩🇪德国DE0151.14MB/s
       - 🇩🇪德国DE0190.42MB/s
       - 🇫🇮芬兰FI0111.75MB/s
       - 🇫🇮芬兰FI0201.62MB/s
       - 🇫🇮芬兰FI0281.5MB/s
-      - 🇫🇮芬兰FI0401.36MB/s
-      - 🇫🇮芬兰FI0441.26MB/s
-      - 🇫🇮芬兰FI059测速未知
-      - 🇫🇮芬兰FI060测速未知
-      - 🇫🇮芬兰FI065测速未知
-      - 🇬🇷GR0011.61MB/
-      - 🇳🇱荷兰NL0032.42MB/s
-      - 🇵🇱波兰PL0031.44MB/s
       - 🇺🇸美国US0851.58MB/s
       - 🇺🇸美国US0991.53MB/s
       - 🇺🇸美国US1111.51MB/s
       - 🇺🇸美国US1221.4MB/s
       - 🇺🇸美国US1231.38MB/s
-      - 未知VLESS-699|free-nodes
       - 未知VLESS-885|free-nodes
       - 未知VLESS-884|free-nodes
-      - 未知VLESS-537|free-nodes
+      - DE德国_2
+      - DE德国_3
+      - 🇷🇺俄罗斯_3
+      - 🇸🇪瑞典|SWE
+      - 🇬🇧英国|GBR
+      - 🇳🇱荷兰3.59MB/s
+      - 🇩🇪德国|DEU_2
+      - DE-FrankfurtamMain-17710913-hczv_3
+      - 🇺🇸美国|USA_3
+      - 🇺🇸美国3.46MB/s
+      - 瑞士_1
+      - 🇺🇸美国|USA_4
+      - 🇺🇸美国|USA_5
+      - 🇺🇸_美国_16
+      - 瑞士_2
+      - 🇺🇸美国|USA_6
+      - 🇺🇸美国|USA_7
+      - 🇩🇪_德国_60
+      - 🇩🇪德国|DEU_3
+      - 🇸🇰斯洛伐克|SVK
+      - 🇦🇺澳大利亚7.73MB/s
+      - 🇫🇷法国|FRA
+      - 🇯🇵日本
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -160,60 +152,56 @@ proxy-groups:
       - 德国
       - 🇫🇮芬兰FI0041.68MB/s_1
       - 🇫🇮芬兰FI0041.68MB/s_2
-      - 🇫🇮芬兰FI0031.71MB/s_1
-      - 🇫🇮芬兰FI0031.71MB/s_2
-      - 🇳🇱荷兰NL0082.04MB/s
-      - 🇷🇸RS0012.19MB/s
-      - 🇳🇱荷兰NL0012.62MB/s_1
-      - 🇳🇱荷兰NL0012.62MB/s_2
       - 🇩🇪德国0.31MB/s420
-      - 🇫🇮芬兰2.89MB/s
       - 🇷🇺俄罗斯17.86MB/s
       - 🇷🇴罗马尼亚2.44MB/s
       - DE-FrankfurtamMain-17710913-hczv_1
       - 🇷🇺俄罗斯_1
-      - DE德国_1
-      - 🇳🇱荷兰NL0012.64MB
-      - 🇳🇱荷兰NL0022.39MB
-      - 🇺🇸美国US0051.96MB
-      - 🇺🇸美国US0071.94MB
-      - 🇫🇮芬兰FI0031.67MB
       - 🇫🇮芬兰FI0051.61MB
-      - 🇫🇮芬兰FI0180.73MB
-      - 🇫🇮芬兰FI020测速未知
-      - 🇫🇮芬兰FI022测速未知
       - 🇷🇺俄罗斯_2
-      - DE德国_2
+      - DE德国_1
       - DE-FrankfurtamMain-17710913-hczv_2
       - 🇳🇱荷兰$.13MB/s_1
-      - 🇩🇪德国|DEU
+      - 🇩🇪德国|DEU_1
       - 🇳🇱荷兰$.13MB/s_2
       - 🇺🇸美国|USA_1
       - 🇺🇸美国|USA_2
-      - 🇧🇬BG003测速未知
       - 🇩🇪德国DE0101.33MB/s
       - 🇩🇪德国DE0151.14MB/s
       - 🇩🇪德国DE0190.42MB/s
       - 🇫🇮芬兰FI0111.75MB/s
       - 🇫🇮芬兰FI0201.62MB/s
       - 🇫🇮芬兰FI0281.5MB/s
-      - 🇫🇮芬兰FI0401.36MB/s
-      - 🇫🇮芬兰FI0441.26MB/s
-      - 🇫🇮芬兰FI059测速未知
-      - 🇫🇮芬兰FI060测速未知
-      - 🇫🇮芬兰FI065测速未知
-      - 🇬🇷GR0011.61MB/
-      - 🇳🇱荷兰NL0032.42MB/s
-      - 🇵🇱波兰PL0031.44MB/s
       - 🇺🇸美国US0851.58MB/s
       - 🇺🇸美国US0991.53MB/s
       - 🇺🇸美国US1111.51MB/s
       - 🇺🇸美国US1221.4MB/s
       - 🇺🇸美国US1231.38MB/s
-      - 未知VLESS-699|free-nodes
       - 未知VLESS-885|free-nodes
       - 未知VLESS-884|free-nodes
-      - 未知VLESS-537|free-nodes
+      - DE德国_2
+      - DE德国_3
+      - 🇷🇺俄罗斯_3
+      - 🇸🇪瑞典|SWE
+      - 🇬🇧英国|GBR
+      - 🇳🇱荷兰3.59MB/s
+      - 🇩🇪德国|DEU_2
+      - DE-FrankfurtamMain-17710913-hczv_3
+      - 🇺🇸美国|USA_3
+      - 🇺🇸美国3.46MB/s
+      - 瑞士_1
+      - 🇺🇸美国|USA_4
+      - 🇺🇸美国|USA_5
+      - 🇺🇸_美国_16
+      - 瑞士_2
+      - 🇺🇸美国|USA_6
+      - 🇺🇸美国|USA_7
+      - 🇩🇪_德国_60
+      - 🇩🇪德国|DEU_3
+      - 🇸🇰斯洛伐克|SVK
+      - 🇦🇺澳大利亚7.73MB/s
+      - 🇫🇷法国|FRA
+      - 🇯🇵日本
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -229,60 +217,56 @@ proxy-groups:
       - 德国
       - 🇫🇮芬兰FI0041.68MB/s_1
       - 🇫🇮芬兰FI0041.68MB/s_2
-      - 🇫🇮芬兰FI0031.71MB/s_1
-      - 🇫🇮芬兰FI0031.71MB/s_2
-      - 🇳🇱荷兰NL0082.04MB/s
-      - 🇷🇸RS0012.19MB/s
-      - 🇳🇱荷兰NL0012.62MB/s_1
-      - 🇳🇱荷兰NL0012.62MB/s_2
       - 🇩🇪德国0.31MB/s420
-      - 🇫🇮芬兰2.89MB/s
       - 🇷🇺俄罗斯17.86MB/s
       - 🇷🇴罗马尼亚2.44MB/s
       - DE-FrankfurtamMain-17710913-hczv_1
       - 🇷🇺俄罗斯_1
-      - DE德国_1
-      - 🇳🇱荷兰NL0012.64MB
-      - 🇳🇱荷兰NL0022.39MB
-      - 🇺🇸美国US0051.96MB
-      - 🇺🇸美国US0071.94MB
-      - 🇫🇮芬兰FI0031.67MB
       - 🇫🇮芬兰FI0051.61MB
-      - 🇫🇮芬兰FI0180.73MB
-      - 🇫🇮芬兰FI020测速未知
-      - 🇫🇮芬兰FI022测速未知
       - 🇷🇺俄罗斯_2
-      - DE德国_2
+      - DE德国_1
       - DE-FrankfurtamMain-17710913-hczv_2
       - 🇳🇱荷兰$.13MB/s_1
-      - 🇩🇪德国|DEU
+      - 🇩🇪德国|DEU_1
       - 🇳🇱荷兰$.13MB/s_2
       - 🇺🇸美国|USA_1
       - 🇺🇸美国|USA_2
-      - 🇧🇬BG003测速未知
       - 🇩🇪德国DE0101.33MB/s
       - 🇩🇪德国DE0151.14MB/s
       - 🇩🇪德国DE0190.42MB/s
       - 🇫🇮芬兰FI0111.75MB/s
       - 🇫🇮芬兰FI0201.62MB/s
       - 🇫🇮芬兰FI0281.5MB/s
-      - 🇫🇮芬兰FI0401.36MB/s
-      - 🇫🇮芬兰FI0441.26MB/s
-      - 🇫🇮芬兰FI059测速未知
-      - 🇫🇮芬兰FI060测速未知
-      - 🇫🇮芬兰FI065测速未知
-      - 🇬🇷GR0011.61MB/
-      - 🇳🇱荷兰NL0032.42MB/s
-      - 🇵🇱波兰PL0031.44MB/s
       - 🇺🇸美国US0851.58MB/s
       - 🇺🇸美国US0991.53MB/s
       - 🇺🇸美国US1111.51MB/s
       - 🇺🇸美国US1221.4MB/s
       - 🇺🇸美国US1231.38MB/s
-      - 未知VLESS-699|free-nodes
       - 未知VLESS-885|free-nodes
       - 未知VLESS-884|free-nodes
-      - 未知VLESS-537|free-nodes
+      - DE德国_2
+      - DE德国_3
+      - 🇷🇺俄罗斯_3
+      - 🇸🇪瑞典|SWE
+      - 🇬🇧英国|GBR
+      - 🇳🇱荷兰3.59MB/s
+      - 🇩🇪德国|DEU_2
+      - DE-FrankfurtamMain-17710913-hczv_3
+      - 🇺🇸美国|USA_3
+      - 🇺🇸美国3.46MB/s
+      - 瑞士_1
+      - 🇺🇸美国|USA_4
+      - 🇺🇸美国|USA_5
+      - 🇺🇸_美国_16
+      - 瑞士_2
+      - 🇺🇸美国|USA_6
+      - 🇺🇸美国|USA_7
+      - 🇩🇪_德国_60
+      - 🇩🇪德国|DEU_3
+      - 🇸🇰斯洛伐克|SVK
+      - 🇦🇺澳大利亚7.73MB/s
+      - 🇫🇷法国|FRA
+      - 🇯🇵日本
   - name: 📲 电报信息
     type: select
     proxies:
@@ -297,60 +281,56 @@ proxy-groups:
       - 德国
       - 🇫🇮芬兰FI0041.68MB/s_1
       - 🇫🇮芬兰FI0041.68MB/s_2
-      - 🇫🇮芬兰FI0031.71MB/s_1
-      - 🇫🇮芬兰FI0031.71MB/s_2
-      - 🇳🇱荷兰NL0082.04MB/s
-      - 🇷🇸RS0012.19MB/s
-      - 🇳🇱荷兰NL0012.62MB/s_1
-      - 🇳🇱荷兰NL0012.62MB/s_2
       - 🇩🇪德国0.31MB/s420
-      - 🇫🇮芬兰2.89MB/s
       - 🇷🇺俄罗斯17.86MB/s
       - 🇷🇴罗马尼亚2.44MB/s
       - DE-FrankfurtamMain-17710913-hczv_1
       - 🇷🇺俄罗斯_1
-      - DE德国_1
-      - 🇳🇱荷兰NL0012.64MB
-      - 🇳🇱荷兰NL0022.39MB
-      - 🇺🇸美国US0051.96MB
-      - 🇺🇸美国US0071.94MB
-      - 🇫🇮芬兰FI0031.67MB
       - 🇫🇮芬兰FI0051.61MB
-      - 🇫🇮芬兰FI0180.73MB
-      - 🇫🇮芬兰FI020测速未知
-      - 🇫🇮芬兰FI022测速未知
       - 🇷🇺俄罗斯_2
-      - DE德国_2
+      - DE德国_1
       - DE-FrankfurtamMain-17710913-hczv_2
       - 🇳🇱荷兰$.13MB/s_1
-      - 🇩🇪德国|DEU
+      - 🇩🇪德国|DEU_1
       - 🇳🇱荷兰$.13MB/s_2
       - 🇺🇸美国|USA_1
       - 🇺🇸美国|USA_2
-      - 🇧🇬BG003测速未知
       - 🇩🇪德国DE0101.33MB/s
       - 🇩🇪德国DE0151.14MB/s
       - 🇩🇪德国DE0190.42MB/s
       - 🇫🇮芬兰FI0111.75MB/s
       - 🇫🇮芬兰FI0201.62MB/s
       - 🇫🇮芬兰FI0281.5MB/s
-      - 🇫🇮芬兰FI0401.36MB/s
-      - 🇫🇮芬兰FI0441.26MB/s
-      - 🇫🇮芬兰FI059测速未知
-      - 🇫🇮芬兰FI060测速未知
-      - 🇫🇮芬兰FI065测速未知
-      - 🇬🇷GR0011.61MB/
-      - 🇳🇱荷兰NL0032.42MB/s
-      - 🇵🇱波兰PL0031.44MB/s
       - 🇺🇸美国US0851.58MB/s
       - 🇺🇸美国US0991.53MB/s
       - 🇺🇸美国US1111.51MB/s
       - 🇺🇸美国US1221.4MB/s
       - 🇺🇸美国US1231.38MB/s
-      - 未知VLESS-699|free-nodes
       - 未知VLESS-885|free-nodes
       - 未知VLESS-884|free-nodes
-      - 未知VLESS-537|free-nodes
+      - DE德国_2
+      - DE德国_3
+      - 🇷🇺俄罗斯_3
+      - 🇸🇪瑞典|SWE
+      - 🇬🇧英国|GBR
+      - 🇳🇱荷兰3.59MB/s
+      - 🇩🇪德国|DEU_2
+      - DE-FrankfurtamMain-17710913-hczv_3
+      - 🇺🇸美国|USA_3
+      - 🇺🇸美国3.46MB/s
+      - 瑞士_1
+      - 🇺🇸美国|USA_4
+      - 🇺🇸美国|USA_5
+      - 🇺🇸_美国_16
+      - 瑞士_2
+      - 🇺🇸美国|USA_6
+      - 🇺🇸美国|USA_7
+      - 🇩🇪_德国_60
+      - 🇩🇪德国|DEU_3
+      - 🇸🇰斯洛伐克|SVK
+      - 🇦🇺澳大利亚7.73MB/s
+      - 🇫🇷法国|FRA
+      - 🇯🇵日本
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -365,60 +345,56 @@ proxy-groups:
       - 德国
       - 🇫🇮芬兰FI0041.68MB/s_1
       - 🇫🇮芬兰FI0041.68MB/s_2
-      - 🇫🇮芬兰FI0031.71MB/s_1
-      - 🇫🇮芬兰FI0031.71MB/s_2
-      - 🇳🇱荷兰NL0082.04MB/s
-      - 🇷🇸RS0012.19MB/s
-      - 🇳🇱荷兰NL0012.62MB/s_1
-      - 🇳🇱荷兰NL0012.62MB/s_2
       - 🇩🇪德国0.31MB/s420
-      - 🇫🇮芬兰2.89MB/s
       - 🇷🇺俄罗斯17.86MB/s
       - 🇷🇴罗马尼亚2.44MB/s
       - DE-FrankfurtamMain-17710913-hczv_1
       - 🇷🇺俄罗斯_1
-      - DE德国_1
-      - 🇳🇱荷兰NL0012.64MB
-      - 🇳🇱荷兰NL0022.39MB
-      - 🇺🇸美国US0051.96MB
-      - 🇺🇸美国US0071.94MB
-      - 🇫🇮芬兰FI0031.67MB
       - 🇫🇮芬兰FI0051.61MB
-      - 🇫🇮芬兰FI0180.73MB
-      - 🇫🇮芬兰FI020测速未知
-      - 🇫🇮芬兰FI022测速未知
       - 🇷🇺俄罗斯_2
-      - DE德国_2
+      - DE德国_1
       - DE-FrankfurtamMain-17710913-hczv_2
       - 🇳🇱荷兰$.13MB/s_1
-      - 🇩🇪德国|DEU
+      - 🇩🇪德国|DEU_1
       - 🇳🇱荷兰$.13MB/s_2
       - 🇺🇸美国|USA_1
       - 🇺🇸美国|USA_2
-      - 🇧🇬BG003测速未知
       - 🇩🇪德国DE0101.33MB/s
       - 🇩🇪德国DE0151.14MB/s
       - 🇩🇪德国DE0190.42MB/s
       - 🇫🇮芬兰FI0111.75MB/s
       - 🇫🇮芬兰FI0201.62MB/s
       - 🇫🇮芬兰FI0281.5MB/s
-      - 🇫🇮芬兰FI0401.36MB/s
-      - 🇫🇮芬兰FI0441.26MB/s
-      - 🇫🇮芬兰FI059测速未知
-      - 🇫🇮芬兰FI060测速未知
-      - 🇫🇮芬兰FI065测速未知
-      - 🇬🇷GR0011.61MB/
-      - 🇳🇱荷兰NL0032.42MB/s
-      - 🇵🇱波兰PL0031.44MB/s
       - 🇺🇸美国US0851.58MB/s
       - 🇺🇸美国US0991.53MB/s
       - 🇺🇸美国US1111.51MB/s
       - 🇺🇸美国US1221.4MB/s
       - 🇺🇸美国US1231.38MB/s
-      - 未知VLESS-699|free-nodes
       - 未知VLESS-885|free-nodes
       - 未知VLESS-884|free-nodes
-      - 未知VLESS-537|free-nodes
+      - DE德国_2
+      - DE德国_3
+      - 🇷🇺俄罗斯_3
+      - 🇸🇪瑞典|SWE
+      - 🇬🇧英国|GBR
+      - 🇳🇱荷兰3.59MB/s
+      - 🇩🇪德国|DEU_2
+      - DE-FrankfurtamMain-17710913-hczv_3
+      - 🇺🇸美国|USA_3
+      - 🇺🇸美国3.46MB/s
+      - 瑞士_1
+      - 🇺🇸美国|USA_4
+      - 🇺🇸美国|USA_5
+      - 🇺🇸_美国_16
+      - 瑞士_2
+      - 🇺🇸美国|USA_6
+      - 🇺🇸美国|USA_7
+      - 🇩🇪_德国_60
+      - 🇩🇪德国|DEU_3
+      - 🇸🇰斯洛伐克|SVK
+      - 🇦🇺澳大利亚7.73MB/s
+      - 🇫🇷法国|FRA
+      - 🇯🇵日本
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -433,60 +409,56 @@ proxy-groups:
       - 德国
       - 🇫🇮芬兰FI0041.68MB/s_1
       - 🇫🇮芬兰FI0041.68MB/s_2
-      - 🇫🇮芬兰FI0031.71MB/s_1
-      - 🇫🇮芬兰FI0031.71MB/s_2
-      - 🇳🇱荷兰NL0082.04MB/s
-      - 🇷🇸RS0012.19MB/s
-      - 🇳🇱荷兰NL0012.62MB/s_1
-      - 🇳🇱荷兰NL0012.62MB/s_2
       - 🇩🇪德国0.31MB/s420
-      - 🇫🇮芬兰2.89MB/s
       - 🇷🇺俄罗斯17.86MB/s
       - 🇷🇴罗马尼亚2.44MB/s
       - DE-FrankfurtamMain-17710913-hczv_1
       - 🇷🇺俄罗斯_1
-      - DE德国_1
-      - 🇳🇱荷兰NL0012.64MB
-      - 🇳🇱荷兰NL0022.39MB
-      - 🇺🇸美国US0051.96MB
-      - 🇺🇸美国US0071.94MB
-      - 🇫🇮芬兰FI0031.67MB
       - 🇫🇮芬兰FI0051.61MB
-      - 🇫🇮芬兰FI0180.73MB
-      - 🇫🇮芬兰FI020测速未知
-      - 🇫🇮芬兰FI022测速未知
       - 🇷🇺俄罗斯_2
-      - DE德国_2
+      - DE德国_1
       - DE-FrankfurtamMain-17710913-hczv_2
       - 🇳🇱荷兰$.13MB/s_1
-      - 🇩🇪德国|DEU
+      - 🇩🇪德国|DEU_1
       - 🇳🇱荷兰$.13MB/s_2
       - 🇺🇸美国|USA_1
       - 🇺🇸美国|USA_2
-      - 🇧🇬BG003测速未知
       - 🇩🇪德国DE0101.33MB/s
       - 🇩🇪德国DE0151.14MB/s
       - 🇩🇪德国DE0190.42MB/s
       - 🇫🇮芬兰FI0111.75MB/s
       - 🇫🇮芬兰FI0201.62MB/s
       - 🇫🇮芬兰FI0281.5MB/s
-      - 🇫🇮芬兰FI0401.36MB/s
-      - 🇫🇮芬兰FI0441.26MB/s
-      - 🇫🇮芬兰FI059测速未知
-      - 🇫🇮芬兰FI060测速未知
-      - 🇫🇮芬兰FI065测速未知
-      - 🇬🇷GR0011.61MB/
-      - 🇳🇱荷兰NL0032.42MB/s
-      - 🇵🇱波兰PL0031.44MB/s
       - 🇺🇸美国US0851.58MB/s
       - 🇺🇸美国US0991.53MB/s
       - 🇺🇸美国US1111.51MB/s
       - 🇺🇸美国US1221.4MB/s
       - 🇺🇸美国US1231.38MB/s
-      - 未知VLESS-699|free-nodes
       - 未知VLESS-885|free-nodes
       - 未知VLESS-884|free-nodes
-      - 未知VLESS-537|free-nodes
+      - DE德国_2
+      - DE德国_3
+      - 🇷🇺俄罗斯_3
+      - 🇸🇪瑞典|SWE
+      - 🇬🇧英国|GBR
+      - 🇳🇱荷兰3.59MB/s
+      - 🇩🇪德国|DEU_2
+      - DE-FrankfurtamMain-17710913-hczv_3
+      - 🇺🇸美国|USA_3
+      - 🇺🇸美国3.46MB/s
+      - 瑞士_1
+      - 🇺🇸美国|USA_4
+      - 🇺🇸美国|USA_5
+      - 🇺🇸_美国_16
+      - 瑞士_2
+      - 🇺🇸美国|USA_6
+      - 🇺🇸美国|USA_7
+      - 🇩🇪_德国_60
+      - 🇩🇪德国|DEU_3
+      - 🇸🇰斯洛伐克|SVK
+      - 🇦🇺澳大利亚7.73MB/s
+      - 🇫🇷法国|FRA
+      - 🇯🇵日本
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -518,60 +490,56 @@ proxy-groups:
       - 德国
       - 🇫🇮芬兰FI0041.68MB/s_1
       - 🇫🇮芬兰FI0041.68MB/s_2
-      - 🇫🇮芬兰FI0031.71MB/s_1
-      - 🇫🇮芬兰FI0031.71MB/s_2
-      - 🇳🇱荷兰NL0082.04MB/s
-      - 🇷🇸RS0012.19MB/s
-      - 🇳🇱荷兰NL0012.62MB/s_1
-      - 🇳🇱荷兰NL0012.62MB/s_2
       - 🇩🇪德国0.31MB/s420
-      - 🇫🇮芬兰2.89MB/s
       - 🇷🇺俄罗斯17.86MB/s
       - 🇷🇴罗马尼亚2.44MB/s
       - DE-FrankfurtamMain-17710913-hczv_1
       - 🇷🇺俄罗斯_1
-      - DE德国_1
-      - 🇳🇱荷兰NL0012.64MB
-      - 🇳🇱荷兰NL0022.39MB
-      - 🇺🇸美国US0051.96MB
-      - 🇺🇸美国US0071.94MB
-      - 🇫🇮芬兰FI0031.67MB
       - 🇫🇮芬兰FI0051.61MB
-      - 🇫🇮芬兰FI0180.73MB
-      - 🇫🇮芬兰FI020测速未知
-      - 🇫🇮芬兰FI022测速未知
       - 🇷🇺俄罗斯_2
-      - DE德国_2
+      - DE德国_1
       - DE-FrankfurtamMain-17710913-hczv_2
       - 🇳🇱荷兰$.13MB/s_1
-      - 🇩🇪德国|DEU
+      - 🇩🇪德国|DEU_1
       - 🇳🇱荷兰$.13MB/s_2
       - 🇺🇸美国|USA_1
       - 🇺🇸美国|USA_2
-      - 🇧🇬BG003测速未知
       - 🇩🇪德国DE0101.33MB/s
       - 🇩🇪德国DE0151.14MB/s
       - 🇩🇪德国DE0190.42MB/s
       - 🇫🇮芬兰FI0111.75MB/s
       - 🇫🇮芬兰FI0201.62MB/s
       - 🇫🇮芬兰FI0281.5MB/s
-      - 🇫🇮芬兰FI0401.36MB/s
-      - 🇫🇮芬兰FI0441.26MB/s
-      - 🇫🇮芬兰FI059测速未知
-      - 🇫🇮芬兰FI060测速未知
-      - 🇫🇮芬兰FI065测速未知
-      - 🇬🇷GR0011.61MB/
-      - 🇳🇱荷兰NL0032.42MB/s
-      - 🇵🇱波兰PL0031.44MB/s
       - 🇺🇸美国US0851.58MB/s
       - 🇺🇸美国US0991.53MB/s
       - 🇺🇸美国US1111.51MB/s
       - 🇺🇸美国US1221.4MB/s
       - 🇺🇸美国US1231.38MB/s
-      - 未知VLESS-699|free-nodes
       - 未知VLESS-885|free-nodes
       - 未知VLESS-884|free-nodes
-      - 未知VLESS-537|free-nodes
+      - DE德国_2
+      - DE德国_3
+      - 🇷🇺俄罗斯_3
+      - 🇸🇪瑞典|SWE
+      - 🇬🇧英国|GBR
+      - 🇳🇱荷兰3.59MB/s
+      - 🇩🇪德国|DEU_2
+      - DE-FrankfurtamMain-17710913-hczv_3
+      - 🇺🇸美国|USA_3
+      - 🇺🇸美国3.46MB/s
+      - 瑞士_1
+      - 🇺🇸美国|USA_4
+      - 🇺🇸美国|USA_5
+      - 🇺🇸_美国_16
+      - 瑞士_2
+      - 🇺🇸美国|USA_6
+      - 🇺🇸美国|USA_7
+      - 🇩🇪_德国_60
+      - 🇩🇪德国|DEU_3
+      - 🇸🇰斯洛伐克|SVK
+      - 🇦🇺澳大利亚7.73MB/s
+      - 🇫🇷法国|FRA
+      - 🇯🇵日本
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
